@@ -81,7 +81,44 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <!-- Right side will remain empty for now -->
+    <div class="col-md-8">
+        <h6 class="section-title mt-4 mb-4">Select data storage services you would like to compare.</h6>
+        <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-primary mb-4 me-2">Select All</button>
+            <button class="btn btn-secondary mb-4">Clear Selections</button>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+            <?php
+            $filePath = __DIR__ . '/data/storage-services.json';
+            // Read the JSON file
+            $json_data = file_get_contents($filePath);
+
+            // Decode the JSON data
+            $data = json_decode($json_data, true);
+
+            // Check if the JSON was successfully decoded
+            if ($data === null) {
+                die('Error decoding JSON');
+            }
+
+            // Loop through the services
+            foreach ($data['services'] as $index => $service) {
+                $id = 'service-' . $index;
+                echo "
+                    <div class='col'>
+                        <div class='card'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>{$service['title']}</h5>
+                                <p class='card-text'>{$service['description']}</p>
+                                <div class='form-check'>
+                                    <input class='form-check-input' type='checkbox' value='' id='{$id}'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ";
+            }
+            ?>
+        </div>
     </div>
 </div>

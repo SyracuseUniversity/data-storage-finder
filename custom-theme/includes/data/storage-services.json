@@ -1,0 +1,36 @@
+{
+    "services": [
+      {
+        "title": "Amazon Web Services Elastic Block Store",
+        "description": "Storage for use with Amazon EC2"
+      },
+      {
+        "title": "Amazon Web Services Elastic File System",
+        "description": "Storage for use with multiple Amazon EC2 instances"
+      },
+      {
+        "title": "Amazon Web Services Glacier",
+        "description": "Cloud based archival storage"
+      },
+      {
+        "title": "Amazon Web Services S3",
+        "description": "Flexible, scalable object storage"
+      },
+      {
+        "title": "BioHPC Cloud",
+        "description": "Storage for BioHPC lab computing services"
+      },
+      {
+        "title": "CAC Archival Storage",
+        "description": "Single copy, non-mountable storage"
+      },
+      {
+        "title": "CAC Red Cloud Storage",
+        "description": "Storage for Red Cloud compute instances"
+      },
+      {
+        "title": "CCSS Data & Reproduction Archive",
+        "description": "Publicly shared and restricted data and code packages repository"
+      }
+    ]
+  }
