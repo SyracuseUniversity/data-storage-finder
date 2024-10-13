@@ -1,13 +1,14 @@
 <hr>
 <div class="row">
-    <div class="col-md-4 scrollable-column">
+    <div class="col-md-4 scrollable-column" id="questionnaireContainer">
         <h6 class="section-title mt-4 mb-4">Describe your data</h6>
         <p class="questions-info">
             Answer these questions to help identify data storage services that are suitable for your needs. Checking
             these boxes will change the list of available services.
             If you are uncertain how to answer, leave the question blank to maximize your resulting options.
         </p>
-        <button class="btn btn-secondary btn-clear-filters mb-4">Clear Answers</button>
+        <button class="btn btn-secondary btn-clear-filters mb-4" id="clearAllButtonStorageQuestionaire">Clear
+            Answers</button>
         <?php
         $filePath = __DIR__ . '/data/storage-questions.json';
         // Read the JSON file
@@ -45,10 +46,10 @@
     <div class="col-md-8">
         <h6 class="section-title mt-4 mb-4">Select data storage services you would like to compare.</h6>
         <div class="d-flex justify-content-end mb-3">
-            <button class="btn btn-primary mb-4 me-2">Select All</button>
-            <button class="btn btn-secondary mb-4">Clear Selections</button>
+            <button class="btn btn-primary mb-4 me-2" id="selectAllButtonStorageSolution">Select All</button>
+            <button class="btn btn-secondary mb-4" id="clearAllButtonStorageSolutions">Clear Selections</button>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4" id="storageSolutionsContainer">
             <?php
             $filePath = __DIR__ . '/data/storage-services.json';
             // Read the JSON file
