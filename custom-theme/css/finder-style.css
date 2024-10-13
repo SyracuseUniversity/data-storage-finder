@@ -1,0 +1,121 @@
+/**
+
+Header Styling
+
+*/
+
+.header-styling {
+    background: linear-gradient(to right, #f0f5f9, #dff2ef, #bfe8e3)
+}
+
+.shifted-left-container {
+    font-size: 24px !important;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #347586;
+}
+
+.nav-no-padded-containers {
+    padding-left: 0px !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link{
+    padding-left: 0px !important;
+    padding-right: 1rem !important;
+}
+
+
+/**
+
+CSS for section-content.php file
+*/
+
+.info-container-heading {
+    font-family: "Roboto", sans-serif;
+    color: #347586;
+}
+
+.info-container-icons{
+    width: 20px; 
+    height: 20px; 
+    color: #A5CA7B;
+}
+
+.info-container-details{
+    font-size: 14px;
+    color: #A5CA7B;
+}
+
+.info-container-links{
+    color: #955F06;
+}
+
+/**
+
+CSS for footer.php file
+*/
+
+.about-header {
+    font-size: 20px;
+    font-weight: 500;
+    color: #347586;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.about-description {
+    font-size: 16px;
+    color: #A5CA7B;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/**
+CSS for section-questions.php
+*/
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #347586;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.scrollable-column {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.questions-info{
+    font-weight: 400;
+}
+
+.section-title{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #347586;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn-secondary {
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid #a7804d;
+    padding: 7px 30px;
+    color: #84653d;
+}
+    
+.btn-secondary:hover, .btn-secondary:focus {
+      background-color: #ebe1d5;
+      border-color: #84653d;
+      color: #614a2d; 
+}
+    
+.btn-secondary:active, .btn-secondary:active:hover, .btn-secondary:active:focus {
+      background-color: #84653d;
+      border-color: #84653d;
+      color: white; 
+}
