@@ -1,3 +1,12 @@
+:root {
+    --font-sans: ShermanSans, Verdana, sans-serif;
+    --font-serif: ShermanSerif, Georgia, serif;
+    --font-weight-normal: 500;
+    --su-orange-primary-100: #F76900;
+    --su-blue-primary-100: #000E54;
+    --su-blue-primary-50: #8087AA
+  }
+
 /**
 
 Header Styling
@@ -31,23 +40,28 @@ CSS for section-content.php file
 */
 
 .info-container-heading {
-    font-family: "Roboto", sans-serif;
-    color: #347586;
+    font-family: var(--font-serif);
+    color: #D74100;
 }
 
 .info-container-icons{
-    width: 20px; 
-    height: 20px; 
-    color: #A5CA7B;
+    width: 22px; 
+    height: 30px; 
+    color: var(--su-blue-primary-100);
+}
+
+.lead{
+    font-size: 15px;
+    color: var(--su-blue-primary-50) !important;
 }
 
 .info-container-details{
-    font-size: 14px;
-    color: #A5CA7B;
+    font-size: 12px;
+    color: var(--su-blue-primary-100);
 }
 
 .info-container-links{
-    color: #955F06;
+    color: var(--su-blue-primary-100);
 }
 
 /**
