@@ -8,14 +8,44 @@
   }
 
 /**
+    Navbar Styling
+*/
+
+.navbar {
+    border-bottom: 1px solid #e0e0e0;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+.navbar-brand .brand-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+.navbar-brand .divider {
+    border-left: 1px solid #000;
+    height: 30px;
+    margin: 0 15px;
+}
+.navbar-brand .sub-brand {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/**
 
 Header Styling
 
 */
 
-.header-styling {
+/* .header-styling {
     background: linear-gradient(to right, #f0f5f9, #dff2ef, #bfe8e3)
-}
+} */
 
 .shifted-left-container {
     font-size: 24px !important;

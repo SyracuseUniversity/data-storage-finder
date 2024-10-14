@@ -12,15 +12,18 @@
 <body>
 
   <header class="header-styling">
-    <div class="container">
-      <div class="row pt-2 pb-2 align-items-center bg-dark text-white">
-        <div class="col-md-12">
-          <a href="https://www.syracuse.edu" class="navbar-brand text-white">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/syracuse-logo.png" alt="Syracuse University"
-              class="img-fluid" style="max-height: 50px;"> Syracuse University
+    <div class="container nav-no-padded-containers">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container nav-no-padded-containers">
+          <a class="navbar-brand" href="#">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/syracuse-logo.png"
+              alt="Syracuse University Logo" style="max-height: 50px;" class="img-fluid">
+            <span class="brand-text">Syracuse University</span>
+            <span class="divider"></span>
+            <span class="sub-brand">Open Source Program Office</span>
           </a>
         </div>
-      </div>
+      </nav>
       <!-- <div class="row nav-no-padded-containers">
         <div class="col-md-8">
           <nav class="navbar navbar-expand-md navbar-dark">
@@ -53,9 +56,9 @@
           </nav>
         </div>
       </div> -->
-      <div class="row shifted-left-container">
+      <!-- <div class="row shifted-left-container">
         <p>Open Source Program Office</p>
-      </div>
+      </div> -->
     </div>
     </div>
     <div></div>

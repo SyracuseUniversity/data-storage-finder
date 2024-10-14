@@ -1,6 +1,6 @@
 <div class="row info-container py-4">
     <div class="col-md-12">
-        <h2 class="info-container-heading border-bottom pb-2 mb-3">Data Storage Finder</h2>
+        <h2 class="info-container-heading pb-2 mb-3">Data Storage Finder</h2>
         <p class="lead text-muted mb-4">Evaluate options for data storage at Syracuse University</p>
 
         <div class="d-flex flex-column gap-1 info-container-details">
