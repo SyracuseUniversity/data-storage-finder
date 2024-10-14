@@ -23,9 +23,8 @@
           </a>
         </div>
       </div>
-      <div class="row nav-no-padded-containers">
+      <!-- <div class="row nav-no-padded-containers">
         <div class="col-md-8">
-          <!-- Navbar Links -->
           <nav class="navbar navbar-expand-md navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
               aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +54,7 @@
             </div>
           </nav>
         </div>
-      </div>
+      </div> -->
       <div class="row shifted-left-container">
         <p>Syracuse University Data Services</p>
       </div>
