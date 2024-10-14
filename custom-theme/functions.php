@@ -12,6 +12,8 @@ function load_css()
 
     wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css');
     wp_enqueue_style('font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+    wp_enqueue_style('syracuse-css-cdn', 'https://fastly.cdn.syracuse.edu/dds/latest/dds.min.css');
 }
 
 add_action('wp_enqueue_scripts', 'load_css');

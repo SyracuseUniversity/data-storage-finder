@@ -15,11 +15,9 @@
     <div class="container">
       <div class="row pt-2 pb-2 align-items-center bg-dark text-white">
         <div class="col-md-12">
-          <!-- Cornell University Logo -->
           <a href="https://www.syracuse.edu" class="navbar-brand text-white">
             <img src="<?php echo get_template_directory_uri(); ?>/images/syracuse-logo.png" alt="Syracuse University"
-              class="img-fluid" style="max-height: 50px;">
-            Syracuse University
+              class="img-fluid" style="max-height: 50px;"> Syracuse University
           </a>
         </div>
       </div>
@@ -56,7 +54,7 @@
         </div>
       </div> -->
       <div class="row shifted-left-container">
-        <p>Syracuse University Data Services</p>
+        <p>Open Source Program Office</p>
       </div>
     </div>
     </div>
