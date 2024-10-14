@@ -70,15 +70,14 @@ CSS for footer.php file
 */
 
 .about-header {
-    font-size: 20px;
     font-weight: 500;
-    color: #347586;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: var(--font-serif);
+    color: #D74100;
 }
 
 .about-description {
-    font-size: 16px;
-    color: #A5CA7B;
+    font-family: var(--font-sans);
+    color: var(--su-blue-primary-100);
 }
 
 .footer-text {
