@@ -17,16 +17,24 @@
         "description": "Flexible, scalable object storage"
       },
       {
-        "title": "BioHPC Cloud",
-        "description": "Storage for BioHPC lab computing services"
+        "title": "Google Drive",
+        "description": "Syracuse University Workspace file storage and sharing"
       },
       {
-        "title": "CAC Archival Storage",
-        "description": "Single copy, non-mountable storage"
+        "title": "Microsoft OneDrive",
+        "description": "Cloud Storage for inidviduals use or sharing with specific individuals"
       },
       {
-        "title": "CAC Red Cloud Storage",
-        "description": "Storage for Red Cloud compute instances"
+        "title": "Microsoft SharePoint",
+        "description": "Cloud Storage for sharing with broad audience"
+      },
+      {
+        "title": "Microsoft Shared Libraries",
+        "description": "Cloud Storage for group and project collaboration"
+      },
+      {
+        "title": "Microsoft Teams",
+        "description": "Cloud Storage for group and project collaboration with online meetings and chat"
       }
     ]
   }
