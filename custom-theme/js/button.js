@@ -2,7 +2,7 @@
 function clearCheckboxes(containerId) {
     const container = document.getElementById(containerId);
     if (container) {
-        const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+        const checkboxes = container.querySelectorAll('input[type=checkbox]');
         checkboxes.forEach(checkbox => {
             checkbox.checked = false;
         });
@@ -11,17 +11,37 @@ function clearCheckboxes(containerId) {
     }
 }
 
-function selectCheckBoxes(containerId) {
+// Function to clear all selected cards in the container
+function clearCards(containerId) {
     const container = document.getElementById(containerId);
     if (container) {
-        const checkboxes = container.querySelectorAll('input[type="checkbox"]');
-        checkboxes.forEach(checkbox => {
-            checkbox.checked = true;
+        const cards = container.querySelectorAll('.service-card');
+        cards.forEach(card => {
+            card.classList.remove('selected');
         });
     } else {
         console.error(`Container with id "${containerId}" not found.`);
     }
 }
+
+// Function to select all cards in the container
+function selectCards(containerId) {
+    const container = document.getElementById(containerId);
+    if (container) {
+        const cards = container.querySelectorAll('.service-card');
+        cards.forEach(card => {
+            card.classList.add('selected');
+        });
+    } else {
+        console.error(`Container with id "${containerId}" not found.`);
+    }
+}
+
+// Function to toggle the 'selected' class on individual cards
+function selectCard(card) {
+    card.classList.toggle('selected');
+}
+
 
 // Event listener for the "Clear All" button
 document.addEventListener('DOMContentLoaded', function() {
@@ -37,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const clearButtonStorageSolutions = document.getElementById('clearAllButtonStorageSolutions');
     if (clearButtonStorageSolutions) {
         clearButtonStorageSolutions.addEventListener('click', function() {
-            clearCheckboxes('storageSolutionsContainer');
+            clearCards('storageSolutionsContainer');
         });
     } else {
         console.error('Clear All button not found.');
@@ -46,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectAllButtonStorageSolution = document.getElementById('selectAllButtonStorageSolution');
     if (selectAllButtonStorageSolution) {
         selectAllButtonStorageSolution.addEventListener('click', function() {
-            selectCheckBoxes('storageSolutionsContainer');
+            selectCards('storageSolutionsContainer');
         });
     } else {
         console.error('Select All button not found.');

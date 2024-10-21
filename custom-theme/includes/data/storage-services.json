@@ -27,10 +27,6 @@
       {
         "title": "CAC Red Cloud Storage",
         "description": "Storage for Red Cloud compute instances"
-      },
-      {
-        "title": "CCSS Data & Reproduction Archive",
-        "description": "Publicly shared and restricted data and code packages repository"
       }
     ]
   }

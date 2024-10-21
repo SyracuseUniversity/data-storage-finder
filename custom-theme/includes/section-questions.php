@@ -1,6 +1,6 @@
 <hr>
 <div class="row">
-    <div class="col-md-4 scrollable-column" id="questionnaireContainer">
+    <div class="col-md-3 scrollable-column" id="questionnaireContainer">
         <h6 class="section-title mt-4 mb-4">Describe your data</h6>
         <p class="questions-info">
             Answer these questions to help identify data storage services that are suitable for your needs. Checking
@@ -43,7 +43,7 @@
         }
         ?>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
         <h6 class="section-title mt-4 mb-4">Select data storage services you would like to compare.</h6>
         <div class="d-flex justify-content-end mb-3">
             <button class="btn btn-primary mb-4 me-2" id="selectAllButtonStorageSolution">Select All</button>
@@ -68,13 +68,10 @@
                 $id = 'service-' . $index;
                 echo "
                     <div class='col'>
-                        <div class='card'>
-                            <div class='card-body'>
+                        <div class='card service-card' onclick='selectCard(this)'>
+                            <div>
                                 <h5 class='card-title'>{$service['title']}</h5>
                                 <p class='card-text'>{$service['description']}</p>
-                                <div class='form-check'>
-                                    <input class='form-check-input' type='checkbox' value='' id='{$id}'>
-                                </div>
                             </div>
                         </div>
                     </div>
