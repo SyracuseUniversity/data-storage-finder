@@ -319,4 +319,12 @@ Cards Grid Styles
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for effect */
 }
 
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer{
+    border-top: none !important;
+}
+
 
