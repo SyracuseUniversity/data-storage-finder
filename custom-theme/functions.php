@@ -28,6 +28,9 @@ function load_js()
     wp_enqueue_script('js_for_buttons');
     wp_register_script('js_for_cards', get_template_directory_uri() . '/js/storageCard.js', null, false, false);
     wp_enqueue_script('js_for_cards');
+    wp_register_script('js_for_forms', get_template_directory_uri() . '/js/form.js', null, false, false);
+    wp_enqueue_script('js_for_forms');
+
 }
 
 add_action('wp_enqueue_scripts', 'load_js');

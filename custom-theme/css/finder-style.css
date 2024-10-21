@@ -295,3 +295,28 @@ Cards Grid Styles
     color: white;
 }
 
+.modal {
+    display: block;
+    z-index: 1050 !important;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+
+/* Custom styles for the SweetAlert */
+.custom-success {
+    background-color: orange !important; /* Orange background */
+    color: white !important; /* White text */
+    padding: 10px; /* Small padding */
+    border-radius: 5px; /* Rounded corners */
+}
+.swal2-icon-success {
+    background-color: white !important; /* White background for the icon */
+    border-radius: 50%; /* Circular icon */
+    padding: 10px; /* Padding around the icon */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for effect */
+}
+
+
