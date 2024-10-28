@@ -15,20 +15,6 @@
         ]
       },
       {
-        "id": 2,
-        "question": "Do you need backups, snapshots or replication of your data?",
-        "options": [
-          {
-            "id": "backupCopies",
-            "label": "I need one or more backup/snapshot copies of the data, and need to be able to restore data from previous points in time (high durability)."
-          },
-          {
-            "id": "replicateCopies",
-            "label": "I need to have replicate copies of the data to minimize downtime (high availability)."
-          }
-        ]
-      },
-      {
         "id": 3,
         "question": "How much data do you have and how fast will it grow?",
         "options": [

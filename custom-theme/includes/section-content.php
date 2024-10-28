@@ -55,6 +55,7 @@
                     <div class="mb-3">
                         <label for="rating" class="form-label">Rating</label>
                         <select class="form-select" id="rating" name="rating">
+                            <option value="default">None</option>
                             <option value="1">1 - Poor</option>
                             <option value="2">2 - Fair</option>
                             <option value="3">3 - Good</option>
@@ -71,9 +72,13 @@
                     </div>
                 </form>
             </div>
+            <!-- Confirmation Message -->
+            <div id="confirmationMessage" class="text-center" style="display: none;">
+                <p>Thank you for your feedback!</p>
+            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="submitFeedback()">Submit
+                <button type="button" id="closeButton" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="submitButton" class="btn btn-primary" onclick="submitFeedback()">Submit
                     Feedback</button>
             </div>
         </div>

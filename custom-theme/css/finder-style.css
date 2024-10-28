@@ -128,7 +128,7 @@ hr {
 }
 
 .scrollable-column {
-    max-height: 600px;
+    max-height: 800px;
     overflow-y: scroll;
 }
 
@@ -247,6 +247,11 @@ Cards Grid Styles
 }
 
 /** Side Blocks Styling */
+
+.disabled {
+    background-color: lightgrey !important;
+    pointer-events: none;
+}
 
 .service-card {
     border: 2px solid var(--su-blue-primary-50);

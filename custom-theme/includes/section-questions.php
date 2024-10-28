@@ -31,7 +31,7 @@
             foreach ($section['options'] as $option) {
                 echo "
                 <div class='form-check mb-2'>
-                    <input class='form-check-input' type='checkbox' value='' id='{$option['id']}'>
+                    <input class='form-check-input data-option' type='checkbox' value='{$option['id']}' id='{$option['id']}'>
                     <label class='form-check-label' for='{$option['id']}'>
                         {$option['label']}
                     </label>
@@ -66,9 +66,10 @@
             // Loop through the services
             foreach ($data['services'] as $index => $service) {
                 $id = 'service-' . $index;
+                $data_options = implode(',', $service['options']);
                 echo "
                     <div class='col'>
-                        <div class='card service-card' onclick='selectCard(this)'>
+                        <div class='card service-card' data-options='$data_options' onclick='selectCard(this)'>
                             <div>
                                 <h5 class='card-title'>{$service['title']}</h5>
                                 <p class='card-text'>{$service['description']}</p>

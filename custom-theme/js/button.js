@@ -9,7 +9,11 @@ function clearCheckboxes(containerId) {
     } else {
         console.error(`Container with id "${containerId}" not found.`);
     }
+
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => card.classList.remove('disabled'));
 }
+
 
 // Function to clear all selected cards in the container
 function clearCards(containerId) {
