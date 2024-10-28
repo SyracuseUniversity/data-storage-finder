@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function filterCards() {
-        console.log("Just checking");
         
         const selectedOptions = Array.from(checkboxes)
             .filter(checkbox => checkbox.checked)
@@ -19,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
             cards.forEach(card => card.classList.remove('disabled'));
             return;
         }
-
-        console.log(selectedOptions);
 
         cards.forEach(card => {
             const cardOptions = card.dataset.options.split(','); // Assuming each card has data-options attribute
