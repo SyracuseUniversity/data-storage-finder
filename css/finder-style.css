@@ -1,0 +1,335 @@
+:root {
+    --font-sans: ShermanSans, Verdana, sans-serif;
+    --font-serif: ShermanSerif, Georgia, serif;
+    --font-weight-normal: 500;
+    --su-orange-primary-100: #F76900;
+    --su-blue-primary-100: #000E54;
+    --su-blue-primary-50: #8087AA
+  }
+
+/**
+    Navbar Styling
+*/
+
+.navbar {
+    border-bottom: 1px solid #e0e0e0;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+.navbar-brand .brand-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+.navbar-brand .divider {
+    border-left: 1px solid #000;
+    height: 30px;
+    margin: 0 15px;
+}
+.navbar-brand .sub-brand {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/**
+
+Header Styling
+
+*/
+
+/* .header-styling {
+    background: linear-gradient(to right, #f0f5f9, #dff2ef, #bfe8e3)
+} */
+
+.shifted-left-container {
+    font-size: 24px !important;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #347586;
+}
+
+.nav-no-padded-containers {
+    padding-left: 0px !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link{
+    padding-left: 0px !important;
+    padding-right: 1rem !important;
+}
+
+
+/**
+
+CSS for section-content.php file
+*/
+
+.info-container-heading {
+    font-family: var(--font-serif);
+    color: #D74100;
+}
+
+.info-container-icons{
+    width: 22px; 
+    height: 30px; 
+    color: var(--su-blue-primary-100);
+}
+
+.lead{
+    font-size: 15px;
+    color: var(--su-blue-primary-50) !important;
+}
+
+.info-container-details{
+    font-size: 12px;
+    color: var(--su-blue-primary-100);
+}
+
+.info-container-links{
+    color: var(--su-blue-primary-100);
+}
+
+/**
+
+CSS for footer.php file
+*/
+
+.about-header {
+    font-weight: 500;
+    font-family: var(--font-serif);
+    color: #D74100;
+}
+
+.about-description {
+    font-family: var(--font-sans);
+    color: var(--su-blue-primary-100);
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/**
+CSS for section-questions.php
+*/
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #347586;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.scrollable-column {
+    max-height: 800px;
+    overflow-y: scroll;
+}
+
+.questions-info{
+    font-weight: 400;
+}
+
+.section-title{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #347586;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn-secondary {
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid var(--su-blue-primary-100);
+    padding: 7px 30px;
+    color: var(--su-blue-primary-100);
+}
+    
+.btn-secondary:hover, .btn-secondary:focus {
+      background-color: var(--su-blue-primary-50);
+      border-color: var(--su-blue-primary-100);
+      color: var(--su-blue-primary-100); 
+}
+    
+.btn-secondary:active, .btn-secondary:active:hover, .btn-secondary:active:focus {
+      background-color: var(--su-blue-primary-100);
+      border-color: var(--su-blue-primary-100);
+      color: white; 
+}
+
+.btn-primary {
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid var(--su-orange-primary-100);
+    padding: 7px 30px;
+    color: var(--su-orange-primary-100);
+}
+    
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--su-orange-primary-50);
+    border-color: var(--su-orange-primary-100);
+    color: var(--su-orange-primary-100); 
+}
+    
+.btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus {
+      background-color: var(--su-blue-primary-100);
+      border-color: var(--su-blue-primary-100);
+      color: white; 
+}
+
+/**
+
+Cards Grid Styles 
+*/
+
+.card {
+    height: 180px !important;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+/** Footer Style
+
+*/
+
+.footer {
+    background-color: #0b1a52; /* Dark blue background */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #07123d; /* Even darker blue for the bottom section */
+    padding: 10px 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/** Side Blocks Styling */
+
+.disabled {
+    background-color: lightgrey !important;
+    pointer-events: none;
+}
+
+.service-card {
+    border: 2px solid var(--su-blue-primary-50);
+    border-radius: 8px;
+    box-shadow: none;
+    background-color: #F8F4FC; /* Light purple background */
+    padding: 15px 10px !important;
+    margin-bottom: 5px;
+    height: 100%; /* Ensures all cards are equal height */
+    transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--su-orange-primary-100); /* Darker purple for title text */
+    margin-bottom: 5px !important;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-family: ShermanSans, Verdana, sans-serif;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--su-blue-primary-50); /* Slightly lighter purple for description */
+}
+
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.selected {
+    background-color: var(--su-blue-primary-100) !important; 
+    border-color: var(--su-blue-primary-100); 
+    color: white; 
+}
+
+.selected .card-title, .selected .card-text {
+    color: white;
+}
+
+.modal {
+    display: block;
+    z-index: 1050 !important;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+
+/* Custom styles for the SweetAlert */
+.custom-success {
+    background-color: orange !important; /* Orange background */
+    color: white !important; /* White text */
+    padding: 10px; /* Small padding */
+    border-radius: 5px; /* Rounded corners */
+}
+.swal2-icon-success {
+    background-color: white !important; /* White background for the icon */
+    border-radius: 50%; /* Circular icon */
+    padding: 10px; /* Padding around the icon */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for effect */
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer{
+    border-top: none !important;
+}
+
+
