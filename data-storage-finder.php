@@ -28,7 +28,7 @@ class data_storage_finder
     public function __construct()
     {
         // Register our hooks
-        //add_action('wp_enqueue_scripts', array($this, 'load_css'));
+        add_action('wp_enqueue_scripts', array($this, 'load_css'));
         add_action('wp_enqueue_scripts', array($this, 'load_js'));
         add_shortcode('banner', array($this, 'banner_shortcode'));
         add_shortcode('questions_table', array($this, 'questions_shortcode'));
@@ -71,7 +71,7 @@ class data_storage_finder
         // Bootstrap CSS
         wp_register_style(
             'bootstrap',
-            plugins_url('assets/css/bootstrap.min.css', __FILE__),
+            plugins_url('css/bootstrap.min.css', __FILE__),
             array(),
             '1.0.0',
             'all'
@@ -81,7 +81,7 @@ class data_storage_finder
         // Custom Finder CSS
         wp_register_style(
             'finder_css',
-            plugins_url('assets/css/finder-style.css', __FILE__),
+            plugins_url('css/finder-style.css', __FILE__),
             array(),
             '1.0.0',
             'all'
