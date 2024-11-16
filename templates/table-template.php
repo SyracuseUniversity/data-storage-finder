@@ -19,6 +19,30 @@
             <tr id="Cost">
                 <th>Cost</th>
             </tr>
+            <tr id="Example Use">
+                <th>Example Use</th>
+            </tr>
+            <tr id="Capacity">
+                <th>Capacity</th>
+            </tr>
+            <tr id="Access and Collaboration">
+                <th>Access and Collaboration</th>
+            </tr>
+            <tr id="Data Allowed">
+                <th>Data Allowed</th>
+            </tr>
+            <tr id="Durability">
+                <th>Durability</th>
+            </tr>
+            <tr id="Availability">
+                <th>Availability</th>
+            </tr>
+            <tr id="Technical Complexity">
+                <th>Technical Complexity</th>
+            </tr>
+            <tr id="Contact">
+                <th>Contact</th>
+            </tr>
         </tbody>
     </table>
 </div>

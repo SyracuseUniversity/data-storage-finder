@@ -121,7 +121,7 @@ CSS for questions.template.php
 } */
 
 .scrollable-column {
-    max-height: 800px;
+    max-height: 900px;
     overflow-y: scroll;
 }
 
@@ -183,7 +183,7 @@ Cards Grid Styles
 */
 
 .card {
-    height: 180px !important;
+    height: 220px !important;
 }
 .card-body {
     display: flex;
