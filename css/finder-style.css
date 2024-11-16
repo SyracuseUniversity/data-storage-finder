@@ -2,130 +2,123 @@
     --font-sans: ShermanSans, Verdana, sans-serif;
     --font-serif: ShermanSerif, Georgia, serif;
     --font-weight-normal: 500;
-    --su-orange-primary-100: #F76900;
     --su-blue-primary-100: #000E54;
     --su-blue-primary-50: #8087AA
   }
 
-/**
-    Navbar Styling
-*/
 
-.navbar {
-    border-bottom: 1px solid #e0e0e0;
-}
-.navbar-brand {
-    display: flex;
-    align-items: center;
-}
-.navbar-brand img {
-    height: 40px;
-    margin-right: 10px;
-}
-.navbar-brand .brand-text {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000;
-}
-.navbar-brand .divider {
-    border-left: 1px solid #000;
-    height: 30px;
-    margin: 0 15px;
-}
-.navbar-brand .sub-brand {
-    font-size: 1.2rem;
-    color: #000;
+h6 {
+    margin-top: 0px !important;
 }
 
 /**
 
-Header Styling
-
+CSS for banner-template.php file
 */
 
-/* .header-styling {
-    background: linear-gradient(to right, #f0f5f9, #dff2ef, #bfe8e3)
-} */
-
-.shifted-left-container {
-    font-size: 24px !important;
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #347586;
+.info-container {
+    padding: 20px;
+    font-family: var(--font-sans);
 }
-
-.nav-no-padded-containers {
-    padding-left: 0px !important;
-}
-
-.navbar-expand-md .navbar-nav .nav-link{
-    padding-left: 0px !important;
-    padding-right: 1rem !important;
-}
-
-
-/**
-
-CSS for section-content.php file
-*/
 
 .info-container-heading {
+    font-weight: 500;
     font-family: var(--font-serif);
-    color: #D74100;
+    font-size: 1.5rem;
 }
 
-.info-container-icons{
-    width: 22px; 
-    height: 30px; 
-    color: var(--su-blue-primary-100);
-}
-
-.lead{
-    font-size: 15px;
+.lead {
+    font-size: 18px;
     color: var(--su-blue-primary-50) !important;
 }
 
-.info-container-details{
-    font-size: 12px;
+.info-container-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
     color: var(--su-blue-primary-100);
 }
 
-.info-container-links{
+.info-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-container-icons {
+    width: 22px;
+    height: 30px;
     color: var(--su-blue-primary-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
 }
 
-/**
-
-CSS for footer.php file
-*/
-
-.about-header {
-    font-weight: 500;
-    font-family: var(--font-serif);
-    color: #D74100;
+.icon-circle {
+    border-radius: 50%;
+    background-color: #f0f0f0;
 }
 
-.about-description {
+.info-container-links {
     font-family: var(--font-sans);
     color: var(--su-blue-primary-100);
 }
 
-.footer-text {
-    font-size: 14px;
+.info-container-links:hover {
+    text-decoration: underline;
 }
 
 /**
-CSS for section-questions.php
+
+CSS for copyright-template.php file
 */
 
-hr {
+.copyright-container {
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.copyright-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright-col {
+    width: 100%;
+}
+
+.about-header {
+    font-weight: 500;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 0px !important;
+}
+
+.about-description, .copyright-container-links {
+    font-family: var(--font-sans);
+    color: var(--su-blue-primary-100);
+}
+
+.copyright-container-links:hover {
+    text-decoration: underline;
+}
+
+
+/**
+CSS for questions.template.php
+*/
+
+/* hr {
     display: block;
     height: 2px;
     border: 0;
-    border-top: 1px solid #347586;
+    border-top: 1px solid var(--su-orange-dark-100);
     margin: 1em 0;
     padding: 0;
-}
+} */
 
 .scrollable-column {
     max-height: 800px;
@@ -134,13 +127,14 @@ hr {
 
 .questions-info{
     font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .section-title{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #347586;
+    font-family: var(--font-serif);
+    color: var(--su-orange-dark-100);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .btn-secondary {
@@ -198,55 +192,13 @@ Cards Grid Styles
 
 .card-text {
     font-size: 0.8rem;
+    color: var(--su-blue-primary-100);
 }
 
-/** Footer Style
-
-*/
-
-.footer {
-    background-color: #0b1a52; /* Dark blue background */
-    color: white;
-    padding: 40px 0;
+.buttons-container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
 }
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    background-color: #07123d; /* Even darker blue for the bottom section */
-    padding: 10px 0;
-}
-
-.footer-bottom a {
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-.footer-bottom a:hover {
-    text-decoration: underline;
-}
-
-.footer-logo {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.footer-logo img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-/** Side Blocks Styling */
 
 .disabled {
     background-color: lightgrey !important;
@@ -262,6 +214,7 @@ Cards Grid Styles
     margin-bottom: 5px;
     height: 100%; /* Ensures all cards are equal height */
     transition: transform 0.2s ease-in-out;
+    width: 200px;
 }
 
 .service-card:hover {
@@ -271,7 +224,6 @@ Cards Grid Styles
 .card-title {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--su-orange-primary-100); /* Darker purple for title text */
     margin-bottom: 5px !important;
 }
 
@@ -280,7 +232,6 @@ Cards Grid Styles
     font-family: ShermanSans, Verdana, sans-serif;
     font-weight: 500;
     line-height: 1.5rem;
-    color: var(--su-blue-primary-50); /* Slightly lighter purple for description */
 }
 
 
@@ -300,6 +251,8 @@ Cards Grid Styles
     color: white;
 }
 
+/** Feedback form modal styling */
+
 .modal {
     display: block;
     z-index: 1050 !important;
@@ -310,20 +263,6 @@ Cards Grid Styles
 }
 
 
-/* Custom styles for the SweetAlert */
-.custom-success {
-    background-color: orange !important; /* Orange background */
-    color: white !important; /* White text */
-    padding: 10px; /* Small padding */
-    border-radius: 5px; /* Rounded corners */
-}
-.swal2-icon-success {
-    background-color: white !important; /* White background for the icon */
-    border-radius: 50%; /* Circular icon */
-    padding: 10px; /* Padding around the icon */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for effect */
-}
-
 .modal-header {
     border-bottom: none !important;
 }
@@ -332,4 +271,17 @@ Cards Grid Styles
     border-top: none !important;
 }
 
+/** Table Styling */
+
+.table th {
+    font-family: var(--font-serif);
+    color: var(--su-blue-primary-100);
+    font-size: 1rem;
+}
+
+.table td{
+    border-color: var(--table-header-border-color);
+    color: var(--su-orange-primary-100);
+    font-size: 1rem;
+}
 

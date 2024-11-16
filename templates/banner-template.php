@@ -1,34 +1,25 @@
-<div class="row info-container py-4">
-    <div class="col-md-12">
-        <h2 class="info-container-heading pb-2 mb-3">Data Storage Finder</h2>
-        <p class="lead text-muted mb-4">Evaluate options for data storage at Syracuse University</p>
+<div class="flex-container">
+    <p class="info-container-heading text-orange-dark">Evaluate options for data storage at Syracuse University</p>
 
-        <div class="d-flex flex-column gap-1 info-container-details">
-            <div class="d-flex align-items-start">
-                <div class="rounded-circle me-1 d-flex align-items-center justify-content-center info-container-icons">
-                    <i class="fa fa-certificate"></i>
-                </div>
-                <p class="mb-0">All services presented on this finder tool are vetted and supported by Syracuse
-                    University.</p>
+    <div class="info-container-details">
+        <div class="info-item">
+            <div class="info-container-icons icon-circle">
+                <i class="fa fa-certificate"></i>
             </div>
-            <!-- <div class="d-flex align-items-start">
-                    <div
-                        class="rounded-circle me-1 d-flex align-items-center justify-content-center info-container-icons">
-                        <i class="fa fa-bullseye"></i>
-                    </div>
-                    <p class="mb-0">To explore data options available to Weill Cornell Medicine Cornellians please visit
-                        the <a href="#" class="info-container-links">WCMC storage wizard</a>.</p>
-                </div> -->
-            <div class="d-flex align-items-start">
-                <div class="rounded-circle me-1 d-flex align-items-center justify-content-center info-container-icons">
-                    <i class="fa fa-comments"></i>
-                </div>
-                <p class="mb-0">We welcome <a href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal"
-                        class="info-container-links">feedback</a> on this tool.</p>
+            <p class="banner-text">All services presented on this finder tool are vetted and supported by Syracuse
+                University.</p>
+        </div>
+
+        <div class="info-item">
+            <div class="info-container-icons icon-circle">
+                <i class="fa fa-comments"></i>
             </div>
+            <p class="banner-text">We welcome <a href="#" class="info-container-links">feedback</a> on this tool.</p>
         </div>
     </div>
 </div>
+
+
 
 <!-- Modal Structure -->
 <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">

@@ -68,16 +68,6 @@ class data_storage_finder
 
     public function load_css()
     {
-        // Bootstrap CSS
-        wp_register_style(
-            'bootstrap',
-            plugins_url('css/bootstrap.min.css', __FILE__),
-            array(),
-            '1.0.0',
-            'all'
-        );
-        wp_enqueue_style('bootstrap');
-
         // Custom Finder CSS
         wp_register_style(
             'finder_css',
@@ -88,15 +78,6 @@ class data_storage_finder
         );
         wp_enqueue_style('finder_css');
 
-        // Bootstrap Icons (CDN)
-        wp_enqueue_style(
-            'bootstrap-icons',
-            'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css',
-            array(),
-            '1.7.2'
-        );
-
-        // Font Awesome (CDN)
         wp_enqueue_style(
             'font_awesome',
             'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css',
@@ -107,7 +88,7 @@ class data_storage_finder
         // Syracuse CSS (CDN)
         wp_enqueue_style(
             'syracuse-css-cdn',
-            'https://fastly.cdn.syracuse.edu/dds/latest/dds.min.css',
+            'https://assets.cdn.syr.edu/dds/latest/dds.min.css',
             array(),
             'latest'
         );

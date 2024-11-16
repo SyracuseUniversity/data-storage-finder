@@ -1,58 +1,58 @@
 {
     "services": [
       {
-        "title": "Amazon Web Services Elastic Block Store",
-        "description": "Storage for use with Amazon EC2",
+        "Title": "Amazon Web Services Elastic Block Store",
+        "Description": "Storage for use with Amazon EC2",
         "options": ["backupCopies"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Amazon Web Services Elastic File System",
-        "description": "Storage for use with multiple Amazon EC2 instances",
+        "Title": "Amazon Web Services Elastic File System",
+        "Description": "Storage for use with multiple Amazon EC2 instances",
         "options": ["backupCopies"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Amazon Web Services Glacier",
-        "description": "Cloud based archival storage",
+        "Title": "Amazon Web Services Glacier",
+        "Description": "Cloud based archival storage",
         "options": ["backupCopies", "dataLessThan1TB"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Amazon Web Services S3",
-        "description": "Flexible, scalable object storage",
+        "Title": "Amazon Web Services S3",
+        "Description": "Flexible, scalable object storage",
         "options": ["xyz"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Google Drive",
-        "description": "Syracuse University Workspace file storage and sharing",
+        "Title": "Google Drive",
+        "Description": "Syracuse University Workspace file storage and sharing",
         "options": ["xyz"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Microsoft OneDrive",
-        "description": "Cloud Storage for inidviduals use or sharing with specific individuals",
+        "Title": "Microsoft OneDrive",
+        "Description": "Cloud Storage for inidviduals use or sharing with specific individuals",
         "options": ["xyz"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Microsoft SharePoint",
-        "description": "Cloud Storage for sharing with broad audience",
+        "Title": "Microsoft SharePoint",
+        "Description": "Cloud Storage for sharing with broad audience",
         "options": ["xyz"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Microsoft Shared Libraries",
-        "description": "Cloud Storage for group and project collaboration",
+        "Title": "Microsoft Shared Libraries",
+        "Description": "Cloud Storage for group and project collaboration",
         "options": ["xyz"],
-        "cost": "$100"
+        "Cost": "$100"
       },
       {
-        "title": "Microsoft Teams",
-        "description": "Cloud Storage for group and project collaboration with online meetings and chat",
+        "Title": "Microsoft Teams",
+        "Description": "Cloud Storage for group and project collaboration with online meetings and chat",
         "options": ["xyz"],
-        "cost": "$100"
+        "Cost": "$100"
       }
     ]
   }
