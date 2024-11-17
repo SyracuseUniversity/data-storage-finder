@@ -138,6 +138,10 @@ class data_storage_finder
             false
         );
         wp_enqueue_script('js_for_forms');
+
+        wp_localize_script('js_for_cards', 'pluginData', array(
+            'jsonUrl' => plugins_url('/templates/data/storage-services.json', __FILE__),
+        ));
     }
 
     // Activation Hook

@@ -22,7 +22,12 @@ function clearCards(containerId) {
         const cards = container.querySelectorAll('.service-card');
         cards.forEach(card => {
             card.classList.remove('selected');
+            const cardId = card.getAttribute('id');
+            const cardIndex = selectedCards.findIndex(item => item.cardId === cardId);
+            selectedCards.splice(cardIndex, 1);
         });
+        updateTable()
+        toggleTableVisibility();
     } else {
         console.error(`Container with id "${containerId}" not found.`);
     }
@@ -34,12 +39,27 @@ function selectCards(containerId) {
     const container = document.getElementById(containerId);
     if (container) {
         const cards = container.querySelectorAll('.service-card');
-        cards.forEach(card => {
-            card.classList.add('selected');
-        });
+        fetch(pluginData.jsonUrl) 
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch JSON data');
+            }
+            return response.json();
+        })
+        .then(data => {
+            cards.forEach(card => {
+                const cardId = card.getAttribute('id');
+                const service_data = data.services.find(service => service.Title === cardId);
+                selectedCards.push({cardId, service_data});
+                card.classList.add('selected');
+            });
+            updateTable()
+            toggleTableVisibility();
+        })
     } else {
         console.error(`Container with id "${containerId}" not found.`);
     }
+    
 }
 
 // Function to toggle the 'selected' class on individual cards
@@ -63,6 +83,7 @@ function selectionCard(card, service_data) {
 }
 
 function updateTable(){
+    console.log(selectedCards);
     const table = document.getElementById('detailsTable');
     var rows = table.getElementsByTagName("tr")
     for (var i = 0; i < rows.length; i++) {
