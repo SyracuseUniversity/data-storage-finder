@@ -15,6 +15,19 @@ function clearCheckboxes(containerId) {
 }
 
 
+//Function to clear the slider values when the Clear Answers Button is clicked
+function clearSlider(sliderId) {
+    const slider = document.getElementById(sliderId); 
+    const sliderValueLabel = document.getElementById("slider-value"); 
+
+    if (slider && sliderValueLabel) {
+        slider.value = 0; 
+        sliderValueLabel.textContent = slider.value;
+    }
+}
+
+
+
 // Function to clear all selected cards in the container
 function clearCards(containerId) {
     const container = document.getElementById(containerId);
@@ -49,9 +62,11 @@ function selectCards(containerId) {
         .then(data => {
             cards.forEach(card => {
                 const cardId = card.getAttribute('id');
-                const service_data = data.services.find(service => service.Title === cardId);
-                selectedCards.push({cardId, service_data});
-                card.classList.add('selected');
+                if (!selectedCards.some(selectedCard => selectedCard.cardId === cardId)) {
+                    const service_data = data.services.find(service => service.Title === cardId);
+                    selectedCards.push({ cardId, service_data });
+                    card.classList.add('selected');
+                }
             });
             updateTable()
             toggleTableVisibility();
@@ -65,22 +80,23 @@ function selectCards(containerId) {
 // Function to toggle the 'selected' class on individual cards
 let selectedCards = [];
 function selectionCard(card, service_data) {
-
     card.classList.toggle('selected');
 
-    var checkIfCardSelected = card.getAttribute('data-selected');
     const cardId = card.getAttribute('id');
-    if(checkIfCardSelected === 'false'){
-        selectedCards.push({cardId, service_data});
-        card.setAttribute('data-selected', 'true')
-    }else{
-        const cardIndex = selectedCards.findIndex(item => item.cardId === cardId);
-        selectedCards.splice(cardIndex, 1);
-        card.setAttribute('data-selected', 'false')
+    const isCardAlreadySelected = selectedCards.some(item => item.cardId === cardId);
+
+    if (isCardAlreadySelected) {
+        selectedCards = selectedCards.filter(item => item.cardId !== cardId);
+        card.setAttribute('data-selected', 'false'); 
+    } else {
+        selectedCards.push({ cardId, service_data });
+        card.setAttribute('data-selected', 'true'); 
     }
-    updateTable()
+    // Update table and visibility
+    updateTable();
     toggleTableVisibility();
 }
+
 
 function updateTable(){
     console.log(selectedCards);
@@ -95,7 +111,9 @@ function updateTable(){
         current_row.appendChild(row_header)
         for(var j = 0; j < selectedCards.length; j++){
             var new_element = document.createElement('td');
-            new_element.innerHTML = selectedCards[j]['service_data'][value]
+            new_element.innerHTML = selectedCards[j]['service_data'][value] !== undefined 
+                ? selectedCards[j]['service_data'][value] 
+                : '';
             current_row.appendChild(new_element)
         }
     }
@@ -120,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (clearButtonStorageQuestionaire) {
         clearButtonStorageQuestionaire.addEventListener('click', function() {
             clearCheckboxes('questionnaireContainer');
+            clearSlider('log-slider');
         });
     } else {
         console.error('Clear All button not found.');
@@ -144,3 +163,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+function deselectOtherCheckboxes(checkbox) {
+    if (checkbox.checked) {
+        // Find all checkboxes in the same section
+        var section = checkbox.closest('.section-item');
+        var checkboxes = section.querySelectorAll('input[type="checkbox"]');
+        
+        checkboxes.forEach(function(otherCheckbox) {
+            if (otherCheckbox !== checkbox) {
+                console.log(otherCheckbox)
+                otherCheckbox.checked = false;
+                if(otherCheckbox.id == 'generalPublic'){
+                    handleGeneralPublic(otherCheckbox)
+                }
+            }
+        });
+    }
+}
+
+function deselectOtherCheckboxesSubQuestion(checkbox){
+    if (checkbox.checked) {
+        // Find all checkboxes in the same section
+        var section = checkbox.closest('.sub-question');
+        var checkboxes = section.querySelectorAll('input[type="checkbox"]');
+        
+        checkboxes.forEach(function(otherCheckbox) {
+            if (otherCheckbox !== checkbox) {
+                otherCheckbox.checked = false;
+            }
+        });
+    }
+}
+
+function handleGeneralPublic(checkbox) {
+    const subquestion = document.getElementById('sub-question')
+    if (checkbox.checked) {
+        console.log('General Public checkbox checked');
+        subquestion.style.display = 'block';
+    }else{
+        subquestion.style.display = 'none';
+    }
+ }

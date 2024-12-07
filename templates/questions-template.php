@@ -1,4 +1,5 @@
-<div class="flex-container">
+<hr>
+<div class="flex-container questions-template-container">
     <div class="flex-grid">
         <div class="flex-grid-item-3-md scrollable-column" id="questionnaireContainer">
             <h6 class="section-title margin-top-4 margin-bottom-4">Describe your data</h6>
@@ -7,7 +8,7 @@
                 these boxes will change the list of available services.
                 If you are uncertain how to answer, leave the question blank to maximize your resulting options.
             </p>
-            <button class="btn btn-secondary btn-clear-filters margin-bottom-4"
+            <button class="questions-button-secondary btn-clear-filters margin-bottom-4"
                 id="clearAllButtonStorageQuestionaire">Clear
                 Answers</button>
             <?php
@@ -23,21 +24,66 @@
                 die('Error decoding JSON');
             }
 
-            // Loop through the sections
             foreach ($data['sections'] as $section) {
                 echo "<div class='section-item margin-bottom-4'>";
-                echo "<h6 class='question-text text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h6>";
+                echo "<h6 class='question-text text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h4>";
+
+                // Determine if this section needs radio-like behavior
+                $radioClass = $section['id'] == 1 ? 'radio-like' : '';
 
                 // Loop through the options
                 foreach ($section['options'] as $option) {
                     echo "
-                <div class='form-check margin-bottom-2 text-blue'>
-                    <input class='form-check-input data-option' type='checkbox' value='{$option['id']}' id='{$option['id']}'>
-                    <label class='form-check-label' for='{$option['id']}'>
-                        {$option['label']}
-                    </label>
-                </div>
-                ";
+                    <div class='form-check margin-bottom-2 text-blue {$radioClass}'>
+                        <input class='form-check-input data-option' type='checkbox' value='{$option['id']}' id='{$option['id']}'
+                            " . ($radioClass ? "onclick=\"deselectOtherCheckboxes(this)" : "") .
+                        ($radioClass && $option['id'] == 'generalPublic' ? "; handleGeneralPublic(this)" : "") .
+                        ($radioClass ? "\"" : "") . ">
+                        <label class='form-check-label' for='{$option['id']}'>
+                            {$option['label']}
+                        </label>
+                    </div>";
+                }
+
+                if ($section['id'] == 1) {
+                    echo "
+                    <div class='sub-question' id='sub-question' style='display:none;' id='sub-{$option['id']}'>
+                        <h6 class='question-text text-orange'>Do you need a DOI ?</h6>
+                        <div class='form-check margin-bottom-2 text-blue radio-like'>
+                            <input class='form-check-input data-option' type='checkbox' value='Yes' id='Yes' onclick=deselectOtherCheckboxesSubQuestion(this)>
+                            <label class='form-check-label' for='Yes'>
+                                Yes
+                            </label>
+                        </div>
+                        <div class='form-check margin-bottom-2 text-blue radio-like'>
+                            <input class='form-check-input data-option' type='checkbox' value='No' id='No' onclick=deselectOtherCheckboxesSubQuestion(this)>
+                            <label class='form-check-label' for='No'>
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    ";
+                }
+
+                if ($section['id'] == 5) {
+                    echo "
+                    <div style='display: flex; align-items: center; position: relative;'>
+                        <span class='question-text log-slider-label' style='margin-right: 10px;'>1GB</span>
+                        <input
+                            id='log-slider'
+                            type='range'
+                            min='0'
+                            max='3'
+                            step='0.01'
+                            value='0'
+                            oninput='updateValue()'
+                            style='flex: 1; margin: 0 10px;'
+                        />
+                        <span class='question-text log-slider-label' style='margin-left: 10px;'>1TB</span>
+                    </div>
+                    <div class='value-log-slider'>
+                        <label class='question-text' for='slider-value'> Value </label> : <span class='log-slider-label' id='slider-value'>1 GB</span>
+                    </div>";
                 }
 
                 echo "</div>";
@@ -48,9 +94,9 @@
             <h6 class="section-title margin-bottom-3 margin-top-3">Select data storage services you would like to
                 compare.</h6>
             <div class="flex margin-bottom-3 flex-justify-end buttons-container">
-                <button class="btn btn-primary margin-right-2" id="selectAllButtonStorageSolution">Select
+                <button class="questions-button-primary margin-right-2" id="selectAllButtonStorageSolution">Select
                     All</button>
-                <button class="btn btn-secondary" id="clearAllButtonStorageSolutions">Clear
+                <button class="questions-button-secondary" id="clearAllButtonStorageSolutions">Clear
                     Selections</button>
             </div>
             <div class="flex-container padding-bottom-3" id="storageSolutionsContainer">
@@ -75,7 +121,7 @@
                         $service_json = json_encode($service);
                         echo "
                     <div class='flex-grid-item-3-md padding-top-2 padding-bottom-2'>
-                        <div class='card service-card' data-selected='false' id='{$service['Title']}' data-options='$data_options' onclick='selectionCard(this, {$service_json})'>
+                        <div class='card service-card' data-selected='false' id='{$service['Title']}' data-options='$data_options' storage-limit='{$service['storageLimit']}' onclick='selectionCard(this, {$service_json})'>
                             <div>
                                 <h5 class='card-title text-orange'>{$service['Title']}</h5>
                                 <p class='card-text'>{$service['Description']}</p>

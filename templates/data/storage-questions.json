@@ -2,6 +2,28 @@
     "sections": [
       {
         "id": 1,
+        "question": "With whom do you want to access your data?",
+        "options": [
+          {
+            "id": "private",
+            "label": "Private"
+          },
+          {
+            "id": "syracuseNetID",
+            "label": "Individual with Syracuse NetID"
+          },
+          {
+            "id": "inAndOutOfSU",
+            "label": "In and Out Of Syracuse University"
+          },
+          {
+            "id": "generalPublic",
+            "label": "General Public"
+          }
+        ]
+      },
+      {
+        "id": 2,
         "question": "Do you need backups, snapshots or replication of your data?",
         "options": [
           {
@@ -44,31 +66,8 @@
       },
       {
         "id": 5,
-        "question": "How are you expecting to access the data?",
-        "options": [
-          {
-            "id": "accessAnywhere",
-            "label": "I need easy access to this data from anywhere, even when I don't have my own computer or mobile device with me."
-          },
-          {
-            "id": "accessMobileDevice",
-            "label": "I frequently need access from a mobile device such as a phone or tablet."
-          }
-        ]
-      },
-      {
-        "id": 6,
-        "question": "With whom do you need to share your data regularly?",
-        "options": [
-          {
-            "id": "syracuseNetID",
-            "label": "Only those with a Syracuse NetlD"
-          },
-          {
-            "id": "publicSharing",
-            "label": "Users in and out of the Syracuse community"
-          }
-        ]
+        "question": "How much is the volume of data ?",
+        "options": [] 
       }
     ]
   }

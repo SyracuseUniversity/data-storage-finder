@@ -119,6 +119,15 @@ class data_storage_finder
         );
         wp_enqueue_script('js_for_buttons');
 
+        // wp_register_script(
+        //     'js_for_modal',
+        //     plugins_url('js/modal.js', __FILE__),
+        //     array(),
+        //     '1.0.1',
+        //     false
+        // );
+        // wp_enqueue_script(handle: 'js_for_modal');
+
         // Storage Card JS
         wp_register_script(
             'js_for_cards',
@@ -138,6 +147,16 @@ class data_storage_finder
             false
         );
         wp_enqueue_script('js_for_forms');
+
+        //Log Scale for JS
+        wp_register_script(
+            'js_for_log_scale',
+            plugins_url('js/logScale.js', __FILE__),
+            array(),
+            '1.0.0',
+            false
+        );
+        wp_enqueue_script('js_for_log_scale');
 
         wp_localize_script('js_for_cards', 'pluginData', array(
             'jsonUrl' => plugins_url('/templates/data/storage-services.json', __FILE__),

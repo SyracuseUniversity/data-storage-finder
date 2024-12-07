@@ -6,9 +6,27 @@
     --su-blue-primary-50: #8087AA
   }
 
-
 h6 {
     margin-top: 0px !important;
+}
+
+/** Navbar fix conflict with dds style */
+
+.navbar {
+    display: block !important;
+}
+
+.banner-text {
+    margin: 0 !important;
+}
+
+.questions-template-container {
+    margin-top: 1rem;
+}
+
+label {
+    display: inline !important;
+    font-size: 1.2rem !important;
 }
 
 /**
@@ -111,18 +129,19 @@ CSS for copyright-template.php file
 CSS for questions.template.php
 */
 
-/* hr {
+hr {
     display: block;
     height: 2px;
     border: 0;
     border-top: 1px solid var(--su-orange-dark-100);
     margin: 1em 0;
     padding: 0;
-} */
+}
 
 .scrollable-column {
     max-height: 900px;
     overflow-y: scroll;
+    background: radial-gradient(ellipse at right center, rgba(225, 202, 180, 0.1) 0%, rgba(255, 255, 255, 0) 70%)
 }
 
 .questions-info{
@@ -137,7 +156,7 @@ CSS for questions.template.php
     font-size: 1.5rem;
 }
 
-.btn-secondary {
+.questions-button-secondary {
     background-color: white;
     border-radius: 2px;
     border: 2px solid var(--su-blue-primary-100);
@@ -145,19 +164,19 @@ CSS for questions.template.php
     color: var(--su-blue-primary-100);
 }
     
-.btn-secondary:hover, .btn-secondary:focus {
+.questions-button-secondary:hover, .questions-button-secondary:focus {
       background-color: var(--su-blue-primary-50);
       border-color: var(--su-blue-primary-100);
       color: var(--su-blue-primary-100); 
 }
     
-.btn-secondary:active, .btn-secondary:active:hover, .btn-secondary:active:focus {
+.questions-button-secondary:active, .questions-button-secondary:active:hover, .questions-button-secondary:active:focus {
       background-color: var(--su-blue-primary-100);
       border-color: var(--su-blue-primary-100);
       color: white; 
 }
 
-.btn-primary {
+.questions-button-primary {
     background-color: white;
     border-radius: 2px;
     border: 2px solid var(--su-orange-primary-100);
@@ -165,13 +184,13 @@ CSS for questions.template.php
     color: var(--su-orange-primary-100);
 }
     
-.btn-primary:hover, .btn-primary:focus {
+.questions-button-primary:hover, .questions-button-primary:focus {
     background-color: var(--su-orange-primary-50);
     border-color: var(--su-orange-primary-100);
     color: var(--su-orange-primary-100); 
 }
     
-.btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus {
+.questions-button-primary:active, .questions-button-primary:active:hover, .questions-button-primary:active:focus {
       background-color: var(--su-blue-primary-100);
       border-color: var(--su-blue-primary-100);
       color: white; 
@@ -188,11 +207,6 @@ Cards Grid Styles
 .card-body {
     display: flex;
     flex-direction: column;
-}
-
-.card-text {
-    font-size: 0.8rem;
-    color: var(--su-blue-primary-100);
 }
 
 .buttons-container {
@@ -221,6 +235,11 @@ Cards Grid Styles
     transform: translateY(-5px); /* Slight hover effect */
 }
 
+.service-card,
+.service-card * {
+    cursor: pointer;
+}
+
 .card-title {
     font-size: 1rem;
     font-weight: bold;
@@ -232,6 +251,8 @@ Cards Grid Styles
     font-family: ShermanSans, Verdana, sans-serif;
     font-weight: 500;
     line-height: 1.5rem;
+    color: var(--su-blue-primary-100);
+    margin: 0px !important;
 }
 
 
@@ -251,37 +272,167 @@ Cards Grid Styles
     color: white;
 }
 
-/** Feedback form modal styling */
-
-.modal {
-    display: block;
-    z-index: 1050 !important;
-}
-
-.modal-backdrop {
-    z-index: 1040 !important;
-}
-
-
-.modal-header {
-    border-bottom: none !important;
-}
-
-.modal-footer{
-    border-top: none !important;
-}
-
 /** Table Styling */
+
+.table {
+    width: 100%;
+    table-layout: fixed; /* Ensures fixed column widths */
+    border-collapse: collapse;
+}
 
 .table th {
     font-family: var(--font-serif);
     color: var(--su-blue-primary-100);
     font-size: 1rem;
+    min-width: 200px !important;
+    width: 200px !important;
 }
+
 
 .table td{
     border-color: var(--table-header-border-color);
     color: var(--su-orange-primary-100);
     font-size: 1rem;
+    width: 200px !important;
 }
 
+tbody{
+    overflow-x: scroll;
+}
+
+.modal-container {
+    background: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal-content {
+    padding: 20px;
+    color: #4a4a4a; 
+    font-family: var(--font-sans);
+}
+
+/* Modal Header */
+.modal-body .form-label {
+    font-weight: 500;
+    color: var(--su-orange-dark-100);;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.modal-body .form-control,
+.modal-body .form-select,
+.modal-body textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Placeholder styles */
+.modal-body input::placeholder,
+.modal-body textarea::placeholder {
+    color: #999;
+    font-family: var(--font-sans);
+}
+
+/* Submit and Close Buttons */
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Error Message */
+#error-msg p {
+    color: #d65a00; /* Orange for error messages */
+    font-size: 14px;
+}
+
+/* Confirmation Message */
+#confirmationMessage p {
+    font-size: 20px;
+    color: var(--su-orange-primary-100);
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100px;
+}
+
+
+.table-container{
+    overflow-x: auto;
+   max-width: 100%;
+}
+.table-fixed {
+   table-layout: fixed;
+   width: 100%;
+}
+.table-fixed th, .table-fixed td {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+/**
+Log scale CSS 
+*/
+
+#log-slider {
+    width: 300px;
+}
+  
+#slider-value {
+    font-weight: 500;
+    margin-left: 10px;
+ }
+
+#log-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: var(--su-blue-light-50); 
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+#log-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--su-blue-primary-100);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#log-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--su-blue-primary-100);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#log-slider::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--su-blue-primary-100);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.value-log-slider {
+    color: var(--su-blue-primary-100);
+    margin-top: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
