@@ -55,7 +55,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function filterStorage() {
         console.log("filterStorage method reached");
         const dataStorageLabel = document.getElementById("slider-value");
-        const dataStorageValue = parseInt(dataStorageLabel.textContent, 10); 
+        
+        var dataStorageValue = 1
+        const actualValue = dataStorageLabel.textContent.split(" ")
+        if(actualValue[1] == "TB"){
+            dataStorageValue = 1000
+        }else{
+            dataStorageValue = parseInt(dataStorageLabel.textContent, 10); 
+        }
 
         cards.forEach(card => {
             const cardStorageLimit = parseInt(card.getAttribute("storage-limit"), 10);

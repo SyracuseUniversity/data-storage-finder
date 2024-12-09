@@ -7,7 +7,7 @@ function updateValue() {
     const displayValue =
         storage >= 1000 ? `${(storage / 1000).toFixed(1)} TB` : `${storage.toFixed(1)} GB`;
 
-    console.log(storage)
+    //console.log(storage)
 
     valueTip.textContent = displayValue;
 
