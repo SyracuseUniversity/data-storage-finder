@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         checkbox.addEventListener('change', filterCards);
     });
 
-    log_slider.addEventListener('input', function () {  // 'input' event ensures real-time update
+    log_slider.addEventListener('input', function () { 
         filterStorage();
     });
 

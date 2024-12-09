@@ -37,20 +37,6 @@
         ]
       },
       {
-        "id": 3,
-        "question": "How much data do you have and how fast will it grow?",
-        "options": [
-          {
-            "id": "dataLessThan1TB",
-            "label": "Unlikely to exceed 1TB in 2 years."
-          },
-          {
-            "id": "dataMoreThan1TB",
-            "label": "Greater than 1TB or likely to exceed in 2 years."
-          }
-        ]
-      },
-      {
         "id": 4,
         "question": "Do you have special performance needs?",
         "options": [
