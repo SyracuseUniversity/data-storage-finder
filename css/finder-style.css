@@ -12,6 +12,10 @@ h6 {
 
 /** Navbar fix conflict with dds style */
 
+.nav {
+    display: block !important;
+}
+
 .navbar {
     display: block !important;
 }
@@ -364,6 +368,22 @@ tbody{
     height: 100px;
 }
 
+#detailsTable th, #detailsTable td {
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+}
+
+#detailsTable tr th:first-child, #detailsTable tr td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #f1f1f1;  
+    z-index: 1; 
+}
+
+#detailsTable tr:first-child{
+   font-weight: 700;
+}
+
 
 .table-container{
     overflow-x: auto;
@@ -385,6 +405,7 @@ Log scale CSS
 
 #log-slider {
     width: 300px;
+    padding: 0px !important; /* Conflict with form.scss */
 }
   
 #slider-value {

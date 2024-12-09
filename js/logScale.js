@@ -5,7 +5,9 @@ function updateValue() {
     const logValue = Math.pow(10, slider.value);
     const storage = logValue * 1; 
     const displayValue =
-        storage >= 1024 ? `${(storage / 1024).toFixed(1)} TB` : `${storage.toFixed(1)} GB`;
+        storage >= 1000 ? `${(storage / 1000).toFixed(1)} TB` : `${storage.toFixed(1)} GB`;
+
+    console.log(storage)
 
     valueTip.textContent = displayValue;
 
