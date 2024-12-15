@@ -26,7 +26,7 @@
 
             foreach ($data['sections'] as $section) {
                 echo "<div class='section-item margin-bottom-4'>";
-                echo "<h6 class='question-text text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h6>";
+                echo "<h4 class='text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h4>";
 
                 // Determine if this section needs radio-like behavior
                 $radioClass = $section['id'] == 1 ? 'radio-like' : '';
@@ -48,7 +48,7 @@
                 if ($section['id'] == 1) {
                     echo "
                     <div class='sub-question' id='sub-question' style='display:none;' id='sub-{$option['id']}'>
-                        <h6 class='question-text text-orange'>Do you need a DOI ?</h6>
+                        <h4 class='text-orange'>Do you need a DOI ?</h4>
                         <div class='form-check margin-bottom-2 text-blue radio-like'>
                             <input class='form-check-input data-option' type='checkbox' value='Yes' id='Yes' onclick=deselectOtherCheckboxesSubQuestion(this)>
                             <label class='form-check-label' for='Yes'>
@@ -68,7 +68,7 @@
                 if ($section['id'] == 5) {
                     echo "
                     <div style='display: flex; align-items: center; position: relative;'>
-                        <span class='question-text log-slider-label' style='margin-right: 10px;'>1GB</span>
+                        <span class='log-slider-label' style='margin-right: 10px;'>1GB</span>
                         <input
                             id='log-slider'
                             type='range'
@@ -79,10 +79,10 @@
                             oninput='updateValue()'
                             style='flex: 1; margin: 0 10px;'
                         />
-                        <span class='question-text log-slider-label' style='margin-left: 10px;'>10TB</span>
+                        <span class='log-slider-label' style='margin-left: 10px;'>10TB</span>
                     </div>
                     <div class='value-log-slider'>
-                        <label class='question-text' for='slider-value'> Value </label> : <span class='log-slider-label' id='slider-value'>1 GB</span>
+                        <label for='slider-value'> Value </label> : <span class='log-slider-label' id='slider-value'>1 GB</span>
                     </div>";
                 }
 
