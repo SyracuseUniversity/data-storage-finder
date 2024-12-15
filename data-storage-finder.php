@@ -99,16 +99,6 @@ class data_storage_finder
         // Ensure jQuery is loaded
         wp_enqueue_script('jquery');
 
-        // Bootstrap JS
-        wp_register_script(
-            'bootstrap',
-            plugins_url('js/bootstrap.min.js', __FILE__),
-            array('jquery'),
-            '1.0.0',
-            true
-        );
-        wp_enqueue_script('bootstrap');
-
         // Custom Button JS
         wp_register_script(
             'js_for_buttons',
