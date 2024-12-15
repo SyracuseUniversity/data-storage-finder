@@ -79,7 +79,7 @@
                             oninput='updateValue()'
                             style='flex: 1; margin: 0 10px;'
                         />
-                        <span class='question-text log-slider-label' style='margin-left: 10px;'>1TB</span>
+                        <span class='question-text log-slider-label' style='margin-left: 10px;'>10TB</span>
                     </div>
                     <div class='value-log-slider'>
                         <label class='question-text' for='slider-value'> Value </label> : <span class='log-slider-label' id='slider-value'>1 GB</span>

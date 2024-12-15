@@ -356,12 +356,9 @@ tbody{
     font-family: var(--font-sans);
 }
 
-.modal-header {
-    justify-content: flex-end !important;
-}
-
 #closeButton {
     cursor: pointer; 
+    margin-left: auto;
 }
 
 /* Submit and Close Buttons */

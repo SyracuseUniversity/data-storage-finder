@@ -4,14 +4,7 @@ jQuery(document).ready(function ($) {
         $('#feedbackModal, .modal-overlay').fadeIn();
     });
 
-    $('#closeButton, .modal-overlay').on('click', function () {
-        $('#feedbackModal, .modal-overlay').fadeOut();
-    });
-
-    $('#submitButton').on('click', function (event) {
-        event.preventDefault();
-        const form = document.getElementById('forminator-module-330');
-        form.submit(); // Trigger form submission
+    $('#closeButton, .modal-overlay, .forminator-button').on('click', function () {
         $('#feedbackModal, .modal-overlay').fadeOut();
     });
 });
