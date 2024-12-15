@@ -6,6 +6,7 @@ jQuery(document).ready(function ($) {
 
     $('#closeButton, .modal-overlay, .forminator-button').on('click', function () {
         $('#feedbackModal, .modal-overlay').fadeOut();
+        $('#forminator-module-330')[0].reset();
     });
 });
 
