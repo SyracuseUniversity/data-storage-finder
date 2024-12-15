@@ -9,7 +9,7 @@
       },
       {
         "Title": "Amazon Web Services Elastic File System",
-        "Description": "Storage for use with multiple Amazon EC2 instances",
+        "Description": "Storage for multiple EC2 instances",
         "options": ["backupCopies"],
         "Cost": "$100",
         "storageLimit": 1

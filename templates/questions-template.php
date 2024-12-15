@@ -1,7 +1,7 @@
 <hr>
 <div class="flex-container questions-template-container">
     <div class="flex-grid">
-        <div class="flex-grid-item-3-md scrollable-column" id="questionnaireContainer">
+        <div class="flex-grid-item-4-md scrollable-column" id="questionnaireContainer">
             <h6 class="section-title margin-top-4 margin-bottom-4">Describe your data</h6>
             <p class="questions-info text-blue">
                 Answer these questions to help identify data storage services that are suitable for your needs. Checking
@@ -26,7 +26,7 @@
 
             foreach ($data['sections'] as $section) {
                 echo "<div class='section-item margin-bottom-4'>";
-                echo "<h6 class='question-text text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h4>";
+                echo "<h6 class='question-text text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h6>";
 
                 // Determine if this section needs radio-like behavior
                 $radioClass = $section['id'] == 1 ? 'radio-like' : '';
@@ -73,7 +73,7 @@
                             id='log-slider'
                             type='range'
                             min='0'
-                            max='3'
+                            max='4'
                             step='0.01'
                             value='0'
                             oninput='updateValue()'
@@ -90,7 +90,7 @@
             }
             ?>
         </div>
-        <div class="flex-grid-item-9-md">
+        <div class="flex-grid-item-8-md">
             <h6 class="section-title margin-bottom-3 margin-top-3">Select data storage services you would like to
                 compare.</h6>
             <div class="flex margin-bottom-3 flex-justify-end buttons-container">

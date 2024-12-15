@@ -160,6 +160,14 @@ hr {
     font-size: 1.5rem;
 }
 
+.section-question {
+    font-size: var(--h6-size);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--h6-line-height);
+    margin-bottom: var(--spacer-3);
+}
+
 .questions-button-secondary {
     background-color: white;
     border-radius: 2px;
@@ -310,6 +318,10 @@ tbody{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     width: 90%;
     max-width: 500px;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 .modal-content {
@@ -348,6 +360,7 @@ tbody{
 .modal-footer {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 /* Error Message */

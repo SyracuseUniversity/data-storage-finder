@@ -30,17 +30,17 @@ class data_storage_finder
         // Register our hooks
         add_action('wp_enqueue_scripts', array($this, 'load_css'));
         add_action('wp_enqueue_scripts', array($this, 'load_js'));
-        add_shortcode('banner', array($this, 'banner_shortcode'));
+        add_shortcode('modal', array($this, 'modal_shortcode'));
         add_shortcode('questions_table', array($this, 'questions_shortcode'));
         add_shortcode('copyright', array($this, 'copyright_shortcode'));
         add_shortcode('details_table', array($this, 'details_table_shortcode'));
     }
 
     //contains code for header welcome message and feedback modal form
-    function banner_shortcode()
+    function modal_shortcode()
     {
         ob_start();
-        include plugin_dir_path(__FILE__) . 'templates/banner-template.php';
+        include plugin_dir_path(__FILE__) . 'templates/modal-template.php';
         return ob_get_clean();
     }
 
@@ -157,6 +157,16 @@ class data_storage_finder
             false
         );
         wp_enqueue_script('js_for_log_scale');
+
+        //JQuery for modal open and close
+        wp_register_script(
+            'js_for_modal',
+            plugins_url('js/triggerModal.js', __FILE__),
+            array('jquery'),
+            '1.0.0',
+            false
+        );
+        wp_enqueue_script('js_for_modal');
 
         wp_localize_script('js_for_cards', 'pluginData', array(
             'jsonUrl' => plugins_url('/templates/data/storage-services.json', __FILE__),

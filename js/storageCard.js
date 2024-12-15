@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function filterStorage() {
-        console.log("filterStorage method reached");
         const dataStorageLabel = document.getElementById("slider-value");
         
         var dataStorageValue = 1
