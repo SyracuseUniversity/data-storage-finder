@@ -45,7 +45,7 @@
                     </div>";
                 }
 
-                if ($section['id'] == 1) {
+                if ($section['id'] == 2) {
                     echo "
                     <div class='sub-question' id='sub-question' style='display:none;' id='sub-{$option['id']}'>
                         <h4 class='text-orange'>Do you need a DOI ?</h4>

@@ -2,7 +2,29 @@
     "sections": [
       {
         "id": 1,
-        "question": "With whom do you want to access your data?",
+        "question": "What is the classification of your data?",
+        "options": [
+          {
+            "id": "public",
+            "label": "Public / Low Risk"
+          },
+          {
+            "id": "sensitive",
+            "label": "Sensitive / Moderate Risk"
+          },
+          {
+            "id": "confidential",
+            "label": "Confidential or Restricted / High Risk"
+          },
+          {
+            "id": "hipaa",
+            "label": "HIPAA-Regulated"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "With whom do you want to share your data?",
         "options": [
           {
             "id": "private",
@@ -23,7 +45,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "question": "Do you need backups, snapshots or replication of your data?",
         "options": [
           {
@@ -52,7 +74,7 @@
       },
       {
         "id": 5,
-        "question": "How much is the volume of data ?",
+        "question": "What is the volume of data ?",
         "options": [] 
       }
     ]
