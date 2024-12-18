@@ -67,9 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const cardStorageLimit = parseInt(card.getAttribute("storage-limit"), 10);
             const dataLimitSatisfied = dataStorageValue <= cardStorageLimit;
 
-            if (dataLimitSatisfied) {
-                card.classList.remove('disabled');
-            } else {
+            if (!dataLimitSatisfied) {
                 card.classList.add('disabled');
             }
         });

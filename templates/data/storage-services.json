@@ -4,7 +4,7 @@
         "Title": "Google Drive",
         "Description": "Focused on application use and collaborative file sharing.",
         "Example Use": "Collaborative sharing for classwork or with  users at other universities.",
-        "options": ["dataLessThan1TB", "moreThan1000Files", "accessAnywhere", "publicSharing"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
         "Cost": "The stance of the univesity is not to provide additional storage for purchase in  Google Workspace.",
         "Capacity": "Active Students & Staff:  10 GB Active Faculty & Instructors:  60 GB",
         "Access and Collaboration": "Shared drives are limited to 20 GB without a special exception",
@@ -13,7 +13,7 @@
         "Availability": "Google Workspace is a cloud application.There are no guarantees of uptime and availability",
         "Technical Complexity": "Easy. Google use model is ease of use and collaboration",
         "Contact": "ITS Core Infrastructure CDI Application team aascsys@su-jsm.atlassian.net",
-        "storageLimit": 50
+        "storageLimit": 60
       },
       {
         "Title": "Microsoft OneDrive",
