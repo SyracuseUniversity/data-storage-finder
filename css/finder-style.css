@@ -143,7 +143,7 @@ hr {
 }
 
 .scrollable-column {
-    max-height: 900px;
+    max-height: 1100px;
     overflow-y: scroll;
     background: radial-gradient(ellipse at right center, rgba(225, 202, 180, 0.1) 0%, rgba(255, 255, 255, 0) 70%)
 }
@@ -290,6 +290,7 @@ Cards Grid Styles
     width: 100%;
     table-layout: fixed; /* Ensures fixed column widths */
     border-collapse: collapse;
+    margin: 0px !important  /* fix conflicting style with base.scss */;
 }
 
 .table th {

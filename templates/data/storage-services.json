@@ -2,7 +2,7 @@
     "services": [
       {
         "Title": "Google Drive",
-        "Intro": "Syracuse University Google Workspace file storage and sharing",
+        "Intro": "Google Workspace file storage and sharing",
         "Description": "Google Workspace storage is focused on application use and collaborative file sharing.",
         "Example Use": "Collaborative sharing for classwork or with users at other universities.",
         "Cost": "Free up to specific thresholds. University does not provide additional storage on g.syr.edu accounts.",
@@ -18,7 +18,7 @@
       },      
       {
         "Title": "Microsoft OneDrive",
-        "Intro": "Syracuse University Cloud storage for individual use or sharing with specific individuals",
+        "Intro": "Cloud storage for individual use or sharing with specific individuals",
         "Description": "OneDrive is the default storage location for personal files at SU. Saving to OneDrive on an SU-managed machine is as simple as saving to Documents or Desktop. OneDrive lets you store and protect your files, share them with others, and access them from anywhere on all your devices.",
         "Example Use": "Personal file storage. Online, real-time collaboration and sharing of specific files with users in and out of SU.",
         "Cost": "Free up to specific thresholds",
@@ -34,7 +34,7 @@
       },
       {
         "Title": "Microsoft SharePoint",
-        "Intro": "Syracuse University provided cloud storage for sharing with a broad audience",
+        "Intro": "Cloud storage for sharing with a broad audience",
         "Description": "SharePoint Communications sites are for one-way information sharing. SharePoint Team sites for collaboration with groups are best created using Microsoft Teams. Only content authors create and modify files. Visitors can only view files.",
         "Example Use": "Create portals or subject-specific sites such as an HR site for employee benefits.",
         "Cost": "Free up to specific thresholds",
@@ -50,7 +50,7 @@
       },
       {
         "Title": "Microsoft Teams",
-        "Intro": "Syracuse University provided Cloud storage for group and project collaboration with online meetings and chat",
+        "Intro": "Cloud storage for group and project collaboration with online meetings and chat",
         "Description": "Microsoft Teams is a workspace for real-time collaboration and communication, meetings, file, and app sharing. Edit documents together at the same time while tracking your changes—no more emailing revisions back and forth. Ask for feedback in real-time, poll the audience, and make decisions faster as a team.",
         "Example Use": "File storage for departments and groups. Online, real-time collaboration and sharing of files and folders with users in and out of SU.",
         "Cost": "Free up to specific thresholds",
@@ -66,7 +66,7 @@
       },
       {
         "Title": "Microsoft Shared Libraries",
-        "Intro": "Syracuse University provided Cloud storage for group and project collaboration",
+        "Intro": "Cloud storage for group and project collaboration",
         "Description": "Collaborative document libraries in SharePoint for teams to store, organize, and share files.",
         "Example Use": "Department-level shared storage for projects or internal documents.",
         "Cost": "Free up to specific thresholds",
