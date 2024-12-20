@@ -29,7 +29,7 @@
                 echo "<h4 class='text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h4>";
 
                 // Determine if this section needs radio-like behavior
-                $radioClass = $section['id'] == 1 ? 'radio-like' : '';
+                $radioClass = $section['id'] == 2 ? 'radio-like' : '';
 
                 // Loop through the options
                 foreach ($section['options'] as $option) {
@@ -50,13 +50,13 @@
                     <div class='sub-question' id='sub-question' style='display:none;' id='sub-{$option['id']}'>
                         <h4 class='text-orange'>Do you need a DOI ?</h4>
                         <div class='form-check margin-bottom-2 text-blue radio-like'>
-                            <input class='form-check-input data-option' type='checkbox' value='Yes' id='Yes' onclick=deselectOtherCheckboxesSubQuestion(this)>
+                            <input class='form-check-input data-option' type='checkbox' value='DOIYes' id='DOIYes' onclick=deselectOtherCheckboxesSubQuestion(this)>
                             <label class='form-check-label' for='Yes'>
                                 Yes
                             </label>
                         </div>
                         <div class='form-check margin-bottom-2 text-blue radio-like'>
-                            <input class='form-check-input data-option' type='checkbox' value='No' id='No' onclick=deselectOtherCheckboxesSubQuestion(this)>
+                            <input class='form-check-input data-option' type='checkbox' value='DOINo' id='DOINo' onclick=deselectOtherCheckboxesSubQuestion(this)>
                             <label class='form-check-label' for='No'>
                                 No
                             </label>
@@ -121,7 +121,7 @@
                         $service_json = json_encode($service);
                         echo "
                     <div class='flex-grid-item-3-md padding-top-2 padding-bottom-2'>
-                        <div class='card service-card' data-selected='false' id='{$service['Title']}' data-options='$data_options' storage-limit='{$service['storageLimit']}' onclick='selectionCard(this, {$service_json})'>
+                        <div class='card service-card' storage-qualified='true' condition-qualified='true' id='{$service['Title']}' data-options='$data_options' storage-limit='{$service['storageLimit']}' onclick='selectionCard(this, {$service_json})'>
                             <div>
                                 <h5 class='card-title text-orange'>{$service['Title']}</h5>
                                 <p class='card-text'>{$service['Intro']}</p>

@@ -40,11 +40,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         cards.forEach(card => {
-            console.log(card)
+            const cardId = card.getAttribute('id');
+
             const cardOptions = card.dataset.options.split(',');    
             const isQualified = selectedOptions.every(option => cardOptions.includes(option));
-        
-            if (isQualified) {
+
+            const documentCard = document.getElementById(cardId)
+
+            documentCard.setAttribute('condition-qualified', isQualified)
+
+            const conditionQualified = documentCard.getAttribute('condition-qualified')
+            const storageQualified = documentCard.getAttribute('storage-qualified')
+
+            console.log(conditionQualified, storageQualified)
+            
+
+            if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
             } else {
                 card.classList.add('disabled');
@@ -64,16 +75,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         cards.forEach(card => {
-            const cardStorageLimit = parseInt(card.getAttribute("storage-limit"), 10);
-            //console.log(card)
-            //console.log(dataStorageValue == -1)
-            const dataLimitSatisfied = (cardStorageLimit == -1) || (dataStorageValue <= cardStorageLimit);
-            //console.log(dataLimitSatisfied == -1)
+            const cardId = card.getAttribute('id');
+            console.log(cardId)
 
-            if (!dataLimitSatisfied) {
-                card.classList.add('disabled');
-            }else{
+            const cardStorageLimit = parseInt(card.getAttribute("storage-limit"), 10);
+            const dataLimitSatisfied = (cardStorageLimit == -1) || (dataStorageValue <= cardStorageLimit);
+            
+            const documentCard = document.getElementById(cardId)
+
+            documentCard.setAttribute('storage-qualified', dataLimitSatisfied)
+
+            const conditionQualified = documentCard.getAttribute('condition-qualified')
+            const storageQualified = documentCard.getAttribute('storage-qualified')
+
+            console.log(cardId, conditionQualified, storageQualified)
+            
+            if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
+            } else {
+                card.classList.add('disabled');
             }
         });
     }
