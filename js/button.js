@@ -10,6 +10,9 @@ function clearCheckboxes(containerId) {
         console.error(`Container with id "${containerId}" not found.`);
     }
 
+    const doiQuestion = document.getElementById('sub-question')
+    doiQuestion.style.display = 'none';
+    
     const cards = document.querySelectorAll('.service-card');
     cards.forEach(card => card.classList.remove('disabled'));
 }
