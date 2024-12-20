@@ -5,11 +5,11 @@
         "Intro": "Syracuse University Google Workspace file storage and sharing",
         "Description": "Google Workspace storage is focused on application use and collaborative file sharing.",
         "Example Use": "Collaborative sharing for classwork or with users at other universities.",
-        "Cost": "Free up to specific thresholds. University doesn't provide additional storage on g.syr.edu accounts.",
+        "Cost": "Free up to specific thresholds. University does not provide additional storage on g.syr.edu accounts.",
         "Capacity": "- Active Students & Staff: 10 GB - Active Faculty & Instructors: 60 GB - Shared Drives: 20 GB Quota (requests for exceptions can be raised)",
         "Access and Collaboration": "Files and folders within My Drive can be shared ad-hoc for express collaboration with SU and non-SU users. Owner controls sharing options, including edit and view rights; file and folder-level controls are available.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information. - Restricted: Academic data. Research and bulk data is strongly discouraged.",
-        "Durability": "High. Google's built-in backup and recycle bin policies apply. Data restore can be admin-initiated for 20 days; the recycle bin is user-controlled with a 20-day retention.",
+        "Durability": "High. Google provided built-in backup and recycle bin policies apply. Data restore can be admin-initiated for 20 days; the recycle bin is user-controlled with a 20-day retention.",
         "Availability": "High. Google Workspace is a cloud application. There are no guarantees of uptime and availability from SU IT.",
         "Technical Complexity": "Low. Google's use model is ease of use and collaboration.",
         "Contact": "ITS Core Infrastructure CDI Application team (aascsys@su-jsm.atlassian.net)",
@@ -30,7 +30,7 @@
         "Technical Complexity": "Low",
         "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "storageLimit": 500
       },
       {
         "Title": "Microsoft SharePoint",
@@ -46,7 +46,7 @@
         "Technical Complexity": "Low",
         "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "storageLimit": 500
       },
       {
         "Title": "Microsoft Teams",
@@ -62,7 +62,7 @@
         "Technical Complexity": "Low",
         "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "storageLimit": 500
       },
       {
         "Title": "Microsoft Shared Libraries",
@@ -78,7 +78,7 @@
         "Technical Complexity": "Low",
         "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "storageLimit": 500
       },
       {
         "Title": "AWS Elastic Block Store",
@@ -93,8 +93,20 @@
         "Availability": "High",
         "Technical Complexity": "High",
         "Contact": "https://aws.amazon.com/ebs/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "confidential",
+          "private",
+          "syracuseNetID",
+          "inAndOutOfSU",
+          "generalPublic",
+          "backupCopies",
+          "replicateCopies",
+          "moreThan1000Files",
+          "highTransactionRates"
+        ],
+        "storageLimit": -1
       },
       {
         "Title": "AWS Elastic File System",
@@ -109,8 +121,9 @@
         "Availability": "High",
         "Technical Complexity": "High",
         "Contact": "https://aws.amazon.com/efs/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": ["public", "sensitive", "confidential", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "moreThan1000Files",
+        "highTransactionRates"],
+        "storageLimit": -1
       },
       {
         "Title": "AWS Glacier",
@@ -125,8 +138,20 @@
         "Availability": "High",
         "Technical Complexity": "Medium",
         "Contact": "https://aws.amazon.com/s3/storage-classes/glacier/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "confidential",
+          "private",
+          "syracuseNetID",
+          "inAndOutOfSU",
+          "generalPublic",
+          "backupCopies",
+          "replicateCopies",
+          "moreThan1000Files",
+          "highTransactionRates"
+        ],
+        "storageLimit": -1
       },
       {
         "Title": "AWS S3",
@@ -141,8 +166,9 @@
         "Availability": "High",
         "Technical Complexity": "Medium",
         "Contact": "https://aws.amazon.com/s3/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": ["public", "sensitive", "confidential", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "replicateCopies", "moreThan1000Files",
+        "highTransactionRates"],
+        "storageLimit": -1
       },
       {
         "Title": "Dropbox",
@@ -157,8 +183,14 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "https://www.dropbox.com/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "private",
+          "inAndOutOfSU",
+          "generalPublic"
+        ],        
+        "storageLimit": -1
       },
       {
         "Title": "Box",
@@ -173,8 +205,14 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "https://www.box.com/home",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "private",
+          "inAndOutOfSU",
+          "generalPublic"
+        ],        
+        "storageLimit": -1
       },
       {
         "Title": "Wasabi",
@@ -189,28 +227,40 @@
         "Availability": "High",
         "Technical Complexity": "Medium",
         "Contact": "https://wasabi.com/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "private",
+          "inAndOutOfSU",
+          "replicateCopies",
+          "highTransactionRates"
+        ],
+        "storageLimit": -1
       },
       {
         "Title": "Zenodo",
-        "Intro": "Open-access repository for research data",
+        "Intro": "Open access repository for research data",
         "Description": "Zenodo is a research data repository that provides open access to datasets, publications, and other scholarly content. It supports data sharing across disciplines and ensures long-term preservation. Every upload is assigned a Digital Object Identifier (DOI) to make them citable and trackable.",
         "Example Use": "Publishing datasets, code, or preprints with DOI assignment.",
         "Cost": "Free to upload and free to access.",
         "Capacity": "Zenodo has no upper data limits, but each record is limited to 50 GB and 100 files.",
-        "Access and Collaboration": "Zenodo's collaboration and sharing features allow you to share individual records/drafts with other users and communities. Records can have open or closed access.",
+        "Access and Collaboration": "Zenodo collaboration and sharing features allow you to share individual records drafts with other users and communities. Records can have open or closed access.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "https://zenodo.org/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "private",
+          "generalPublic"
+        ],
+        "storageLimit": -1
       },
       {
         "Title": "Dryad",
-        "Intro": "International open-access repository of research data",
+        "Intro": "International open access repository of research data",
         "Description": "Dryad is an open data publishing platform and a community committed to the open availability and routine re-use of all research data.",
         "Example Use": "Archiving datasets for journal publications.",
         "Cost": "Publication fee of $150. Dryad charges excess storage fees for data totaling over 50GB. For data packages in excess of 50GB, submitters will be charged $50 for each additional 10GB.",
@@ -221,8 +271,12 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "https://datadryad.org/stash",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "private",
+          "generalPublic"
+        ],"storageLimit": -1
       },
       {
         "Title": "Figshare",
@@ -237,8 +291,13 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "https://figshare.com/",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
-        "storageLimit": 60
+        "options": [
+          "public",
+          "sensitive",
+          "private",
+          "generalPublic"
+        ],
+        "storageLimit": -1
       }
     ]
   }

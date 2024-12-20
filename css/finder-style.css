@@ -405,7 +405,8 @@ tbody{
 
 .table-container{
     overflow-x: auto;
-   max-width: 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
 }
 .table-fixed {
    table-layout: fixed;

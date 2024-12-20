@@ -8,7 +8,7 @@
 </div>
 
 <div class="flex-container">
-    <div class="table-container">
+    <div class="table-container" id="table-con" style="display: none;">
         <table class="table" style="display: none;" id="detailsTable">
             <tbody>
                 <tr id="Title">

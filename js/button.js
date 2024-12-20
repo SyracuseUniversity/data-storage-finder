@@ -123,12 +123,15 @@ function toggleTableVisibility() {
     console.log(selectedCards)
     const table = document.getElementById('detailsTable');
     const banner = document.getElementById('detailsTableBanner')
+    const tableContainer = document.getElementById('table-con')
     if (selectedCards.length > 0) {
         table.style.display = 'table'; 
         banner.style.display = 'block'
+        tableContainer.style.display = 'block';
     } else {
         table.style.display = 'none';
         banner.style.display = 'none';
+        tableContainer.style.display = 'none';
     }
 }
 

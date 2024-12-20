@@ -65,10 +65,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cards.forEach(card => {
             const cardStorageLimit = parseInt(card.getAttribute("storage-limit"), 10);
-            const dataLimitSatisfied = dataStorageValue <= cardStorageLimit;
+            //console.log(card)
+            //console.log(dataStorageValue == -1)
+            const dataLimitSatisfied = (cardStorageLimit == -1) || (dataStorageValue <= cardStorageLimit);
+            //console.log(dataLimitSatisfied == -1)
 
             if (!dataLimitSatisfied) {
                 card.classList.add('disabled');
+            }else{
+                card.classList.remove('disabled');
             }
         });
     }
