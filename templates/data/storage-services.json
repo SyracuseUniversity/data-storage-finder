@@ -9,7 +9,7 @@
         "Capacity": "- Active Students & Staff: 10 GB - Active Faculty & Instructors: 60 GB - Shared Drives: 20 GB Quota (requests for exceptions can be raised)",
         "Access and Collaboration": "Files and folders within My Drive can be shared ad-hoc for express collaboration with SU and non-SU users. Owner controls sharing options, including edit and view rights; file and folder-level controls are available.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information. - Restricted: Academic data. Research and bulk data is strongly discouraged.",
-        "Durability": "High. Google provided built-in backup and recycle bin policies apply. Data restore can be admin-initiated for 20 days; the recycle bin is user-controlled with a 20-day retention.",
+        "Durability": "High. Google's built in backup and recycle bin policies apply.  Data restore can be admin initiated for 20 days, recycle bin is user controlled with 20 day retention.",
         "Availability": "High. Google Workspace is a cloud application. There are no guarantees of uptime and availability from SU IT.",
         "Technical Complexity": "Low. Google's use model is ease of use and collaboration.",
         "Contact": "ITS Core Infrastructure CDI Application team (aascsys@su-jsm.atlassian.net)",
@@ -112,7 +112,7 @@
         "Title": "AWS Elastic File System",
         "Intro": "Storage for use with multiple Amazon EC2 instances",
         "Description": "Amazon Elastic File System (EFS) provides simple, scalable file storage for use with Amazon EC2 instances in the AWS Cloud. EFS grows and shrinks automatically, so your applications have the storage they need, when they need it. Multiple EC2 instances can access an EFS file system at the same time. EFS provides high performance, availability, and durability.",
-        "Example Use": "Storing data files to be shared among multiple servers doing analysis.",
+        "Example Use": "Storing data files to be shared among multiple servers for conducting analyses.",
         "Cost": "> $1000/TB/Year",
         "Capacity": "- 47.9 TB file size limit. - No overall limit (costs incurred). - No practical limit to the number of files.",
         "Access and Collaboration": "Access to EFS volumes by servers is controlled by AWS network access control lists and security groups. Servers mounting EFS volumes are responsible for end-user access control.",
@@ -175,7 +175,7 @@
         "Intro": "Cloud-based file sharing for individually owned data",
         "Description": "Dropbox is a cloud-based file sharing option for individual data storage. The individual owner is the only one with full control over the space, but links to the data can be created and then shared with others.",
         "Example Use": "File storage, sharing, and collaboration across devices.",
-        "Cost": "Free (2GB) or paid plans starting at $16.58/month for 3 TB storage.",
+        "Cost": "Free (2GB) or paid plans starting at $9.99 / month for 2 TB storage",
         "Capacity": "Varies by plan, up to unlimited for Business plans.",
         "Access and Collaboration": "Supports real-time collaboration and sharing with external users.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
@@ -197,8 +197,8 @@
         "Intro": "Cloud-based storage and collaboration service",
         "Description": "Box is an online file sharing and cloud content management service that works on PCs, Macs, mobile and tablet devices and provides access to files from any location for collaboration with other University users or external parties.",
         "Example Use": "Secure sharing of sensitive data and team collaboration.",
-        "Cost": "Free (10GB) or paid plans starting at $15/month.",
-        "Capacity": "Business plans offer unlimited storage.",
+        "Cost": "Free (10GB) or paid plans starting at $10/month.",
+        "Capacity": "Varies by plan, up to unlimited for Business plans. 250 MB file size limit for free plan.",
         "Access and Collaboration": "By inviting existing Box users to folders, or by sending shared links. Owner controls sharing options, including edit and view rights; file and folder level controls available.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
@@ -242,7 +242,7 @@
         "Intro": "Open access repository for research data",
         "Description": "Zenodo is a research data repository that provides open access to datasets, publications, and other scholarly content. It supports data sharing across disciplines and ensures long-term preservation. Every upload is assigned a Digital Object Identifier (DOI) to make them citable and trackable.",
         "Example Use": "Publishing datasets, code, or preprints with DOI assignment.",
-        "Cost": "Free to upload and free to access.",
+        "Cost": "Free to upload and free to access. Zenodo has no upper data limits, but each record is limited to 50 GB and 100 files.",
         "Capacity": "Zenodo has no upper data limits, but each record is limited to 50 GB and 100 files.",
         "Access and Collaboration": "Zenodo collaboration and sharing features allow you to share individual records drafts with other users and communities. Records can have open or closed access.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
@@ -283,8 +283,8 @@
         "Intro": "Open-access repository for research data, publications, and multimedia",
         "Description": "Figshare is a web-based repository designed to enable researchers to store, share, and disseminate their research outputs, including datasets, figures, videos, and other types of multimedia. It provides an open-access platform where researchers can upload and share a wide range of research materials to make them publicly available.",
         "Example Use": "Sharing datasets, figures, or media files with persistent identifiers.",
-        "Cost": "Free.",
-        "Capacity": "Free Plan: Provides 1 GB of storage per user. Allows for unlimited public datasets, with a DOI (Digital Object Identifier) for each. Suitable for individual researchers or small-scale projects.",
+        "Cost": "Free plan provides 20 GB of storage per user. Allows for up to 500 items, with a DOI (Digital Object Identifier) for each.",
+        "Capacity": "Free plan provides 20 GB of storage per user. Allows for up to 500 items, with a DOI (Digital Object Identifier) for each.",
         "Access and Collaboration": "Open access with DOI for citation. Restricted access for selected individuals or groups. Share via links or create groups.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
@@ -298,6 +298,27 @@
           "generalPublic"
         ],
         "storageLimit": -1
-      }
+      },
+      {
+        "Title": "OSF.io",
+        "Intro": "Open platform to support research and enable collaboration.",
+        "Description": "OSF.io, or the Open Science Framework, is an online platform that enables researchers to transparently plan, collect, analyze, and share their work throughout the entire research life cycle.",
+        "Example Use": "Publishing datasets, code, or preprints with DOI assignment.",
+        "Cost": "Free",
+        "Capacity": "Capacity of 5 GB for private projects and 50 GB for public projects. File size limit of 5 GB. Can integrate with other storage management services (e.g., Amazon S3, Dropbox, Github, OneDrive).",
+        "Access and Collaboration": "Public projects are open access with optional DOI. Collaborators and contributors can be added for projects, registrations, or preprints. Each contributor has their own permission level (ie. Administrator, Read+Write, and Read), each with different responsibilities and privileges.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Durability": "High",
+        "Availability": "High",
+        "Technical Complexity": "Low",
+        "Contact": "https://osf.io/",
+        "options": [
+          "public",
+          "sensitive",
+          "private",
+          "generalPublic"
+        ],
+        "storageLimit": -1
+      }      
     ]
   }
