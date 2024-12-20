@@ -12,7 +12,7 @@ function clearCheckboxes(containerId) {
 
     const doiQuestion = document.getElementById('sub-question')
     doiQuestion.style.display = 'none';
-    
+
     const cards = document.querySelectorAll('.service-card');
     cards.forEach(card => card.classList.remove('disabled'));
 }
@@ -22,7 +22,6 @@ function clearCheckboxes(containerId) {
 function clearSlider(sliderId) {
     const slider = document.getElementById(sliderId); 
     const sliderValueLabel = document.getElementById("slider-value"); 
-
     if (slider && sliderValueLabel) {
         slider.value = 0; 
         sliderValueLabel.textContent = slider.value;
@@ -80,7 +79,6 @@ function selectCards(containerId) {
     
 }
 
-// Function to toggle the 'selected' class on individual cards
 let selectedCards = [];
 function selectionCard(card, service_data) {
     card.classList.toggle('selected');
@@ -90,12 +88,9 @@ function selectionCard(card, service_data) {
 
     if (isCardAlreadySelected) {
         selectedCards = selectedCards.filter(item => item.cardId !== cardId);
-        card.setAttribute('data-selected', 'false'); 
     } else {
         selectedCards.push({ cardId, service_data });
-        card.setAttribute('data-selected', 'true'); 
     }
-    // Update table and visibility
     updateTable();
     toggleTableVisibility();
 }

@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         updateSelectedOptions(selectedOptions, "generalPublic", ["Yes", "No"])
     
-        if (selectedOptions.length === 0) {
-            cards.forEach(card => card.classList.remove('disabled'));
-            return;
-        }
+        // if (selectedOptions.length === 0) {
+        //     cards.forEach(card => card.classList.remove('disabled'));
+        //     return;
+        // }
 
         cards.forEach(card => {
             const cardId = card.getAttribute('id');
@@ -56,8 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
             if (conditionQualified == "true" && storageQualified == "true") {
+                console.log("comes up")
                 card.classList.remove('disabled');
             } else {
+                console.log("comes down")
                 card.classList.add('disabled');
             }
         });
