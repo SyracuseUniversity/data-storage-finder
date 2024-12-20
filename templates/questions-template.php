@@ -124,7 +124,7 @@
                         <div class='card service-card' data-selected='false' id='{$service['Title']}' data-options='$data_options' storage-limit='{$service['storageLimit']}' onclick='selectionCard(this, {$service_json})'>
                             <div>
                                 <h5 class='card-title text-orange'>{$service['Title']}</h5>
-                                <p class='card-text'>{$service['Description']}</p>
+                                <p class='card-text'>{$service['Intro']}</p>
                             </div>
                         </div>
                     </div>
