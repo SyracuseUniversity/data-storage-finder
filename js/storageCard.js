@@ -28,11 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const dataStorageLabel = document.getElementById("slider-value");
         const dataStorageValue = dataStorageLabel.textContent
         
-        const selectedOptions = Array.from(checkboxes)
+        var selectedOptions = Array.from(checkboxes)
             .filter(checkbox => checkbox.checked)
             .map(checkbox => checkbox.value);
 
-        updateSelectedOptions(selectedOptions, "generalPublic", ["Yes", "No"])
+    
+        selectedOptions = updateSelectedOptions(selectedOptions, "generalPublic", ["DOIYes", "DOINo"])
+
+        console.log(selectedOptions)
 
         cards.forEach(card => {
             const cardId = card.getAttribute('id');
