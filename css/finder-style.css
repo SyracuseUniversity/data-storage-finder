@@ -6,6 +6,10 @@
     --su-blue-primary-50: #8087AA
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 h6 {
     margin-top: 0px !important;
 }
@@ -476,4 +480,30 @@ Log scale CSS
     display: flex; 
     justify-content: center; 
     align-items: center;
+}
+
+li {
+    display: list-item;
+    list-style: decimal;
+    list-style-position: outside;
+  }
+
+::marker {
+    color: var(--su-orange-primary-100) !important;
+}
+
+#compare-nav{
+    background-color: #000E54;
+    position: sticky;
+    width: 100vw;
+    bottom: 0;
+    text-align: left;
+    display: none;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+
+#compareTableOptions{
+    margin-top: 20px;
 }

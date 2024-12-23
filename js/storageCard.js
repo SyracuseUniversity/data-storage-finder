@@ -33,11 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
             .map(checkbox => checkbox.value);
 
         updateSelectedOptions(selectedOptions, "generalPublic", ["Yes", "No"])
-    
-        // if (selectedOptions.length === 0) {
-        //     cards.forEach(card => card.classList.remove('disabled'));
-        //     return;
-        // }
 
         cards.forEach(card => {
             const cardId = card.getAttribute('id');

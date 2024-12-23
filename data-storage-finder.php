@@ -34,6 +34,7 @@ class data_storage_finder
         add_shortcode('questions_table', array($this, 'questions_shortcode'));
         add_shortcode('copyright', array($this, 'copyright_shortcode'));
         add_shortcode('details_table', array($this, 'details_table_shortcode'));
+        add_shortcode('sticky_nav', array($this, 'sticky_nav_shortcode'));
     }
 
     //contains code for header welcome message and feedback modal form
@@ -62,6 +63,13 @@ class data_storage_finder
     {
         ob_start();
         include plugin_dir_path(__FILE__) . 'templates/table-template.php';
+        return ob_get_clean();
+    }
+
+    function sticky_nav_shortcode()
+    {
+        ob_start();
+        include plugin_dir_path(__FILE__) . 'templates/table-compare-sticky-nav.php';
         return ob_get_clean();
     }
 

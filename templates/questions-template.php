@@ -24,10 +24,12 @@
                 die('Error decoding JSON');
             }
 
-            foreach ($data['sections'] as $section) {
-                echo "<div class='section-item margin-bottom-4'>";
-                echo "<h4 class='text-orange'>{$section['id']}. {$section['question']} <i class='bi bi-info-circle'></i></h4>";
+            echo "<ol id='question-list'>";
 
+            foreach ($data['sections'] as $section) {
+                echo "<li class='text-orange margin-bottom-4'> {$section['question']}";
+                // echo "<h4 class='text-orange'> <i class='bi bi-info-circle'></i></h4>";
+            
                 // Determine if this section needs radio-like behavior
                 $radioClass = $section['id'] == 2 ? 'radio-like' : '';
 
@@ -68,7 +70,7 @@
                 if ($section['id'] == 5) {
                     echo "
                     <div style='display: flex; align-items: center; position: relative;'>
-                        <span class='log-slider-label' style='margin-right: 10px;'>1GB</span>
+                        <span class='log-slider-label' style='margin-right: 10px;'> ≤ 1GB</span>
                         <input
                             id='log-slider'
                             type='range'
@@ -79,16 +81,16 @@
                             oninput='updateValue()'
                             style='flex: 1; margin: 0 10px;'
                         />
-                        <span class='log-slider-label' style='margin-left: 10px;'>10TB</span>
+                        <span class='log-slider-label' style='margin-left: 10px;'> ≥ 10TB</span>
                     </div>
                     <div class='value-log-slider'>
                         <label for='slider-value'> Value </label> : <span class='log-slider-label' id='slider-value'>1 GB</span>
                     </div>";
                 }
-
-                echo "</div>";
+                echo "</li>";
             }
-            ?>
+            echo "</ol>"
+                ?>
         </div>
         <div class="flex-grid-item-8-md">
             <h6 class="section-title margin-bottom-3 margin-top-3">Select data storage services you would like to

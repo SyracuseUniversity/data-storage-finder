@@ -1,3 +1,5 @@
+
+
 // Function to clear all checkboxes
 function clearCheckboxes(containerId) {
     const container = document.getElementById(containerId);
@@ -91,8 +93,17 @@ function selectionCard(card, service_data) {
     } else {
         selectedCards.push({ cardId, service_data });
     }
+    displayCompareNav();
     updateTable();
     toggleTableVisibility();
+}
+
+function displayCompareNav(){
+    console.log("Reaches here");
+    const nav = document.getElementById('compare-nav');
+    if(selectedCards.length > 0){
+        nav.style.display = 'flex';
+    }
 }
 
 
@@ -133,6 +144,19 @@ function toggleTableVisibility() {
     }
 }
 
+window.addEventListener('scroll', () => {
+    const hideMe = document.getElementById('compare-nav');
+    const target = document.getElementById('detailsTableBanner');
+    
+    console.log("reacges here")
+    const targetPosition = target.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (targetPosition <= windowHeight / 2) {
+      hideMe.style.display = 'none';
+    }
+  });
+
 // Event listener for the "Clear All" button
 document.addEventListener('DOMContentLoaded', function() {
     const clearButtonStorageQuestionaire = document.getElementById('clearAllButtonStorageQuestionaire');
@@ -162,7 +186,6 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Select All button not found.');
     }
-
 });
 
 function deselectOtherCheckboxes(checkbox) {
