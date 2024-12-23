@@ -90,16 +90,8 @@ function selectionCard(card, service_data) {
     } else {
         selectedCards.push({ cardId, service_data });
     }
-    displayCompareNav();
     updateTable();
     toggleTableVisibility();
-}
-
-function displayCompareNav(){
-    const nav = document.getElementById('compare-nav');
-    if(selectedCards.length > 0){
-        nav.style.display = 'flex';
-    }
 }
 
 function updateTable(){
@@ -126,14 +118,20 @@ function toggleTableVisibility() {
     const table = document.getElementById('detailsTable');
     const banner = document.getElementById('detailsTableBanner')
     const tableContainer = document.getElementById('table-con')
+    const nav = document.getElementById('compare-nav');
+    const servicesText = document.getElementById('noOfServices');
+
     if (selectedCards.length > 0) {
         table.style.display = 'table'; 
         banner.style.display = 'block'
         tableContainer.style.display = 'block';
+        servicesText.textContent = `${selectedCards.length} Services Selected`
+        nav.style.display = 'flex';
     } else {
         table.style.display = 'none';
         banner.style.display = 'none';
         tableContainer.style.display = 'none';
+        nav.style.display = 'none';
     }
 }
 
