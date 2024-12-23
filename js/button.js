@@ -96,7 +96,6 @@ function selectionCard(card, service_data) {
 }
 
 function displayCompareNav(){
-    console.log("Reaches here");
     const nav = document.getElementById('compare-nav');
     if(selectedCards.length > 0){
         nav.style.display = 'flex';
@@ -104,7 +103,6 @@ function displayCompareNav(){
 }
 
 function updateTable(){
-    console.log(selectedCards);
     const table = document.getElementById('detailsTable');
     var rows = table.getElementsByTagName("tr")
     for (var i = 0; i < rows.length; i++) {
@@ -125,7 +123,6 @@ function updateTable(){
 }
 
 function toggleTableVisibility() {
-    console.log(selectedCards)
     const table = document.getElementById('detailsTable');
     const banner = document.getElementById('detailsTableBanner')
     const tableContainer = document.getElementById('table-con')
@@ -143,8 +140,6 @@ function toggleTableVisibility() {
 window.addEventListener('scroll', () => {
     const hideMe = document.getElementById('compare-nav');
     const target = document.getElementById('detailsTableBanner');
-    
-    console.log("reacges here")
     const targetPosition = target.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
@@ -192,7 +187,6 @@ function deselectOtherCheckboxes(checkbox) {
         
         checkboxes.forEach(function(otherCheckbox) {
             if (otherCheckbox !== checkbox) {
-                console.log(otherCheckbox)
                 otherCheckbox.checked = false;
                 if(otherCheckbox.id == 'generalPublic'){
                     handleGeneralPublic(otherCheckbox)
@@ -219,7 +213,6 @@ function deselectOtherCheckboxesSubQuestion(checkbox){
 function handleGeneralPublic(checkbox) {
     const subquestion = document.getElementById('sub-question')
     if (checkbox.checked) {
-        console.log('General Public checkbox checked');
         subquestion.style.display = 'block';
     }else{
         subquestion.style.display = 'none';

@@ -5,12 +5,6 @@ function submitFeedback() {
     const rating = document.getElementById("rating").value;
     const comments = document.getElementById("comments").value;
 
-    console.log("Feedback Submitted:");
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Rating:", rating);
-    console.log("Comments:", comments);
-
     if (!comments.trim()) {
         var alertp = document.getElementById("error-msg");
         alertp.style.display = 'block';

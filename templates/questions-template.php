@@ -27,11 +27,11 @@
             echo "<ol id='question-list'>";
 
             foreach ($data['sections'] as $section) {
-                echo "<li class='text-orange margin-bottom-4'> {$section['question']} <span class='info-icon' onclick='displayToolTipInfo(\"{$section['id']}tooltip\")'>&#8505;</span>";
+                echo "<li class='section-item text-orange margin-bottom-4'> {$section['question']} <span class='info-icon' onclick='displayToolTipInfo(\"{$section['id']}tooltip\")'>&#8505;</span>";
                 // echo "<h4 class='text-orange'> <i class='bi bi-info-circle'></i></h4>";
             
                 // Determine if this section needs radio-like behavior
-                $radioClass = $section['id'] == 2 ? 'radio-like' : '';
+                $radioClass = $section['id'] == 1 || 2 ? 'radio-like' : '';
 
                 // Loop through the options
                 foreach ($section['options'] as $option) {
