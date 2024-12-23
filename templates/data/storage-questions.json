@@ -20,7 +20,8 @@
             "id": "hipaa",
             "label": "HIPAA-Regulated"
           }
-        ]
+        ],
+        "helper_info": "<span class='text-bolder'>1. Public Data / Low Risk:</span> Data openly and freely available to the public. Example: dataset associated with an already-published manuscript. <br> <span class='text-bolder'> 2. Sensitive / Moderate Risk Data:</span> Data that is not yet available to the public, but contains no confidential or restricted information. Example: most unpublished research project data, such as working data and research notes collected during course of research.<br> <span class='text-bolder'> 3. Confidential or Restricted / High Risk Data:</span> Data that contains personally identifiable or legally protected information. Examples: data that has restrictions due to data use agreements or other regulations such as census data, NIH dbGaP data, data containing social security numbers, or credit card numbers along with names or other identifiers. Note that while Export Controlled Information (EPI) is considered High Risk, none of the services described here are appropriate for EPI. Researchers needing to store EPI should consult with the Export Controls Office. <br> <span class='text-bolder'> 4. HIPAA (Health Records) Data:</span> Certain health information is protected by HIPAA (Health Information Portability and Accountability Act) and is considered confidential if it is individually identifiable and held or transmitted by a covered entity. Examples: health records, patient treatment information, health insurance billing information."
       },
       {
         "id": 2,
@@ -42,7 +43,8 @@
             "id": "generalPublic",
             "label": "General Public"
           }
-        ]
+        ],
+        "helper_info": "Some tools are designed with collaboration and sharing in mind, others may have limitations (e.g. sharing only within the Syracuse community)."
       },
       {
         "id": 3,
@@ -56,7 +58,8 @@
             "id": "replicateCopies",
             "label": "I need to have replicate copies of the data to minimize downtime (high availability)."
           }
-        ]
+        ],
+        "helper_info": "Replication, Backup and Snapshots offer different types of protection against loss of data access. <br> <span class='text-bolder'> Backups and snapshots </span> protect against corruption or unintended user deletion. Previous versions can be kept with options for local or remote storage depending on your needs. <br> <span class='text-bolder'> Replication </span> is an availability option that  protects against equipment failure and minimizes downtime. Replication doesn't protect against errors or accidents and cannot be used to restore deleted data. <br> All services can be set up to have backups, snapshots and/or replication; services where that protection cannot be configured natively (ie. require a secondary service to provide protection) will drop out when these items are selected."
       },
       {
         "id": 4,
@@ -70,12 +73,14 @@
             "id": "highTransactionRates",
             "label": "My data interactions demand high transaction or transfer rates."
           }
-        ]
+        ],
+        "helper_info": "Some storage systems do not perform well when there are many files in one directory.  Similarly, system performance can be impacted by both peak transaction rate and sustained transfer rate. <br> <br> If you're not sure your data storage falls into either of the cases described, do not select anything here."
       },
       {
         "id": 5,
         "question": "What is the volume of data ?",
-        "options": [] 
+        "options": [],
+        "helper_info": "The volume of data you plan to store can impact your choice of storage solutions. Large datasets may require systems optimized for scalability, while smaller datasets can be managed with simpler solutions. Consider both your current data volume and expected growth over time. If you're unsure, estimate conservatively based on your research or project needs."
       }
     ]
   }

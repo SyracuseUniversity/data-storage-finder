@@ -46,15 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const conditionQualified = documentCard.getAttribute('condition-qualified')
             const storageQualified = documentCard.getAttribute('storage-qualified')
-
-            console.log(conditionQualified, storageQualified)
             
-
             if (conditionQualified == "true" && storageQualified == "true") {
-                console.log("comes up")
                 card.classList.remove('disabled');
             } else {
-                console.log("comes down")
                 card.classList.add('disabled');
             }
         });
@@ -73,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cards.forEach(card => {
             const cardId = card.getAttribute('id');
-            console.log(cardId)
 
             const cardStorageLimit = parseInt(card.getAttribute("storage-limit"), 10);
             const dataLimitSatisfied = (cardStorageLimit == -1) || (dataStorageValue <= cardStorageLimit);
@@ -84,8 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const conditionQualified = documentCard.getAttribute('condition-qualified')
             const storageQualified = documentCard.getAttribute('storage-qualified')
-
-            console.log(cardId, conditionQualified, storageQualified)
             
             if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');

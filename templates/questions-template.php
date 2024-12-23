@@ -27,7 +27,7 @@
             echo "<ol id='question-list'>";
 
             foreach ($data['sections'] as $section) {
-                echo "<li class='text-orange margin-bottom-4'> {$section['question']}";
+                echo "<li class='text-orange margin-bottom-4'> {$section['question']} <span class='info-icon' onclick='displayToolTipInfo(\"{$section['id']}tooltip\")'>&#8505;</span>";
                 // echo "<h4 class='text-orange'> <i class='bi bi-info-circle'></i></h4>";
             
                 // Determine if this section needs radio-like behavior
@@ -88,6 +88,12 @@
                     </div>";
                 }
                 echo "</li>";
+                echo "
+                <div class='tooltip-info tooltip-hidden' id='{$section['id']}tooltip'>
+                    <p class='tooltip-helper-text'>
+                        {$section['helper_info']}
+                    </p>
+                </div>";
             }
             echo "</ol>"
                 ?>

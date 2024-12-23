@@ -507,3 +507,41 @@ li {
 #compareTableOptions{
     margin-top: 20px;
 }
+
+/** 
+Questions tooltip styling 
+*/
+
+.info-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--su-orange-primary-100);
+    background-color: white; 
+    color: var(--su-orange-primary-100);
+    text-align: center;
+    cursor: pointer;
+  }
+
+.tooltip-info{
+    width: auto;
+    height: max-content;
+ }
+
+.tooltip-hidden {
+    display: none;  /* Initially hidden */
+}
+
+.tooltip-helper-text {
+    line-height: 1.25rem;
+    color: var(--su-blue-primary-100);
+    font-size: 14px;
+}
+
+.text-bolder{
+    font-weight: bold;
+}

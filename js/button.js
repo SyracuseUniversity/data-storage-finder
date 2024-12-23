@@ -30,8 +30,6 @@ function clearSlider(sliderId) {
     }
 }
 
-
-
 // Function to clear all selected cards in the container
 function clearCards(containerId) {
     const container = document.getElementById(containerId);
@@ -49,7 +47,6 @@ function clearCards(containerId) {
         console.error(`Container with id "${containerId}" not found.`);
     }
 }
-
 
 // Function to select all cards in the container
 function selectCards(containerId) {
@@ -105,7 +102,6 @@ function displayCompareNav(){
         nav.style.display = 'flex';
     }
 }
-
 
 function updateTable(){
     console.log(selectedCards);
@@ -229,3 +225,11 @@ function handleGeneralPublic(checkbox) {
         subquestion.style.display = 'none';
     }
  }
+
+//function to toggle tooltip visibility
+function displayToolTipInfo(toolTipId){
+    const tooltipDiv = document.getElementById(toolTipId);
+    if (tooltipDiv) {
+        tooltipDiv.classList.toggle('tooltip-hidden');
+    }
+}
