@@ -12,37 +12,38 @@
         <table class="table" style="display: none;" id="detailsTable">
             <tbody>
                 <tr id="Title">
-                    <th>Title</th>
+                    <th>Title <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Description">
-                    <th>Description</th>
+                    <th>Description <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Cost">
                     <th>Cost</th>
                 </tr>
                 <tr id="Example Use">
-                    <th>Example Use</th>
+                    <th>Example Use <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Capacity">
-                    <th>Capacity</th>
+                    <th>Capacity <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Access and Collaboration">
-                    <th>Access and Collaboration</th>
+                    <th>Access and Collaboration <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span>
+                    </th>
                 </tr>
                 <tr id="Data Allowed">
-                    <th>Data Allowed</th>
+                    <th>Data Allowed <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Durability">
-                    <th>Durability</th>
+                    <th>Durability <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Availability">
-                    <th>Availability</th>
+                    <th>Availability <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Technical Complexity">
-                    <th>Technical Complexity</th>
+                    <th>Technical Complexity <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
                 <tr id="Contact">
-                    <th>Contact</th>
+                    <th>Contact <span class='info-icon' onclick='displayToolTipInfo()'>&#8505;</span></th>
                 </tr>
             </tbody>
         </table>

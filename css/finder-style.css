@@ -435,6 +435,7 @@ Log scale CSS
 #slider-value {
     font-weight: 500;
     margin-left: 10px;
+    width: fit-content;
  }
 
 #log-slider {
@@ -480,6 +481,20 @@ Log scale CSS
     display: flex; 
     justify-content: center; 
     align-items: center;
+}
+
+#slider-value {
+    margin-left: 10px; 
+    width: 100px; 
+    text-align: center; 
+    border: 2px solid var(--su-blue-primary-100); 
+    border-radius: 5px; 
+    padding: 4px;
+    outline: none;
+}
+
+#slider-value:focus{
+    border: 2px solid var(--su-blue-primary-100); 
 }
 
 li {
@@ -538,6 +553,10 @@ Questions tooltip styling
  }
 
 .tooltip-hidden {
+    display: none;  /* Initially hidden */
+}
+
+.tooltip-error-hidden{
     display: none;  /* Initially hidden */
 }
 

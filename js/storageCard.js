@@ -59,15 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function filterStorage() {
-        const dataStorageLabel = document.getElementById("slider-value");
-        
-        var dataStorageValue = 1
-        const actualValue = dataStorageLabel.textContent.split(" ")
-        if(actualValue[1] == "TB"){
-            dataStorageValue = 1000
-        }else{
-            dataStorageValue = parseInt(dataStorageLabel.textContent, 10); 
-        }
+        const dataStorageLabel = document.getElementById("log-slider");
+        const dataStorageValue = Math.pow(10, dataStorageLabel.value); 
 
         cards.forEach(card => {
             const cardId = card.getAttribute('id');

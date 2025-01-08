@@ -30,6 +30,13 @@
                 echo "<li class='section-item text-orange margin-bottom-4'> {$section['question']} <span class='info-icon' onclick='displayToolTipInfo(\"{$section['id']}tooltip\")'>&#8505;</span>";
                 // echo "<h4 class='text-orange'> <i class='bi bi-info-circle'></i></h4>";
             
+                echo "
+                <div class='tooltip-info tooltip-hidden' id='{$section['id']}tooltip'>
+                    <p class='tooltip-helper-text'>
+                        {$section['helper_info']}
+                    </p>
+                </div>";
+
                 // Determine if this section needs radio-like behavior
                 $radioClass = $section['id'] == 1 || 2 ? 'radio-like' : '';
 
@@ -84,16 +91,22 @@
                         <span class='log-slider-label' style='margin-left: 10px;'> ≥ 10TB</span>
                     </div>
                     <div class='value-log-slider'>
-                        <label for='slider-value'> Value </label> : <span class='log-slider-label' id='slider-value'>1 GB</span>
-                    </div>";
+                        <label for='slider-value'>Value:</label>
+                        <input
+                            type='text'
+                            id='slider-value'
+                            value='1 GB'
+                            oninput='updateSlider()'
+                        />
+                    </div>
+                    <div class='tooltip-error tooltip-error-hidden  margin-top-3'>
+                        <p class='tooltip-helper-text' id='input-slider-error'>
+                            
+                        </p>
+                    </div>"
+                    ;
                 }
                 echo "</li>";
-                echo "
-                <div class='tooltip-info tooltip-hidden' id='{$section['id']}tooltip'>
-                    <p class='tooltip-helper-text'>
-                        {$section['helper_info']}
-                    </p>
-                </div>";
             }
             echo "</ol>"
                 ?>
