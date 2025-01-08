@@ -311,6 +311,8 @@ Cards Grid Styles
     color: var(--su-orange-primary-100);
     font-size: 1rem;
     width: 200px !important;
+    word-wrap: break-word;       
+    overflow-wrap: break-word;
 }
 
 tbody{
@@ -547,6 +549,21 @@ Questions tooltip styling
     cursor: pointer;
   }
 
+.info-icon-table {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--su-blue-primary-100);
+    background-color: #f1f1f1; 
+    color: var(--su-blue-primary-100);
+    text-align: center;
+    cursor: pointer;
+}
+
 .tooltip-info{
     width: auto;
     height: max-content;
@@ -568,4 +585,10 @@ Questions tooltip styling
 
 .text-bolder{
     font-weight: bold;
+}
+
+.tooltip-table-text{
+    line-height: 1.25rem;
+    font-size: 14px;
+    font-weight: lighter;
 }

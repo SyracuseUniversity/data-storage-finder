@@ -1,4 +1,5 @@
 
+const headersWithInfoIncon = ["Durability", "Availability"]
 
 // Function to clear all checkboxes
 function clearCheckboxes(containerId) {
@@ -99,11 +100,7 @@ function updateTable(){
     var rows = table.getElementsByTagName("tr")
     for (var i = 0; i < rows.length; i++) {
         var current_row = rows[i];
-        current_row.innerHTML = ''
         var value = current_row.getAttribute('id');
-        var row_header = document.createElement('th');
-        row_header.innerHTML = value
-        current_row.appendChild(row_header)
         for(var j = 0; j < selectedCards.length; j++){
             var new_element = document.createElement('td');
             new_element.innerHTML = selectedCards[j]['service_data'][value] !== undefined 
