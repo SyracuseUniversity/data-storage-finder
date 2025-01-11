@@ -54,7 +54,12 @@ function selectCards(containerId) {
     const container = document.getElementById(containerId);
     if (container) {
         const cards = container.querySelectorAll('.service-card');
-        fetch(pluginData.jsonUrl) 
+        fetch(pluginData.jsonUrl,
+            {
+                method: 'GET',
+                cache: 'no-store' 
+            }
+        ) 
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch JSON data');
@@ -95,18 +100,23 @@ function selectionCard(card, service_data) {
     toggleTableVisibility();
 }
 
-function updateTable(){
+function updateTable() {
     const table = document.getElementById('detailsTable');
-    var rows = table.getElementsByTagName("tr")
-    for (var i = 0; i < rows.length; i++) {
-        var current_row = rows[i];
-        var value = current_row.getAttribute('id');
-        for(var j = 0; j < selectedCards.length; j++){
-            var new_element = document.createElement('td');
+    const rows = table.getElementsByTagName("tr");
+    for (let i = 0; i < rows.length; i++) {
+        const current_row = rows[i];
+
+        while (current_row.children.length > 1) {
+            current_row.removeChild(current_row.lastChild);
+        }
+
+        const value = current_row.getAttribute('id');
+        for (let j = 0; j < selectedCards.length; j++) {
+            const new_element = document.createElement('td');
             new_element.innerHTML = selectedCards[j]['service_data'][value] !== undefined 
                 ? selectedCards[j]['service_data'][value] 
                 : '';
-            current_row.appendChild(new_element)
+            current_row.appendChild(new_element);
         }
     }
 }

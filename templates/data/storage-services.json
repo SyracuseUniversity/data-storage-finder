@@ -12,7 +12,7 @@
         "Durability": "High. Google built in backup and recycle bin policies apply.  Data restore can be admin initiated for 20 days, recycle bin is user controlled with 20 day retention.",
         "Availability": "High. Google Workspace is a cloud application. There are no guarantees of uptime and availability from SU IT.",
         "Technical Complexity": "Low. Google use model is ease of use and collaboration.",
-        "Contact": "ITS Core Infrastructure CDI Application team (aascsys@su-jsm.atlassian.net)",
+        "Contact": "ITS Core Infrastructure CDI Application team. <a class=\"table-links \" href=\"mailto:aascsys@su-jsm.atlassian.net\">aascsys@su-jsm.atlassian.net</a>",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
         "storageLimit": 60
       },      
@@ -28,7 +28,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
+        "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
         "storageLimit": 500
       },
@@ -44,7 +44,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
+        "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
         "storageLimit": 500
       },
@@ -60,7 +60,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
+        "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
         "storageLimit": 500
       },
@@ -76,7 +76,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "ITS Help Desk (https://its.syr.edu/its_service_center/) at 315-443-2677, help@syr.edu",
+        "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
         "storageLimit": 500
       },
@@ -92,7 +92,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "High",
-        "Contact": "https://aws.amazon.com/ebs/",
+        "Contact": "<a class=\"table-links \" href=\"https://aws.amazon.com/ebs/\">Amazon AWS</a>",
         "options": [
           "public",
           "sensitive",
@@ -120,7 +120,7 @@
         "Durability": "Medium",
         "Availability": "High",
         "Technical Complexity": "High",
-        "Contact": "https://aws.amazon.com/efs/",
+        "Contact": "<a class=\"table-links \" href=\"https://aws.amazon.com/ebs/\">Amazon EFS</a>",
         "options": ["public", "sensitive", "confidential", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "moreThan1000Files",
         "highTransactionRates", "DOINo"],
         "storageLimit": -1
@@ -137,7 +137,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Medium",
-        "Contact": "https://aws.amazon.com/s3/storage-classes/glacier/",
+        "Contact": "<a class=\"table-links \" href=\"https://aws.amazon.com/s3/storage-classes/glacier/\"> AWS Glacier </a>",
         "options": [
           "public",
           "sensitive",
@@ -165,7 +165,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Medium",
-        "Contact": "https://aws.amazon.com/s3/",
+        "Contact": "<a class=\"table-links \" href=\"https://aws.amazon.com/s3/\"> Amazon S3 </a>",
         "options": ["public", "sensitive", "confidential", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "replicateCopies", "moreThan1000Files",
         "highTransactionRates", "DOINo"],
         "storageLimit": -1
@@ -182,7 +182,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "https://www.dropbox.com/",
+        "Contact": "<a class=\"table-links \" href=\"https://www.dropbox.com/\"> Dropbox </a>",
         "options": [
           "public",
           "sensitive",
@@ -204,7 +204,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "https://www.box.com/home",
+        "Contact": "<a class=\"table-links \" href=\"https://www.box.com/home\"> Box </a>",
         "options": [
           "public",
           "sensitive",
@@ -226,7 +226,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Medium",
-        "Contact": "https://wasabi.com/",
+        "Contact": "<a class=\"table-links \" href=\"https://wasabi.com/\"> Wasabi </a>",
         "options": [
           "public",
           "sensitive",
@@ -250,7 +250,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "https://zenodo.org/",
+        "Contact": "<a class=\"table-links \" href=\"https://zenodo.org/\"> Zenodo </a>",
         "options": [
           "public",
           "sensitive",
@@ -272,7 +272,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "https://datadryad.org/stash",
+        "Contact": "<a class=\"table-links \" href=\"https://datadryad.org/stash\"> Dryad </a>",
         "options": [
           "public",
           "sensitive",
@@ -293,7 +293,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "https://figshare.com/",
+        "Contact": "<a class=\"table-links \" href=\"https://figshare.com/\"> Figshare </a>",
         "options": [
           "public",
           "sensitive",
@@ -315,7 +315,7 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "https://osf.io/",
+        "Contact": "<a class=\"table-links \" href=\"https://osf.io/\"> OSF.io </a>",
         "options": [
           "public",
           "sensitive",

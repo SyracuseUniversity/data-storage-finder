@@ -592,3 +592,12 @@ Questions tooltip styling
     font-size: 14px;
     font-weight: lighter;
 }
+
+.table-links{
+    color: var(--su-orange-primary-100);
+    font-size: 15px;
+}
+
+.table-links:hover{
+    color: var(--su-blue-primary-100);
+}
