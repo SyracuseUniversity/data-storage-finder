@@ -114,8 +114,8 @@
         <div class="flex-grid-item-8-md">
             <h6 class="section-title margin-bottom-3 margin-top-3">Select data storage services you would like to
                 compare.</h6>
-            <div class="flex margin-bottom-3 flex-justify-end buttons-container">
-                <button class="questions-button-primary margin-right-2" id="selectAllButtonStorageSolution">Select
+            <div class="flex margin-bottom-3 buttons-container">
+                <button class="questions-button-primary" id="selectAllButtonStorageSolution">Select
                     All</button>
                 <button class="questions-button-secondary" id="clearAllButtonStorageSolutions">Clear
                     Selections</button>
@@ -141,7 +141,7 @@
                         $data_options = implode(',', $service['options']);
                         $service_json = json_encode($service);
                         echo "
-                    <div class='flex-grid-item-3-md padding-top-2 padding-bottom-2'>
+                    <div class='flex-grid-item-3-lg flex-grid-item-4-md flex-grid-item-6-sm padding-top-2 padding-bottom-2'>
                         <div class='card service-card' storage-qualified='true' condition-qualified='true' id='{$service['Title']}' data-options='$data_options' storage-limit='{$service['storageLimit']}' onclick='selectionCard(this, {$service_json})'>
                             <div>
                                 <h5 class='card-title text-orange'>{$service['Title']}</h5>

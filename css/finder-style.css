@@ -193,6 +193,7 @@ hr {
 }
 
 .questions-button-primary {
+    margin-right: 20px;
     background-color: white;
     border-radius: 2px;
     border: 2px solid var(--su-orange-primary-100);
@@ -226,6 +227,7 @@ Cards Grid Styles
 }
 
 .buttons-container {
+    justify-content: flex-end;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
 }
@@ -600,4 +602,63 @@ Questions tooltip styling
 
 .table-links:hover{
     color: var(--su-blue-primary-100);
+}
+
+/** Media Queries for responsive design */
+
+@media screen and (max-width: 767px) {
+    .card {
+        height: 180px !important;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .section-item {
+        font-size: 1.3rem;
+    }
+
+    .buttons-container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .questions-button-primary, .questions-button-secondary {
+        width: 100%;
+    }
+
+    .questions-button-primary{
+        margin-right: 0px;
+    }
+
+    .questions-button-secondary{
+        margin-top: 10px;
+    }
+
+    .table th {
+        width: 150px !important;
+    }
+
+    #detailsTable th {
+        padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .table th {
+        width: 100px !important;
+        font-size: 0.75rem;
+    }
+
+    .table td {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        height: 220px !important;
+    }
+
+    .card-text{
+        font-size: 0.8rem;
+    }
 }
