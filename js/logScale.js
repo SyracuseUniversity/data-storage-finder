@@ -65,4 +65,9 @@ function updateSlider() {
         slider.value = logValue.toFixed(2);
         tooltip.classList.add("tooltip-error-hidden"); 
     }
+
+    // Manually dispatching the input event 
+    //for filterStorage() function in storageCard.js to get triggered
+    const event = new Event('input', { bubbles: true });
+    slider.dispatchEvent(event);
 }

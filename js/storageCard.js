@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function filterStorage() {
+        console.log("comes here")
         const dataStorageLabel = document.getElementById("log-slider");
         const dataStorageValue = Math.pow(10, dataStorageLabel.value); 
 
