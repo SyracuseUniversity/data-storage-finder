@@ -38,7 +38,7 @@
                 </div>";
 
                 // Determine if this section needs radio-like behavior
-                $radioClass = $section['id'] == 1 || 2 ? 'radio-like' : '';
+                $radioClass = $section['id'] == 1 || $section['id'] == 2 ? 'radio-like' : '';
 
                 // Loop through the options
                 foreach ($section['options'] as $option) {
