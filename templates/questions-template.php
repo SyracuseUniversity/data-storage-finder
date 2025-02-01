@@ -64,12 +64,6 @@
                                 Yes
                             </label>
                         </div>
-                        <div class='form-check margin-bottom-2 text-blue radio-like'>
-                            <input class='form-check-input data-option' type='checkbox' value='DOINo' id='DOINo' onclick=deselectOtherCheckboxesSubQuestion(this)>
-                            <label class='form-check-label' for='No'>
-                                No
-                            </label>
-                        </div>
                     </div>
                     ";
                 }

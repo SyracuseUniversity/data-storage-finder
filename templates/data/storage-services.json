@@ -6,14 +6,14 @@
         "Description": "Google Workspace storage is focused on application use and collaborative file sharing.",
         "Example Use": "Collaborative sharing for classwork or with users at other universities.",
         "Cost": "Free up to specific thresholds. University does not provide additional storage on g.syr.edu accounts.",
-        "Capacity": "- Active Students & Staff: 10 GB - Active Faculty & Instructors: 60 GB - Shared Drives: 20 GB Quota (requests for exceptions can be raised)",
+        "Capacity": "- Active Students & Staff: 10 GB <br>- Active Faculty & Instructors: 60 GB <br>- Shared Drives: 20 GB Quota (requests for exceptions can be raised)",
         "Access and Collaboration": "Files and folders within My Drive can be shared ad-hoc for express collaboration with SU and non-SU users. Owner controls sharing options, including edit and view rights; file and folder-level controls are available.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information. - Restricted: Academic data. Research and bulk data is strongly discouraged.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br> - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information. <br> - Restricted: Academic data. Research and bulk data is strongly discouraged.",
         "Durability": "High. Google built in backup and recycle bin policies apply.  Data restore can be admin initiated for 20 days, recycle bin is user controlled with 20 day retention.",
         "Availability": "High. Google Workspace is a cloud application. There are no guarantees of uptime and availability from SU IT.",
         "Technical Complexity": "Low. Google use model is ease of use and collaboration.",
         "Contact": "ITS Core Infrastructure CDI Application team. <a class=\"table-links \" href=\"mailto:aascsys@su-jsm.atlassian.net\">aascsys@su-jsm.atlassian.net</a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
         "storageLimit": 60
       },      
       {
@@ -22,14 +22,14 @@
         "Description": "OneDrive is the default storage location for personal files at SU. Saving to OneDrive on an SU-managed machine is as simple as saving to Documents or Desktop. OneDrive lets you store and protect your files, share them with others, and access them from anywhere on all your devices.",
         "Example Use": "Personal file storage. Online, real-time collaboration and sharing of specific files with users in and out of SU.",
         "Cost": "Free up to specific thresholds",
-        "Capacity": "- 500 GB on university-provided Microsoft 365 account. - Staff and Faculty can request more storage from their IT support.",
+        "Capacity": "500 GB on university-provided Microsoft 365 account. Staff and Faculty can request more storage from their IT support.",
         "Access and Collaboration": "SU requires that sharing invitations be sent to an email address and requires that invitees not using a @syr.edu email address be able to receive an access code at their email address to access any shared files.",
-        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. <br>- Not Allowed: Confidential or restricted/high-risk data, Export-Controlled information. <br>- Allowed with special configuration: HIPAA-regulated data <a class=\"table-links\" href=\"https://learn.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech\">Refer</a>",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "hipaa"],
         "storageLimit": 500
       },
       {
@@ -40,12 +40,12 @@
         "Cost": "Free up to specific thresholds",
         "Capacity": "Not Specified",
         "Access and Collaboration": "Can include non-SU users. Owner controls sharing options, including edit and view rights.",
-        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. <br>- Not Allowed: Confidential or restricted/high-risk data Export-Controlled information. <br>- Allowed with special configuration: HIPAA-regulated data <a class=\"table-links\" href=\"https://learn.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech\">Refer</a>",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "hipaa"],
         "storageLimit": 500
       },
       {
@@ -56,12 +56,12 @@
         "Cost": "Free up to specific thresholds",
         "Capacity": "Not Specified",
         "Access and Collaboration": "Can include non-SU users. Owner controls sharing options, including edit and view rights.",
-        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. <br>- Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
         "storageLimit": 500
       },
       {
@@ -72,12 +72,12 @@
         "Cost": "Free up to specific thresholds",
         "Capacity": "Not Specified",
         "Access and Collaboration": "Can include non-SU users. Owner controls sharing options, including edit and view rights.",
-        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. <br>- Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "DOINo"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
         "storageLimit": 500
       },
       {
@@ -86,9 +86,9 @@
         "Description": "Amazon Elastic Block Store (EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. EBS volumes are automatically replicated to provide high availability and durability. EBS offers high performance and the ability to scale your usage up or down quickly while paying only for what you use.",
         "Example Use": "Storing data files to be accessed by a single Amazon EC2 server.",
         "Cost": "Cost dependent on storage class, replication, and other services used.",
-        "Capacity": "- No practical file size limit. - No practical overall limit. - No practical limit to the number of files (costs incurred).",
+        "Capacity": "- No practical file size limit. <br>- No practical overall limit. <br>- No practical limit to the number of files (costs incurred).",
         "Access and Collaboration": "End-user access control to the content of EBS volumes is implemented by the EC2 instance to which an EBS volume is attached. Access and management of EBS volumes themselves are controlled by AWS IAM (Identity and Access Management), which can be linked to Cornell Active Directory for authentication and authorization.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS Elastic Block Store for more information). - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS Elastic Block Store for more information), HIPAA - regulated data <a class=\"table-links \" href=\"https://aws.amazon.com/compliance/hipaa-compliance/\">Refer</a>. <br>- Not Allowed: Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "High",
@@ -104,7 +104,7 @@
           "backupCopies",
           "replicateCopies",
           "moreThan1000Files",
-          "highTransactionRates", "DOINo"
+          "highTransactionRates"
         ],
         "storageLimit": -1
       },
@@ -114,15 +114,15 @@
         "Description": "Amazon Elastic File System (EFS) provides simple, scalable file storage for use with Amazon EC2 instances in the AWS Cloud. EFS grows and shrinks automatically, so your applications have the storage they need, when they need it. Multiple EC2 instances can access an EFS file system at the same time. EFS provides high performance, availability, and durability.",
         "Example Use": "Storing data files to be shared among multiple servers for conducting analyses.",
         "Cost": "> $1000/TB/Year",
-        "Capacity": "- 47.9 TB file size limit. - No overall limit (costs incurred). - No practical limit to the number of files.",
+        "Capacity": "- 47.9 TB file size limit. <br>- No overall limit (costs incurred). <br>- No practical limit to the number of files.",
         "Access and Collaboration": "Access to EFS volumes by servers is controlled by AWS network access control lists and security groups. Servers mounting EFS volumes are responsible for end-user access control.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS Elastic File System for more information). - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS Elastic File System for more information), HIPAA - regulated data <a class=\"table-links \" href=\"https://aws.amazon.com/compliance/hipaa-compliance/\">Refer</a>. <br>- Not Allowed: Export-Controlled information.",
         "Durability": "Medium",
         "Availability": "High",
         "Technical Complexity": "High",
         "Contact": "<a class=\"table-links \" href=\"https://aws.amazon.com/ebs/\">Amazon EFS</a>",
         "options": ["public", "sensitive", "confidential", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "moreThan1000Files",
-        "highTransactionRates", "DOINo"],
+        "highTransactionRates"],
         "storageLimit": -1
       },
       {
@@ -131,9 +131,9 @@
         "Description": "Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup. Amazon Glacier provides three options for access to archives, from a few minutes to several hours.",
         "Example Use": "Storing an archival copy of a static dataset when the actively used, primary copy is stored elsewhere.",
         "Cost": "< $500/TB/Year",
-        "Capacity": "- 5 TB file size limit. - No overall limit (costs incurred). - No practical limit to the number of files.",
+        "Capacity": "- 5 TB file size limit. <br>- No overall limit (costs incurred). <br>- No practical limit to the number of files.",
         "Access and Collaboration": "Extensive control using AWS IAM (Identity and Access Management) and Cornell Active Directory users and groups.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS Glacier for more information). - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS Glacier for more information), HIPAA - regulated data <a class=\"table-links \" href=\"https://aws.amazon.com/compliance/hipaa-compliance/\">Refer</a>. <br>- Not Allowed: Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Medium",
@@ -149,7 +149,7 @@
           "backupCopies",
           "replicateCopies",
           "moreThan1000Files",
-          "highTransactionRates", "DOINo"
+          "highTransactionRates"
         ],
         "storageLimit": -1
       },
@@ -159,15 +159,15 @@
         "Description": "Scalable object storage service for a variety of use cases.",
         "Example Use": "Making a large dataset available for public download. Private file sharing with versioning and replication for a widely distributed team.",
         "Cost": "Up to $1000/TB/Year. Cost dependent on storage class, replication, and other services used.",
-        "Capacity": "- 5 TB file size limit. - No overall limit (costs incurred). - No practical limit to the number of files.",
+        "Capacity": "- 5 TB file size limit. <br>- No overall limit (costs incurred). <br>- No practical limit to the number of files.",
         "Access and Collaboration": "Extensive control using AWS IAM (Identity and Access Management) and Cornell Active Directory users and groups.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS S3 for more information). - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data (contact AWS S3 for more information), IPAA - regulated data <a class=\"table-links \" href=\"https://aws.amazon.com/compliance/hipaa-compliance/\">Refer</a> <br>- Not Allowed: Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Medium",
         "Contact": "<a class=\"table-links \" href=\"https://aws.amazon.com/s3/\"> Amazon S3 </a>",
         "options": ["public", "sensitive", "confidential", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "replicateCopies", "moreThan1000Files",
-        "highTransactionRates", "DOINo"],
+        "highTransactionRates", "hipaa"],
         "storageLimit": -1
       },
       {
@@ -178,7 +178,7 @@
         "Cost": "Free (2GB) or paid plans starting at $9.99 / month for 2 TB storage",
         "Capacity": "Varies by plan, up to unlimited for Business plans.",
         "Access and Collaboration": "Supports real-time collaboration and sharing with external users.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data <a class=\"table-links \" href=\"https://help.dropbox.com/security/hipaa-hitech-overview/\">Refer</a>. - Not Allowed: Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -188,7 +188,7 @@
           "sensitive",
           "private",
           "inAndOutOfSU",
-          "generalPublic", "DOINo"
+          "generalPublic", "hipaa"
         ],        
         "storageLimit": -1
       },
@@ -200,7 +200,7 @@
         "Cost": "Free (10GB) or paid plans starting at $10/month.",
         "Capacity": "Varies by plan, up to unlimited for Business plans. 250 MB file size limit for free plan.",
         "Access and Collaboration": "By inviting existing Box users to folders, or by sending shared links. Owner controls sharing options, including edit and view rights; file and folder level controls available.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data <a class=\"table-links \" href=\"https://www.box.com/industries/healthcare/hipaa-compliance/\">Refer</a>. <br>- Not Allowed: Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -210,7 +210,7 @@
           "sensitive",
           "private",
           "inAndOutOfSU",
-          "generalPublic", "DOINo"
+          "generalPublic", "hipaa"
         ],        
         "storageLimit": -1
       },
@@ -222,7 +222,7 @@
         "Cost": "Pay-as-you-go service is available for $6.99/TB/Month.",
         "Capacity": "Unlimited, scalable cloud storage with no minimum storage size or duration requirements.",
         "Access and Collaboration": "Data can be accessed through S3-compatible APIs, integrated with applications, and shared securely.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Medium",
@@ -234,7 +234,7 @@
           "inAndOutOfSU",
           "replicateCopies",
           "highTransactionRates",
-          "generalPublic", "DOINo"
+          "generalPublic"
         ],
         "storageLimit": -1
       },
@@ -246,7 +246,7 @@
         "Cost": "Free to upload and free to access. Zenodo has no upper data limits, but each record is limited to 50 GB and 100 files.",
         "Capacity": "Zenodo has no upper data limits, but each record is limited to 50 GB and 100 files.",
         "Access and Collaboration": "Zenodo collaboration and sharing features allow you to share individual records drafts with other users and communities. Records can have open or closed access.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -268,7 +268,7 @@
         "Cost": "Publication fee of $150. Dryad charges excess storage fees for data totaling over 50GB. For data packages in excess of 50GB, submitters will be charged $50 for each additional 10GB.",
         "Capacity": "Individual files should not exceed 10GB. Limit of 300GB per data publication uploaded through the web interface.",
         "Access and Collaboration": "Open access shared with the public. Some data may have access restrictions due to privacy concerns, ethical considerations, or copyright issues. Authors can apply restrictions to certain datasets.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -289,7 +289,7 @@
         "Cost": "Free plan provides 20 GB of storage per user. Allows for up to 500 items, with a DOI (Digital Object Identifier) for each.",
         "Capacity": "Free plan provides 20 GB of storage per user. Allows for up to 500 items, with a DOI (Digital Object Identifier) for each.",
         "Access and Collaboration": "Open access with DOI for citation. Restricted access for selected individuals or groups. Share via links or create groups.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -311,7 +311,7 @@
         "Cost": "Free",
         "Capacity": "Capacity of 5 GB for private projects and 50 GB for public projects. File size limit of 5 GB. Can integrate with other storage management services (e.g., Amazon S3, Dropbox, Github, OneDrive).",
         "Access and Collaboration": "Public projects are open access with optional DOI. Collaborators and contributors can be added for projects, registrations, or preprints. Each contributor has their own permission level (ie. Administrator, Read+Write, and Read), each with different responsibilities and privileges.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
