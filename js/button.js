@@ -29,6 +29,9 @@ function clearSlider(sliderId) {
         slider.value = 0; 
         sliderValueLabel.textContent = slider.value;
     }
+
+    const sliderInputBox = document.getElementById('slider-value')
+    sliderInputBox.value = '1 GB'
 }
 
 // Function to clear all selected cards in the container
@@ -86,18 +89,30 @@ function selectCards(containerId) {
 
 let selectedCards = [];
 function selectionCard(card, service_data) {
-    card.classList.toggle('selected');
-
+    const isCardAlreadySelected = card.getAttribute('is-selected');
     const cardId = card.getAttribute('id');
-    const isCardAlreadySelected = selectedCards.some(item => item.cardId === cardId);
-
-    if (isCardAlreadySelected) {
+    
+    if (isCardAlreadySelected == "true") {
+        card.classList.remove('selected')
+        card.setAttribute('is-selected', false)
         selectedCards = selectedCards.filter(item => item.cardId !== cardId);
+
+        const conditionQualified = card.getAttribute('condition-qualified')
+        const storageQualified = card.getAttribute('storage-qualified')
+
+        if (conditionQualified == "false" || storageQualified == "false") {
+            card.classList.remove('selected-invalid');
+            card.classList.add('disabled')
+        }
+            
     } else {
+        card.classList.add('selected')
+        card.setAttribute('is-selected', true)
         selectedCards.push({ cardId, service_data });
     }
     updateTable();
     toggleTableVisibility();
+    console.log(selectedCards);
 }
 
 function updateTable() {

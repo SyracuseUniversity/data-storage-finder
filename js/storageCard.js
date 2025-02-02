@@ -50,16 +50,24 @@ document.addEventListener('DOMContentLoaded', function () {
             const conditionQualified = documentCard.getAttribute('condition-qualified')
             const storageQualified = documentCard.getAttribute('storage-qualified')
             
+            const isAlreadySelected = documentCard.getAttribute('is-selected')
+
             if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
             } else {
-                card.classList.add('disabled');
+                if(isAlreadySelected == "true"){
+                    card.classList.remove('disabled');
+                    card.classList.remove('selected');
+                    card.classList.add('selected-invalid')
+                }
+                else{
+                    card.classList.add('disabled');
+                }
             }
         });
     }
 
     function filterStorage() {
-        console.log("comes here")
         const dataStorageLabel = document.getElementById("log-slider");
         const dataStorageValue = Math.pow(10, dataStorageLabel.value); 
 
@@ -75,11 +83,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const conditionQualified = documentCard.getAttribute('condition-qualified')
             const storageQualified = documentCard.getAttribute('storage-qualified')
+            const isAlreadySelected = documentCard.getAttribute('is-selected')
             
             if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
             } else {
-                card.classList.add('disabled');
+                if(isAlreadySelected == "true"){
+                    card.classList.remove('disabled');
+                    card.classList.remove('selected');
+                    card.classList.add('selected-invalid')
+                }
+                else{
+                    card.classList.add('disabled');
+                }
             }
         });
     }

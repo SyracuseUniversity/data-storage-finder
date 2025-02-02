@@ -237,6 +237,11 @@ Cards Grid Styles
     pointer-events: none;
 }
 
+.selected-invalid {
+    background-color: #a8a8a8  !important;
+    border: 5px solid var(--su-blue-primary-100) !important;
+}
+
 .service-card {
     border: 2px solid var(--su-blue-primary-50);
     border-radius: 8px;

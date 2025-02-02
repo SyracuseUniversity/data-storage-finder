@@ -136,7 +136,7 @@
                         $service_json = json_encode($service);
                         echo "
                     <div class='flex-grid-item-3-lg flex-grid-item-4-md flex-grid-item-6-sm padding-top-2 padding-bottom-2'>
-                        <div class='card service-card' storage-qualified='true' condition-qualified='true' id='{$service['Title']}' data-options='$data_options' storage-limit='{$service['storageLimit']}' onclick='selectionCard(this, {$service_json})'>
+                        <div class='card service-card' storage-qualified='true' is-selected='false' condition-qualified='true' id='{$service['Title']}' data-options='$data_options' storage-limit='{$service['storageLimit']}' onclick='selectionCard(this, {$service_json})'>
                             <div>
                                 <h5 class='card-title text-orange'>{$service['Title']}</h5>
                                 <p class='card-text'>{$service['Intro']}</p>
