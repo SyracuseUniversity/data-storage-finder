@@ -54,6 +54,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
+                if(isAlreadySelected == "true"){
+                    card.classList.remove('selected-invalid');
+                    card.classList.add('selected')
+                }
             } else {
                 if(isAlreadySelected == "true"){
                     card.classList.remove('disabled');
@@ -87,6 +91,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
+                if(isAlreadySelected == "true"){
+                    card.classList.remove('selected-invalid');
+                    card.classList.add('selected')
+                }
             } else {
                 if(isAlreadySelected == "true"){
                     card.classList.remove('disabled');
