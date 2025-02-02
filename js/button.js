@@ -76,6 +76,7 @@ function selectCards(containerId) {
                     const service_data = data.services.find(service => service.Title === cardId);
                     selectedCards.push({ cardId, service_data });
                     card.classList.add('selected');
+                    card.setAttribute('is-selected', true)
                 }
             });
             updateTable()
