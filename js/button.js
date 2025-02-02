@@ -56,14 +56,33 @@ function clearCards(containerId) {
         const cards = container.querySelectorAll('.service-card');
         cards.forEach(card => {
             card.classList.remove('selected');
+            card.classList.remove('selected-invalid');
+            card.setAttribute('is-selected', false);
             const cardId = card.getAttribute('id');
             const cardIndex = selectedCards.findIndex(item => item.cardId === cardId);
             selectedCards.splice(cardIndex, 1);
+            const conditionQualified = card.getAttribute('condition-qualified')
+            const storageQualified = card.getAttribute('storage-qualified')
+            if(conditionQualified == "false" || storageQualified == "false"){
+                card.classList.add('disabled')
+            }
         });
         updateTable()
         toggleTableVisibility();
     } else {
         console.error(`Container with id "${containerId}" not found.`);
+    }
+}
+
+function clearCardConditions(containerId){
+
+    const container = document.getElementById(containerId);
+    if (container) {
+        const cards = container.querySelectorAll('.service-card');
+        cards.forEach(card => {
+            card.setAttribute('condition-qualified', true)
+            card.setAttribute('storage-qualified', true)
+        })
     }
 }
 
@@ -87,7 +106,9 @@ function selectCards(containerId) {
         .then(data => {
             cards.forEach(card => {
                 const cardId = card.getAttribute('id');
-                if (!selectedCards.some(selectedCard => selectedCard.cardId === cardId)) {
+                const conditionQualified = card.getAttribute('condition-qualified')
+                const storageQualified = card.getAttribute('storage-qualified')
+                if ((conditionQualified == "true" && storageQualified == "true") && (!selectedCards.some(selectedCard => selectedCard.cardId === cardId))) {
                     const service_data = data.services.find(service => service.Title === cardId);
                     selectedCards.push({ cardId, service_data });
                     card.classList.add('selected');
@@ -191,6 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clearButtonStorageQuestionaire.addEventListener('click', function() {
             clearCheckboxes('questionnaireContainer');
             clearSlider('log-slider');
+            clearCardConditions('storageSolutionsContainer')
         });
     } else {
         console.error('Clear All button not found.');
