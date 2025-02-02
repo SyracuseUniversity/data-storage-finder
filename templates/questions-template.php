@@ -70,7 +70,7 @@
 
                 if ($section['id'] == 5) {
                     echo "
-                    <div style='display: flex; align-items: center; position: relative;'>
+                    <div style='display: flex; align-items: center; position: relative;' id='log-slider-container'>
                         <span class='log-slider-label' style='margin-right: 10px;'> ≤ 1GB</span>
                         <input
                             id='log-slider'

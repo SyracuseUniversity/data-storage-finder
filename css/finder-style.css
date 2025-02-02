@@ -147,7 +147,6 @@ hr {
 }
 
 .scrollable-column {
-    max-height: 1100px;
     overflow-y: scroll;
     background: radial-gradient(ellipse at right center, rgba(225, 202, 180, 0.1) 0%, rgba(255, 255, 255, 0) 70%)
 }
@@ -611,9 +610,27 @@ Questions tooltip styling
 
 /** Media Queries for responsive design */
 
+@media screen and (max-width: 1115px) {
+    .card-text {
+        font-size: 0.85rem !important;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .card-text {
+        font-size: 0.85rem !important;
+    }
+    #log-slider-container{
+        display: none !important;
+    }
+  }
+
 @media screen and (max-width: 767px) {
     .card {
         height: 180px !important;
+    }
+    #log-slider-container{
+        display: flex !important;
     }
   }
 

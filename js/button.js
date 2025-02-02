@@ -1,4 +1,19 @@
 
+function setScrollableSectionHeight() {
+    const cardDiv = document.getElementById("storageSolutionsContainer");
+    const scrollableDiv = document.getElementById("questionnaireContainer");
+    if (window.innerWidth >= 768) {
+        const cardHeight = cardDiv.offsetHeight;
+        scrollableDiv.style.height = cardHeight + 'px';
+    }else{
+        scrollableDiv.style.height = '1100px';
+    }
+}
+
+window.addEventListener("load", setScrollableSectionHeight);
+window.addEventListener("resize", setScrollableSectionHeight);
+
+
 const headersWithInfoIncon = ["Durability", "Availability"]
 
 // Function to clear all checkboxes
