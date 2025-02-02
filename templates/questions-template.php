@@ -77,7 +77,7 @@
                             type='range'
                             min='0'
                             max='4'
-                            step='0.01'
+                            step='any'
                             value='0'
                             oninput='updateValue()'
                             style='flex: 1; margin: 0 10px;'

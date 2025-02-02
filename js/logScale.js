@@ -73,7 +73,7 @@ function updateSlider() {
         tooltip.classList.add("tooltip-error-hidden"); 
     } else {
         const logValue = Math.log10(gbValue);
-        slider.value = logValue.toFixed(2);
+        slider.value = logValue;
         tooltip.classList.add("tooltip-error-hidden"); 
     }
 
