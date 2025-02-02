@@ -12,6 +12,10 @@ function updateValue() {
     const displayValue =
         storage >= 1000 ? `${(storage / 1000).toFixed(1)} TB` : `${storage.toFixed(1)} GB`;
 
+
+    let cursorPosition = valueInput.selectionStart;
+    valueInput.setSelectionRange(cursorPosition, cursorPosition);
+
     valueInput.value = displayValue;
 }
 
@@ -21,7 +25,8 @@ function updateSlider() {
     const errorMsg = document.getElementById("input-slider-error");
     const tooltip = document.querySelector(".tooltip-error");
 
-    const value = valueInput.value.toLowerCase().trim();
+    const value = valueInput.value;
+    const trimValue = value.toLowerCase().trim()
     const numericValue = parseFloat(value);
 
     // Check for valid numeric value
@@ -36,8 +41,8 @@ function updateSlider() {
 
     // Validate unit
     const validUnits = ["b", "kb", "mb", "gb", "tb"];
-    const unit = value.replace(/[0-9.\s]/g, ""); // Extract unit by removing numbers and spaces
-
+    const unit = trimValue.replace(/[0-9.\s]/g, ""); // Extract unit by removing numbers and spaces
+    
     if (!validUnits.includes(unit)) {
         errorMsg.textContent = "Invalid unit. Allowed units: B, KB, MB, GB, TB.";
         tooltip.classList.remove("tooltip-error-hidden");
