@@ -28,6 +28,9 @@ function updateSlider() {
     if (isNaN(numericValue)) {
         errorMsg.textContent = "Please enter a valid numeric value.";
         tooltip.classList.remove("tooltip-error-hidden");
+        setTimeout(() => {
+            errorMsg.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 100);
         return;
     }
 
@@ -38,6 +41,9 @@ function updateSlider() {
     if (!validUnits.includes(unit)) {
         errorMsg.textContent = "Invalid unit. Allowed units: B, KB, MB, GB, TB.";
         tooltip.classList.remove("tooltip-error-hidden");
+        setTimeout(() => {
+            errorMsg.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 100);
         return;
     }
 

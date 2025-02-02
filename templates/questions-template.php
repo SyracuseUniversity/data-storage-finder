@@ -93,7 +93,7 @@
                             oninput='updateSlider()'
                         />
                     </div>
-                    <div class='tooltip-error tooltip-error-hidden  margin-top-3'>
+                    <div class='tooltip-error tooltip-error-hidden margin-top-3'>
                         <p class='tooltip-helper-text' id='input-slider-error'>
                             
                         </p>
