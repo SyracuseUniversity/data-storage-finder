@@ -4,8 +4,8 @@
  * Data Storage Finder
  *
  * @package     DataStorageFinder
- * @author      Kamaljit Aulakh
- * @copyright   2025 Kamaljit Aulakh
+ * @author      Open Source Program Office at Syracuse University
+ * @copyright   2025 Open Source Program Office at Syracuse University
  * @license     GPL-2.0-or-later
  *
  * @wordpress-plugin
@@ -13,8 +13,8 @@
  * Plugin URI: 
  * Description: Handles all CSS and JavaScript assets from the Finder theme
  * Version: 1.0
- * Author: Your Name
- * Author URI: 
+ * Author: Open Source Program Office at Syracuse University
+ * Author URI: https://opensource.syracuse.edu/
  * License: GPL v2 or later
  */
 
@@ -117,14 +117,6 @@ class data_storage_finder
         );
         wp_enqueue_script('js_for_buttons');
 
-        // wp_register_script(
-        //     'js_for_modal',
-        //     plugins_url('js/modal.js', __FILE__),
-        //     array(),
-        //     '1.0.1',
-        //     false
-        // );
-        // wp_enqueue_script(handle: 'js_for_modal');
 
         // Storage Card JS
         wp_register_script(
