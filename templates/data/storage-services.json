@@ -15,7 +15,22 @@
         "Contact": "ITS Core Infrastructure CDI Application team. <a class=\"table-links \" href=\"mailto:aascsys@su-jsm.atlassian.net\">aascsys@su-jsm.atlassian.net</a>",
         "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
         "storageLimit": 60
-      },      
+      },
+      {
+        "Title": "GitHub (SU Enterprise)",
+        "Intro": "Web-based platform to store, manage, and share code and files",
+        "Brief Description": "A platform built on Git that provides hosting for repositories, collaborative tools, issue tracking, CI/CD integration, and project management.",
+        "Example Use": "Hosting and collaborating on open-source or private software projects, tracking changes in code, and managing issues.",
+        "Cost": "Free for faculty and students. Default limits apply,  no process in place to purchase additional quota or higher limits. <a class=\"table-links \" href=\" https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage\">Refer</a>",
+        "Access and Collaboration": "Repositories can be made public or private. Shared access to users onboarded on the SU Github Enterprise account",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information. - Restricted: Academic data. Research and bulk data is strongly discouraged.",
+        "Durability": "High",
+        "Availability": "High",
+        "Technical Complexity": "Low",
+        "Contact": "<a class=\"table-links \" href=\" https://su-jsm.atlassian.net/wiki/x/eoKICQ\">Github at Syracuse University</a>",
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic"],
+        "storageLimit": 1
+      },            
       {
         "Title": "Microsoft OneDrive",
         "Intro": "Cloud storage for individual use or sharing with specific individuals",
@@ -257,6 +272,7 @@
           "sensitive",
           "private",
           "generalPublic",
+          "inAndOutOfSU",
           "DOIYes"
         ],
         "storageLimit": -1
@@ -279,6 +295,7 @@
           "sensitive",
           "private",
           "generalPublic",
+          "inAndOutOfSU",
           "DOIYes"
         ],"storageLimit": -1
       },
@@ -300,6 +317,7 @@
           "sensitive",
           "private",
           "generalPublic",
+          "inAndOutOfSU",
           "DOIYes"
         ],
         "storageLimit": -1
@@ -322,6 +340,7 @@
           "sensitive",
           "private",
           "generalPublic",
+          "inAndOutOfSU",
           "DOIYes"
         ],
         "storageLimit": -1
