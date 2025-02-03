@@ -60,7 +60,7 @@
                         <h4 class='text-orange'>Do you need a DOI ?</h4>
                         <div class='form-check margin-bottom-2 text-blue radio-like'>
                             <input class='form-check-input data-option' type='checkbox' value='DOIYes' id='DOIYes' onclick=deselectOtherCheckboxesSubQuestion(this)>
-                            <label class='form-check-label' for='Yes'>
+                            <label class='form-check-label' for='DOIYes'>
                                 Yes
                             </label>
                         </div>
