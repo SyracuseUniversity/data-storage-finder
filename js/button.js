@@ -1,5 +1,6 @@
 const restrictedScopes = ["sensitive", "confidential", "hipaa"]
 const openScope = ["generalPublic"]
+var isConflictSelected = false
 
 function setScrollableSectionHeight() {
     const cardDiv = document.getElementById("storageSolutionsContainer");
@@ -244,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function deselectOtherCheckboxes(checkbox) {
     const isRestricted = restrictedScopes.includes(checkbox.id);
     const isOpenScope = openScope.includes(checkbox.id);
-
+    
     if (isRestricted || isOpenScope) {
         var targetScope = isRestricted ? openScope : restrictedScopes;
     }
@@ -264,15 +265,26 @@ function deselectOtherCheckboxes(checkbox) {
         });
 
         if(targetScope){
+            isConflictSelected = true
             conflictingCheckBox(targetScope, 'disable')
         }else{
-            conflictingCheckBox(restrictedScopes, 'enable')
             conflictingCheckBox(openScope, 'enable')
+            conflictingCheckBox(restrictedScopes, 'enable')
         }
 
     }else{
-        conflictingCheckBox(targetScope, 'enable')
+        if(targetScope){
+            isConflictSelected = false
+            conflictingCheckBox(openScope, 'enable')
+            conflictingCheckBox(restrictedScopes, 'enable')
+        }
     }
+
+    if(targetScope == null && isConflictSelected == false){
+        conflictingCheckBox(openScope, 'enable')
+        conflictingCheckBox(restrictedScopes, 'enable')
+    }
+
 }
 
 function conflictingCheckBox(array, operation){
@@ -287,11 +299,9 @@ function conflictingCheckBox(array, operation){
             cb.disabled = true;
         })
     }   
-    
     array.forEach(el => {
         updateLabelColor(el)
-    })
-    
+    })   
 }
 
 function updateLabelColor(checkboxId) {
