@@ -306,7 +306,7 @@
         "Intro": "Open-access repository for research data, publications, and multimedia",
         "Description": "Figshare is a web-based repository designed to enable researchers to store, share, and disseminate their research outputs, including datasets, figures, videos, and other types of multimedia. It provides an open-access platform where researchers can upload and share a wide range of research materials to make them publicly available.",
         "Example Use": "Sharing datasets, figures, or media files with persistent identifiers.",
-        "Cost": "Free plan provides 20 GB of storage per user. Allows for up to 500 items, with a DOI (Digital Object Identifier) for each.",
+        "Cost": "Free plan provides 20 GB of storage per user. Additional storage can be purchased <a class=\"table-links \" href=\"https://info.figshare.com/figshare-plus/\"> Refer Figshare Plus </a>",
         "Capacity": "Free plan provides 20 GB of storage per user. Allows for up to 500 items, with a DOI (Digital Object Identifier) for each.",
         "Access and Collaboration": "Open access with DOI for citation. Restricted access for selected individuals or groups. Share via links or create groups.",
         "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
@@ -322,7 +322,7 @@
           "inAndOutOfSU",
           "DOIYes", "confidential"
         ],
-        "storageLimit": -1
+        "storageLimit": 20
       },
       {
         "Title": "OSF.io",
