@@ -45,7 +45,7 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "hipaa"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "confidential", "hipaa"],
         "storageLimit": 500
       },
       {
@@ -61,7 +61,7 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "hipaa"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies","confidential",  "hipaa"],
         "storageLimit": 500
       },
       {
@@ -195,7 +195,7 @@
         "Cost": "Free (2GB) or paid plans starting at $9.99 / month for 2 TB storage",
         "Capacity": "Varies by plan, up to unlimited for Business plans.",
         "Access and Collaboration": "Supports real-time collaboration and sharing with external users.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data <a class=\"table-links \" href=\"https://help.dropbox.com/security/hipaa-hitech-overview/\">Refer</a>. - Not Allowed: Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data <a class=\"table-links \" href=\"https://help.dropbox.com/security/hipaa-hitech-overview/\">Refer</a>. <br>- Not Allowed: Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -205,7 +205,7 @@
           "sensitive",
           "private",
           "inAndOutOfSU",
-          "generalPublic", "hipaa"
+          "generalPublic", "hipaa", "confidential"
         ],        
         "storageLimit": -1
       },
@@ -227,7 +227,8 @@
           "sensitive",
           "private",
           "inAndOutOfSU",
-          "generalPublic", "hipaa"
+          "confidential",
+          "generalPublic", "hipaa", "confidential"
         ],        
         "storageLimit": -1
       },
@@ -251,7 +252,7 @@
           "inAndOutOfSU",
           "replicateCopies",
           "highTransactionRates",
-          "generalPublic"
+          "generalPublic", "confidential"
         ],
         "storageLimit": -1
       },
@@ -274,9 +275,9 @@
           "private",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes"
+          "DOIYes", "confidential"
         ],
-        "storageLimit": -1
+        "storageLimit": 50
       },
       {
         "Title": "Dryad",
@@ -297,7 +298,7 @@
           "private",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes"
+          "DOIYes", "confidential"
         ],"storageLimit": -1
       },
       {
@@ -319,7 +320,7 @@
           "private",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes"
+          "DOIYes", "confidential"
         ],
         "storageLimit": -1
       },
@@ -342,9 +343,9 @@
           "private",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes"
+          "DOIYes", "confidential"
         ],
-        "storageLimit": -1
+        "storageLimit": 50
       }      
     ]
   }
