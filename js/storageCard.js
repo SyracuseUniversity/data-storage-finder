@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
         selectedOptions = updateSelectedOptions(selectedOptions, "generalPublic", ["DOIYes", "DOINo"])
 
-        console.log(selectedOptions)
-
         cards.forEach(card => {
             const cardId = card.getAttribute('id');
 

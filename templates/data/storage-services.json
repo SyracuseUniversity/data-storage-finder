@@ -272,7 +272,6 @@
         "options": [
           "public",
           "sensitive",
-          "private",
           "generalPublic",
           "inAndOutOfSU",
           "DOIYes", "confidential"
@@ -295,7 +294,6 @@
         "options": [
           "public",
           "sensitive",
-          "private",
           "generalPublic",
           "inAndOutOfSU",
           "DOIYes", "confidential"

@@ -1,3 +1,5 @@
+const restrictedScopes = ["sensitive", "confidential", "hipaa"]
+const openScope = ["generalPublic"]
 
 function setScrollableSectionHeight() {
     const cardDiv = document.getElementById("storageSolutionsContainer");
@@ -238,6 +240,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function deselectOtherCheckboxes(checkbox) {
+    const isRestricted = restrictedScopes.includes(checkbox.id);
+    const isOpenScope = openScope.includes(checkbox.id);
+
+    if (isRestricted || isOpenScope) {
+        var targetScope = isRestricted ? openScope : restrictedScopes;
+    }
+
     if (checkbox.checked) {
         // Find all checkboxes in the same section
         var section = checkbox.closest('.section-item');
@@ -251,7 +260,42 @@ function deselectOtherCheckboxes(checkbox) {
                 }
             }
         });
+
+        if(targetScope){
+            conflictingCheckBox(targetScope, 'disable')
+        }else{
+            conflictingCheckBox(restrictedScopes, 'enable')
+            conflictingCheckBox(openScope, 'enable')
+        }
+
+    }else{
+        conflictingCheckBox(targetScope, 'enable')
     }
+}
+
+function conflictingCheckBox(array, operation){
+    if(operation == 'enable'){
+        array.forEach(el => {
+            var cb = document.getElementById(el);
+            cb.disabled = false;
+        })
+    }else{
+        array.forEach(el => {
+            var cb = document.getElementById(el);
+            cb.disabled = true;
+        })
+    }   
+    
+    array.forEach(el => {
+        updateLabelColor(el)
+    })
+    
+}
+
+function updateLabelColor(checkboxId) {
+    const checkbox = document.getElementById(checkboxId);
+    const label = document.querySelector(`label[for="${checkboxId}"]`);
+    label.style.color = checkbox.disabled ? "grey" : "#000E54" ; 
 }
 
 function deselectOtherCheckboxesSubQuestion(checkbox){
