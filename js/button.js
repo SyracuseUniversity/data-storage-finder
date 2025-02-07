@@ -25,6 +25,8 @@ function clearCheckboxes(containerId) {
         const checkboxes = container.querySelectorAll('input[type=checkbox]');
         checkboxes.forEach(checkbox => {
             checkbox.checked = false;
+            checkbox.disabled = false;
+            updateLabelColor(checkbox.id)
         });
     } else {
         console.error(`Container with id "${containerId}" not found.`);
