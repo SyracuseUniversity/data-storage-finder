@@ -1,5 +1,11 @@
 const restrictedScopes = ["sensitive", "confidential", "hipaa"]
 const openScope = ["generalPublic"]
+
+const clearScopes = new Map();
+
+clearScopes.set(0, ["public"]);
+clearScopes.set(1, ["private", "syracuseNetID", "inAndOutOfSU"]);
+
 var isConflictSelected = false
 
 function setScrollableSectionHeight() {
@@ -242,13 +248,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function findKey(value) {
+    for (const [key, values] of clearScopes.entries()) {
+        if (values.includes(value)) {
+            return key;
+        }
+    }
+    return -1; 
+}
+
 function deselectOtherCheckboxes(checkbox) {
     const isRestricted = restrictedScopes.includes(checkbox.id);
     const isOpenScope = openScope.includes(checkbox.id);
-    
-    if (isRestricted || isOpenScope) {
-        var targetScope = isRestricted ? openScope : restrictedScopes;
-    }
+    const clearKey = findKey(checkbox.id);
 
     if (checkbox.checked) {
         // Find all checkboxes in the same section
@@ -264,25 +276,28 @@ function deselectOtherCheckboxes(checkbox) {
             }
         });
 
-        if(targetScope){
-            isConflictSelected = true
-            conflictingCheckBox(targetScope, 'disable')
-        }else{
-            conflictingCheckBox(openScope, 'enable')
-            conflictingCheckBox(restrictedScopes, 'enable')
-        }
+            if(isRestricted){
+                conflictingCheckBox(openScope, 'disable');
+            }
+            if(isOpenScope){
+                conflictingCheckBox(restrictedScopes, 'disable');
+            }
 
+            if(clearKey == 0){
+                conflictingCheckBox(openScope, 'enable')
+            }
+            if(clearKey == 1){
+                conflictingCheckBox(restrictedScopes, 'enable')
+            }
     }else{
-        if(targetScope){
-            isConflictSelected = false
-            conflictingCheckBox(openScope, 'enable')
-            conflictingCheckBox(restrictedScopes, 'enable')
+            
+        if(isRestricted){
+            conflictingCheckBox(openScope, 'enable');
         }
-    }
-
-    if(targetScope == null && isConflictSelected == false){
-        conflictingCheckBox(openScope, 'enable')
-        conflictingCheckBox(restrictedScopes, 'enable')
+        if(isOpenScope){
+            conflictingCheckBox(restrictedScopes, 'enable');
+        }
+    
     }
 
 }

@@ -6,7 +6,6 @@
             <p class="questions-info text-blue">
                 Answer these questions to help identify data storage services that are suitable for your needs. Checking
                 these boxes will change the list of available services.
-                If you are uncertain how to answer, leave the question blank to maximize your resulting options.
             </p>
             <button class="questions-button-secondary btn-clear-filters margin-bottom-4"
                 id="clearAllButtonStorageQuestionaire">Clear
