@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
+                addCardToGrid(card);
                 if(isAlreadySelected == "true"){
                     card.classList.remove('selected-invalid');
                     card.classList.add('selected')
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 else{
                     card.classList.add('disabled');
+                    removeCardFromGrid(card);
                 }
             }
         });
@@ -89,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             if (conditionQualified == "true" && storageQualified == "true") {
                 card.classList.remove('disabled');
+                addCardToGrid(card);
                 if(isAlreadySelected == "true"){
                     card.classList.remove('selected-invalid');
                     card.classList.add('selected')
@@ -101,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 else{
                     card.classList.add('disabled');
+                    removeCardFromGrid(card);
                 }
             }
         });
@@ -113,6 +117,26 @@ document.addEventListener('DOMContentLoaded', function () {
     log_slider.addEventListener('input', function () { 
         filterStorage();
     });
+
+    function removeCardFromGrid(card) {
+        const parentDiv = card.parentElement;
+        parentDiv.classList.remove('showCard');
+        parentDiv.classList.add('removeCard');
+        
+        setTimeout(() => {
+            parentDiv.classList.add('animation-complete');
+        }, 500); 
+    }
+    
+    function addCardToGrid(card) {
+        const parentDiv = card.parentElement;
+        parentDiv.classList.remove('animation-complete');
+        
+        void parentDiv.offsetWidth;
+        
+        parentDiv.classList.remove('removeCard');
+        parentDiv.classList.add('showCard');
+    }
 
     filterCards();
     filterStorage();

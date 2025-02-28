@@ -234,11 +234,45 @@ Cards Grid Styles
 .disabled {
     background-color: lightgrey !important;
     pointer-events: none;
+    border: 2px solid #808080 !important;
+}
+
+.disabled > div > .card-title {
+    color: #808080 !important;
+}
+
+.disabled > div > .card-text {
+    color: #808080 !important;
+}
+
+.showCard {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.removeCard {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none; /* Prevents interaction while invisible */
+}
+
+/* For when animation completes */
+.removeCard.animation-complete {
+    display: none;
 }
 
 .selected-invalid {
     background-color: #a8a8a8  !important;
     border: 5px solid var(--su-blue-primary-100) !important;
+}
+
+.selected-invalid > div > .card-title {
+    color: #808080 !important;
+}
+
+.selected-invalid > div > .card-text {
+    color: #808080 !important;
 }
 
 .service-card {

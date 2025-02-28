@@ -43,9 +43,31 @@ function clearCheckboxes(containerId) {
     doiQuestion.style.display = 'none';
 
     const cards = document.querySelectorAll('.service-card');
-    cards.forEach(card => card.classList.remove('disabled'));
+    cards.forEach(card => { 
+        card.classList.remove('disabled')
+        addCardToGrid(card);
+    });
 }
 
+function removeCardFromGrid(card) {
+    const parentDiv = card.parentElement;
+    parentDiv.classList.remove('showCard');
+    parentDiv.classList.add('removeCard');
+    
+    setTimeout(() => {
+        parentDiv.classList.add('animation-complete');
+    }, 500); 
+}
+
+function addCardToGrid(card) {
+    const parentDiv = card.parentElement;
+    parentDiv.classList.remove('animation-complete');
+    
+    void parentDiv.offsetWidth;
+    
+    parentDiv.classList.remove('removeCard');
+    parentDiv.classList.add('showCard');
+}
 
 //Function to clear the slider values when the Clear Answers Button is clicked
 function clearSlider(sliderId) {
@@ -136,6 +158,7 @@ function selectCards(containerId) {
 }
 
 let selectedCards = [];
+
 function selectionCard(card, service_data) {
     const isCardAlreadySelected = card.getAttribute('is-selected');
     const cardId = card.getAttribute('id');
@@ -151,6 +174,7 @@ function selectionCard(card, service_data) {
         if (conditionQualified == "false" || storageQualified == "false") {
             card.classList.remove('selected-invalid');
             card.classList.add('disabled')
+            removeCardFromGrid(card)
         }
             
     } else {
@@ -161,6 +185,16 @@ function selectionCard(card, service_data) {
     updateTable();
     toggleTableVisibility();
     console.log(selectedCards);
+}
+
+function removeCardFromGrid(card) {
+    const parentDiv = card.parentElement;
+    parentDiv.classList.remove('showCard');
+    parentDiv.classList.add('removeCard');
+    
+    setTimeout(() => {
+        parentDiv.classList.add('animation-complete');
+    }, 500); 
 }
 
 function updateTable() {

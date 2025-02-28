@@ -280,7 +280,7 @@
       },
       {
         "Title": "Dryad",
-        "Intro": "International open access repository of research data",
+        "Intro": "Open access repository of research data",
         "Description": "Dryad is an open data publishing platform and a community committed to the open availability and routine re-use of all research data.",
         "Example Use": "Archiving datasets for journal publications.",
         "Cost": "Publication fee of $150. Dryad charges excess storage fees for data totaling over 50GB. For data packages in excess of 50GB, submitters will be charged $50 for each additional 10GB.",
