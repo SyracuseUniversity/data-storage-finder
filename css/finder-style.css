@@ -195,15 +195,15 @@ hr {
     margin-right: 20px;
     background-color: white;
     border-radius: 2px;
-    border: 2px solid var(--su-orange-primary-100);
+    border: 2px solid var(--su-orange-dark-100);
     padding: 7px 30px;
-    color: var(--su-orange-primary-100);
+    color: var(--su-orange-dark-100);
 }
     
 .questions-button-primary:hover, .questions-button-primary:focus {
     background-color: var(--su-orange-primary-50);
-    border-color: var(--su-orange-primary-100);
-    color: var(--su-orange-primary-100); 
+    border-color: var(--su-orange-dark-100);
+    color: var(--su-orange-dark-100); 
 }
     
 .questions-button-primary:active, .questions-button-primary:active:hover, .questions-button-primary:active:focus {
@@ -348,7 +348,7 @@ Cards Grid Styles
 
 .table td{
     border-color: var(--table-header-border-color);
-    color: var(--su-orange-primary-100);
+    color: var(--su-orange-dark-100);
     font-size: 1rem;
     width: 200px !important;
     word-wrap: break-word;       
@@ -424,7 +424,7 @@ tbody{
 /* Confirmation Message */
 #confirmationMessage p {
     font-size: 20px;
-    color: var(--su-orange-primary-100);
+    color: var(--su-orange-dark-100);
     font-weight: bold;
     margin-top: 20px;
     display: flex; 
@@ -539,14 +539,14 @@ Log scale CSS
     border: 2px solid var(--su-blue-primary-100); 
 }
 
-li {
+#question-list > li {
     display: list-item;
     list-style: decimal;
     list-style-position: outside;
   }
 
 ::marker {
-    color: var(--su-orange-primary-100) !important;
+    color: var(--su-orange-dark-100) !important;
 }
 
 #compare-nav{
@@ -566,7 +566,7 @@ li {
 
 #noOfServices {
     margin-top: 30px;
-    color: var(--su-orange-primary-100);
+    color: var(--su-orange-dark-100);
     margin-left: 5%;
 }
 
@@ -582,9 +582,9 @@ Questions tooltip styling
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid var(--su-orange-primary-100);
+    border: 1px solid var(--su-orange-dark-100);
     background-color: white; 
-    color: var(--su-orange-primary-100);
+    color: var(--su-orange-dark-100);
     text-align: center;
     cursor: pointer;
   }
@@ -634,7 +634,7 @@ Questions tooltip styling
 }
 
 .table-links{
-    color: var(--su-orange-primary-100);
+    color: var(--su-orange-dark-100);
     font-size: 15px;
 }
 
