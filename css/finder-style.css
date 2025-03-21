@@ -201,7 +201,7 @@ hr {
 }
     
 .questions-button-primary:hover, .questions-button-primary:focus {
-    background-color: var(--su-orange-primary-50);
+    background-color: var(--su-orange-dark-50);
     border-color: var(--su-orange-dark-100);
     color: var(--su-orange-dark-100); 
 }
@@ -582,9 +582,8 @@ Questions tooltip styling
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid var(--su-orange-dark-100);
-    background-color: white; 
-    color: var(--su-orange-dark-100);
+    border: 1px solid var(--su-orange-dark-100) !important;
+    color: var(--su-orange-dark-100) !important;
     text-align: center;
     cursor: pointer;
   }
@@ -640,6 +639,19 @@ Questions tooltip styling
 
 .table-links:hover{
     color: var(--su-blue-primary-100);
+}
+
+/** accessibility hidden */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /** Media Queries for responsive design */

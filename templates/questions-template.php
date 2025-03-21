@@ -81,8 +81,10 @@
             <h6 class="section-title margin-bottom-3 margin-top-3">Select data storage services you would like to
                 compare.</h6>
             <div class="flex margin-bottom-3 buttons-container">
-                <button class="questions-button-primary" id="selectAllButtonStorageSolution">Select All</button>
-                <button class="questions-button-secondary" id="clearAllButtonStorageSolutions">Clear Selections</button>
+                <button class="questions-button-primary" id="selectAllButtonStorageSolution"
+                    aria-label="Select all storage solutions">Select All</button>
+                <button class="questions-button-secondary" id="clearAllButtonStorageSolutions"
+                    aria-label="Clear all selected storage solutions">Clear Selections</button>
             </div>
             <div class="flex-container padding-bottom-3" id="storageSolutionsContainer">
                 <div class='flex-grid'>
