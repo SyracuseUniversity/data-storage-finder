@@ -375,6 +375,7 @@ function deselectOtherCheckboxesSubQuestion(checkbox){
 
 function handleGeneralPublic(checkbox) {
     const subquestion = document.getElementById('sub-question')
+    console.log("comes here")
     if (checkbox.checked) {
         subquestion.style.display = 'block';
     }else{

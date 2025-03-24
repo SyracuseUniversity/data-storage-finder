@@ -5,8 +5,8 @@
 
 <div class="flex-container">
     <div class="table-container" id="table-con" style="display: none;">
+        <caption>Comparison of Data Storage Options</caption>
         <table class="table" style="display: none;" id="detailsTable">
-            <caption>Comparison of Data Storage Options</caption>
             <tbody>
                 <tr id="Title">
                     <th scope="col">Title</th>

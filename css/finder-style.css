@@ -148,7 +148,7 @@ hr {
 
 .scrollable-column {
     overflow-y: scroll;
-    background: radial-gradient(ellipse at right center, rgba(225, 202, 180, 0.1) 0%, rgba(255, 255, 255, 0) 70%)
+    background: radial-gradient(ellipse at right center, rgba(225, 165, 130, 0.2) 0%, rgba(255, 255, 255, 0) 70%)
 }
 
 .questions-info{
@@ -179,17 +179,12 @@ hr {
     color: var(--su-blue-primary-100);
 }
     
-.questions-button-secondary:hover, .questions-button-secondary:focus {
+.questions-button-secondary:hover {
       background-color: var(--su-blue-primary-50);
       border-color: var(--su-blue-primary-100);
       color: var(--su-blue-primary-100); 
 }
-    
-.questions-button-secondary:active, .questions-button-secondary:active:hover, .questions-button-secondary:active:focus {
-      background-color: var(--su-blue-primary-100);
-      border-color: var(--su-blue-primary-100);
-      color: white; 
-}
+
 
 .questions-button-primary {
     margin-right: 20px;
@@ -200,16 +195,10 @@ hr {
     color: var(--su-orange-dark-100);
 }
     
-.questions-button-primary:hover, .questions-button-primary:focus {
+.questions-button-primary:hover {
     background-color: var(--su-orange-dark-50);
     border-color: var(--su-orange-dark-100);
     color: var(--su-orange-dark-100); 
-}
-    
-.questions-button-primary:active, .questions-button-primary:active:hover, .questions-button-primary:active:focus {
-      background-color: var(--su-blue-primary-100);
-      border-color: var(--su-blue-primary-100);
-      color: white; 
 }
 
 /**
