@@ -38,7 +38,9 @@
                     echo "<div class='form-check margin-bottom-2 text-blue {$radioClass}'>
                             <input class='form-check-input data-option' type='checkbox' value='{$option['id']}' id='{$option['id']}'
                                 tabindex='0'
-                                " . ($radioClass ? "onclick=\"deselectOtherCheckboxes(this)\"" : "") . ">
+                                " . ($radioClass ? "onclick=\"deselectOtherCheckboxes(this)" : "") .
+                        ($radioClass && $option['id'] == 'generalPublic' ? "; handleGeneralPublic(this)" : "") . ($radioClass && $option['id'] == 'generalPublic' ? "; handleGeneralPublic(this)" : "") .
+                        ($radioClass ? "\"" : "") . ">
                             <label class='form-check-label' for='{$option['id']}'>
                                 {$option['label']}
                             </label>

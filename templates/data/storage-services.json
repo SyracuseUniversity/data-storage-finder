@@ -18,7 +18,7 @@
       },
       {
         "Title": "GitHub (SU Enterprise)",
-        "Intro": "Web-based platform to store, manage, and share code and files",
+        "Intro": "Web platform to store, manage, and share code and files",
         "Description": "A platform built on Git that provides hosting for repositories, collaborative tools, issue tracking, CI/CD integration, and project management.",
         "Example Use": "Hosting and collaborating on open-source or private software projects, tracking changes in code, and managing issues.",
         "Cost": "Free for faculty and students.",
@@ -66,7 +66,7 @@
       },
       {
         "Title": "Microsoft Teams",
-        "Intro": "Cloud storage for group and project collaboration with online meetings and chat",
+        "Intro": "Cloud storage for team collaboration with online meetings and chat",
         "Description": "Microsoft Teams is a workspace for real-time collaboration and communication, meetings, file, and app sharing. Edit documents together at the same time while tracking your changes—no more emailing revisions back and forth. Ask for feedback in real-time, poll the audience, and make decisions faster as a team.",
         "Example Use": "File storage for departments and groups. Online, real-time collaboration and sharing of files and folders with users in and out of SU.",
         "Cost": "Free up to specific thresholds",

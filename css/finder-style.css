@@ -14,6 +14,10 @@ h6 {
     margin-top: 0px !important;
 }
 
+ol {
+    padding-left: 1.3rem !important;
+}
+
 /** Navbar fix conflict with dds style */
 
 .nav {
@@ -346,6 +350,7 @@ Cards Grid Styles
 
 tbody{
     overflow-x: scroll;
+
 }
 
 .modal-container {
@@ -422,36 +427,67 @@ tbody{
     height: 100px;
 }
 
+#detailsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 #detailsTable th, #detailsTable td {
     padding: 10px 30px;
     border: 1px solid #ddd;
+}
+
+#detailsTable caption {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    font-weight: 700;
+    z-index: 2;
+    font-size: 1.2rem;
+    color: var(--su-orange-dark-100);
+    border-bottom: 2px solid #ddd;
 }
 
 #detailsTable tr th:first-child, #detailsTable tr td:first-child {
     position: sticky;
     left: 0;
     background-color: #f1f1f1;  
-    z-index: 1; 
+    z-index: 1;
 }
 
-#detailsTable tr:first-child{
-   font-weight: 700;
+#detailsTable tr:first-child {
+    font-weight: 700;
 }
 
-
-.table-container{
+.table-container {
     overflow-x: auto;
     max-width: 100%;
     border: 1px solid #ddd;
+    overflow-y: auto;
 }
-.table-fixed {
-   table-layout: fixed;
-   width: 100%;
+
+.table-container table {
+    width: 100%;
+    table-layout: fixed;
 }
-.table-fixed th, .table-fixed td {
-   overflow: hidden;
-   text-overflow: ellipsis;
-   white-space: nowrap;
+
+.table-container tbody {
+    display: block;
+    overflow-y: auto;
+}
+
+.table-container thead {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.table-container th, .table-container td {
+    width: 150px; /* Adjust this value as per your need */
+    text-align: left;
+    padding: 10px;
 }
 
 /**
@@ -717,5 +753,12 @@ Questions tooltip styling
 
     .card-text{
         font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 375px) {
+        #storageSolutionsContainer {
+            padding-left: 1.1rem !important;
+            padding-right: 1.1rem !important;
+        }
     }
 }
