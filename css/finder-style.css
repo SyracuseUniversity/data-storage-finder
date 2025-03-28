@@ -18,6 +18,10 @@ ol {
     padding-left: 1.3rem !important;
 }
 
+#sub-question p {
+    margin-bottom: 10px !important;
+}
+
 /** Navbar fix conflict with dds style */
 
 .nav {
@@ -397,24 +401,10 @@ Cards Grid Styles
     height: 100px;
 }
 
-.table-container {
-    overflow-x: auto;
-    max-width: 100%;
-    border: 1px solid #ddd;
-    overflow-y: auto;
-}
-
 .table {
     width: 100%;
-    table-layout: fixed; 
     border-collapse: collapse;
     margin: 0px !important  /* fix conflicting style with base.scss */;
-    overflow-y: scroll;
-}
-
-tbody {
-    display: block;
-    overflow-y: scroll;
 }
 
 .table th {
@@ -429,42 +419,42 @@ tbody {
 .table td{
     border-color: var(--table-header-border-color);
     color: var(--su-orange-dark-100);
-    font-size: 1rem;    
-    width: max-content;
-    min-width: 200px !important; 
+    font-size: 1rem;
+    word-wrap: break-word;       
+    overflow-wrap: break-word;
 }
 
-.table tr {
-    page-break-inside: avoid !important;
+tbody{
+    overflow-x: scroll;
 }
 
-.table-container{
-    overflow-y: auto; /* Enable vertical scrolling for entire table */
-}
-
-#detailsTable th, 
-#detailsTable td {
+#detailsTable th, #detailsTable td {
     padding: 10px 30px;
     border: 1px solid #ddd;
 }
 
-#detailsTable caption {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    padding: 10px;
-    font-weight: 700;
-    z-index: 2;
-    font-size: 1.2rem;
-    color: var(--su-orange-dark-100);
-    border-bottom: 2px solid #ddd;
-}
-
-#detailsTable tr th:first-child {
+#detailsTable tr th:first-child, #detailsTable tr td:first-child {
     position: sticky;
     left: 0;
     background-color: #f1f1f1;  
-    z-index: 1;
+    z-index: 1; 
+}
+
+#detailsTable tr:first-child{
+   font-weight: 700;
+}
+
+#detailsTable caption {
+    text-align: left;
+    position: absolute;
+    z-index: 99;
+    margin-top: -68px;
+}
+
+.table-container{
+    overflow-x: auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
 }
 
 
@@ -731,12 +721,5 @@ Questions tooltip styling
 
     .card-text{
         font-size: 0.8rem;
-    }
-
-    @media screen and (max-width: 375px) {
-        #storageSolutionsContainer {
-            padding-left: 1.1rem !important;
-            padding-right: 1.1rem !important;
-        }
     }
 }

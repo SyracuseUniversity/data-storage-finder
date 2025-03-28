@@ -49,7 +49,7 @@
 
                 if ($section['id'] == 2) {
                     echo "<div class='sub-question' id='sub-question' style='display:none;'>
-                            <h4 class='text-orange-dark'>Do you need a DOI?</h4>
+                            <p class='text-orange-dark'>Do you need a DOI?</p>
                             <div class='form-check margin-bottom-2 text-blue radio-like'>
                                 <input class='form-check-input data-option' type='checkbox' value='DOIYes' id='DOIYes' 
                                     tabindex='0' onclick='deselectOtherCheckboxesSubQuestion(this)'>

@@ -45,6 +45,11 @@ function clearCheckboxes(containerId) {
     const cards = document.querySelectorAll('.service-card');
     cards.forEach(card => { 
         card.classList.remove('disabled')
+        if(card.classList.contains('selected-invalid')){
+            card.classList.remove('selected-invalid');
+            card.classList.add('selected')
+        }
+        
         addCardToGrid(card);
     });
 }

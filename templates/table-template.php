@@ -1,12 +1,13 @@
 <div class="flex-container" style="display: none;" id="detailsTableBanner">
-    <h6 class="section-title margin-top-4 margin-bottom-4">Compare services that match your
-        selected criteria</h6>
 </div>
 
-<div class="flex-container">
+<div class="flex-container margin-top-4">
     <div class="table-container" id="table-con" style="display: none;">
         <table class="table" style="display: none;" id="detailsTable">
-            <caption>Comparison of Data Storage Options</caption>
+            <caption>
+                <h6 class="section-title margin-top-4 margin-bottom-4">Comparison of services that match your
+                    selected criteria</h6>
+            </caption>
             <tbody>
                 <tr id="Title">
                     <th scope="col">Title</th>
