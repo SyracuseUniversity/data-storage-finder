@@ -428,6 +428,10 @@ tbody{
     overflow-x: scroll;
 }
 
+.outside-container {
+    margin-top: 30px;
+}
+
 #detailsTable th, #detailsTable td {
     padding: 10px 30px;
     border: 1px solid #ddd;
