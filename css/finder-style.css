@@ -323,36 +323,6 @@ Cards Grid Styles
 
 /** Table Styling */
 
-.table {
-    width: 100%;
-    table-layout: fixed; /* Ensures fixed column widths */
-    border-collapse: collapse;
-    margin: 0px !important  /* fix conflicting style with base.scss */;
-}
-
-.table th {
-    font-family: var(--font-serif);
-    color: var(--su-blue-primary-100);
-    font-size: 1rem;
-    min-width: 200px !important;
-    width: 200px !important;
-}
-
-
-.table td{
-    border-color: var(--table-header-border-color);
-    color: var(--su-orange-dark-100);
-    font-size: 1rem;
-    width: 200px !important;
-    word-wrap: break-word;       
-    overflow-wrap: break-word;
-}
-
-tbody{
-    overflow-x: scroll;
-
-}
-
 .modal-container {
     background: #fff; 
     border-radius: 8px; 
@@ -427,12 +397,53 @@ tbody{
     height: 100px;
 }
 
-#detailsTable {
-    width: 100%;
-    border-collapse: collapse;
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    overflow-y: auto;
 }
 
-#detailsTable th, #detailsTable td {
+.table {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+    margin: 0px !important  /* fix conflicting style with base.scss */;
+    overflow-y: scroll;
+}
+
+tbody {
+    display: block;
+    overflow-y: scroll;
+}
+
+.table th {
+    font-family: var(--font-serif);
+    color: var(--su-blue-primary-100);
+    font-size: 1rem;
+    min-width: 200px !important;
+    width: 200px !important;
+}
+
+
+.table td{
+    border-color: var(--table-header-border-color);
+    color: var(--su-orange-dark-100);
+    font-size: 1rem;    
+    width: max-content;
+    min-width: 200px !important; 
+}
+
+.table tr {
+    page-break-inside: avoid !important;
+}
+
+.table-container{
+    overflow-y: auto; /* Enable vertical scrolling for entire table */
+}
+
+#detailsTable th, 
+#detailsTable td {
     padding: 10px 30px;
     border: 1px solid #ddd;
 }
@@ -449,46 +460,13 @@ tbody{
     border-bottom: 2px solid #ddd;
 }
 
-#detailsTable tr th:first-child, #detailsTable tr td:first-child {
+#detailsTable tr th:first-child {
     position: sticky;
     left: 0;
     background-color: #f1f1f1;  
     z-index: 1;
 }
 
-#detailsTable tr:first-child {
-    font-weight: 700;
-}
-
-.table-container {
-    overflow-x: auto;
-    max-width: 100%;
-    border: 1px solid #ddd;
-    overflow-y: auto;
-}
-
-.table-container table {
-    width: 100%;
-    table-layout: fixed;
-}
-
-.table-container tbody {
-    display: block;
-    overflow-y: auto;
-}
-
-.table-container thead {
-    display: block;
-    position: sticky;
-    top: 0;
-    background-color: white;
-}
-
-.table-container th, .table-container td {
-    width: 150px; /* Adjust this value as per your need */
-    text-align: left;
-    padding: 10px;
-}
 
 /**
 Log scale CSS 
