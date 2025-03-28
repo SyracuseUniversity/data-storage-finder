@@ -664,6 +664,16 @@ Questions tooltip styling
     }
   }
 
+  @media screen and (max-width: 630px) {
+    #detailsTable caption{
+        margin-top: -110px;
+    }
+
+    .outside-container{
+        margin-top: 100px;
+    }
+  }
+
 @media screen and (max-width: 767px) {
     .card {
         height: 180px !important;
@@ -707,7 +717,7 @@ Questions tooltip styling
 
   @media screen and (max-width: 425px) {
     .table th {
-        width: 100px !important;
+        width: 80px !important;
         font-size: 0.75rem;
     }
 

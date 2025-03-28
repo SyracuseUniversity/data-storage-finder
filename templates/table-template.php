@@ -1,7 +1,7 @@
 <div class="flex-container" style="display: none;" id="detailsTableBanner">
 </div>
 
-<div class="flex-container margin-top-4">
+<div class="flex-container outside-container">
     <div class="table-container" id="table-con" style="display: none;">
         <table class="table" style="display: none;" id="detailsTable">
             <caption>
