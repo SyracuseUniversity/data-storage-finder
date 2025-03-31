@@ -78,6 +78,17 @@
       },
       {
         "id": 5,
+        "question": "Would you need technical support from SU Staff ?",
+        "options": [
+          {
+            "id": "YesSUSupportITS",
+            "label": "Yes"
+          }
+        ],
+        "helper_info": "This includes help from appropriate staff members (ITS, research computing and OSPO) to setup the accounts and any troubleshooting."
+      },
+      {
+        "id": 6,
         "question": "What is the volume of data ?",
         "options": [],
         "helper_info": "The volume of data you plan to store can impact your choice of storage solutions. Large datasets may require systems optimized for scalability, while smaller datasets can be managed with simpler solutions. Consider both your current data volume and expected growth over time. If you're unsure, estimate based on your research or project needs. <br> <span class='text-bolder'> Please enter correct storage unit B (Byte) KB (Kilobyte) MB (Megabyte) GB (Gigabyte) or TB (Terabyte)"

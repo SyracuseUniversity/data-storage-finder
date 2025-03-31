@@ -58,7 +58,7 @@
                         </div>";
                 }
 
-                if ($section['id'] == 5) {
+                if ($section['id'] == 6) {
                     echo "<div style='display: flex; align-items: center; position: relative;' id='log-slider-container'>
                             <span class='log-slider-label' style='margin-right: 10px;'> ≤ 1GB</span>
                             <input id='log-slider' type='range' min='0' max='4' step='any' value='0' 

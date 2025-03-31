@@ -13,7 +13,7 @@
         "Availability": "High. Google Workspace is a cloud application. There are no guarantees of uptime and availability from SU IT.",
         "Technical Complexity": "Low. Google use model is ease of use and collaboration.",
         "Contact": "ITS Core Infrastructure CDI Application team. <a class=\"table-links\" href=\"mailto:aascsys@su-jsm.atlassian.net\">Contact Support</a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "YesSUSupportITS"],
         "storageLimit": 60
       },
       {
@@ -29,7 +29,7 @@
         "Availability": "High",
         "Technical Complexity": "Medium",
         "Contact": "<a class=\"table-links\" href=\"https://su-jsm.atlassian.net/wiki/x/eoKICQ\">GitHub at Syracuse University</a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "YesSUSupportITS"],
         "storageLimit": 1
       },
       {
@@ -45,7 +45,7 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links\" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links\" href=\"mailto:help@syr.edu\">Email Support</a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "confidential", "hipaa"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "confidential", "hipaa", "YesSUSupportITS"],
         "storageLimit": 500
       },
       {
@@ -61,7 +61,7 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies","confidential",  "hipaa"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies","confidential",  "hipaa", "YesSUSupportITS"],
         "storageLimit": 500
       },
       {
@@ -77,7 +77,7 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "YesSUSupportITS"],
         "storageLimit": 500
       },
       {
@@ -93,7 +93,7 @@
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links \" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links \" href=\"mailto:help@syr.edu\"> help@syr.edu </a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "YesSUSupportITS"],
         "storageLimit": 500
       },
       {
@@ -284,13 +284,13 @@
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
-        "Contact": "<a class=\"table-links\" href=\"https://zenodo.org/\">Zenodo</a>",
+        "Contact": "OSPO at <a class=\"table-links\" href=\"mailto:ospo@syr.edu\">ospo@syr.edu</a> or visit <a class=\"table-links\" href=\"https://zenodo.org/\">Zenodo</a>.",
         "options": [
           "public",
           "sensitive",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes", "confidential"
+          "DOIYes", "confidential", "YesSUSupportITS"
         ],
         "storageLimit": 50
       },
