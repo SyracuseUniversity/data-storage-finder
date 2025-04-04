@@ -362,6 +362,32 @@
           "confidential"
         ],
         "storageLimit": 50
-      }   
+      },
+      {
+        "Title": "QDR",
+        "Intro": "Archive for storing and sharing digital data (and accompanying documentation)",
+        "Description": "The Qualitative Data Repository (QDR) is a dedicated archive for storing and sharing digital data (and accompanying documentation) generated or collected through qualitative and multi-method research in the social sciences and related disciplines. QDR provides leadership and training in—and works to develop and publicize common standards and practices for—managing, archiving, sharing, reusing, and citing qualitative data. Through these efforts we aim to expand and improve the use of qualitative data in the production and evaluation of research, and in teaching.",
+        "Example Use": "Storing data from structured, semi-structured, or unstructured interviews; focus groups; oral histories (audio/video recordings; transcripts; notes/summaries; questionnaires/interview protocols)",
+        "Cost": "Free for faculty and students.",
+        "Capacity": "Contact QDR before update large amounts of data (100 GB) or individual files larger than 2 GBs",
+        "Access and Collaboration": "Public, restricted, and private data sharing. Researchers can control access levels and collaborate with team members or reviewers through managed permissions.",
+        "Data Allowed": "- Allowed: Public data. Sensitive / moderate risk data. <br> - Allowed with special configuration: FERPA-protected data. Confidential or restricted / high risk data. <br> - Not Allowed: HIPAA-regulated data. Export-Controlled information.",
+        "Durability": "High",
+        "Availability": "High",
+        "Technical Complexity": "Medium",
+        "Contact": "<a class=\"table-links\" href=\"https://qdr.syr.edu/\">QDR Website</a> Reach out via mail on <a class=\"table-links\" href=\"mailto:qdr@syr.edu\"> qdr@syr.edu </a>",
+        "options": [
+          "public",
+          "sensitive",
+          "generalPublic",
+          "inAndOutOfSU",
+          "syracuseNetID",
+          "backupCopies",
+          "moreThan1000Files",
+          "YesSUSupportITS",
+          "DOIYes"
+        ],
+        "storageLimit": -1
+      }
     ]
   }
