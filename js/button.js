@@ -103,6 +103,7 @@ function clearCards(containerId) {
             const storageQualified = card.getAttribute('storage-qualified')
             if(conditionQualified == "false" || storageQualified == "false"){
                 card.classList.add('disabled')
+                removeCardFromGrid(card)
             }
         });
         updateTable()
