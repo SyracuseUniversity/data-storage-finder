@@ -8,12 +8,12 @@
         "Cost": "Free up to specific thresholds. University does not provide additional storage on g.syr.edu accounts.",
         "Capacity": "- Active Students & Staff: 10 GB <br>- Active Faculty & Instructors: 60 GB <br>- Shared Drives: 20 GB Quota (requests for exceptions can be raised)",
         "Access and Collaboration": "Files and folders within My Drive can be shared ad-hoc for express collaboration with SU and non-SU users. Owner controls sharing options, including edit and view rights; file and folder-level controls are available.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br> - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information. <br> - Restricted: Academic data. Research and bulk data is strongly discouraged.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data, confidential or restricted/high-risk data. <br> - Not Allowed: HIPAA-regulated data, Export-Controlled information. <br> - Restricted: Academic data. Research and bulk data is strongly discouraged.",
         "Durability": "High. Google built-in backup and recycle bin policies apply. Data restore can be admin-initiated for 20 days, recycle bin is user-controlled with 20-day retention.",
         "Availability": "High. Google Workspace is a cloud application. There are no guarantees of uptime and availability from SU IT.",
         "Technical Complexity": "Low. Google use model is ease of use and collaboration.",
         "Contact": "ITS Core Infrastructure CDI Application team. <a class=\"table-links\" href=\"mailto:aascsys@su-jsm.atlassian.net\">Contact Support</a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "YesSUSupportITS"],
+        "options": ["public", "confidential", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "YesSUSupportITS"],
         "storageLimit": 60
       },
       {
