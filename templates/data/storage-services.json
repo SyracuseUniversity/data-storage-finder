@@ -8,12 +8,12 @@
         "Cost": "Free up to specific thresholds. University does not provide additional storage on g.syr.edu accounts.",
         "Capacity": "- Active Students & Staff: 10 GB <br>- Active Faculty & Instructors: 60 GB <br>- Shared Drives: 20 GB Quota (requests for exceptions can be raised)",
         "Access and Collaboration": "Files and folders within My Drive can be shared ad-hoc for express collaboration with SU and non-SU users. Owner controls sharing options, including edit and view rights; file and folder-level controls are available.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data, confidential or restricted/high-risk data. <br> - Not Allowed: HIPAA-regulated data, Export-Controlled information. <br> - Restricted: Academic data. Research and bulk data is strongly discouraged.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br> - Not Allowed: Confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information. <br> - Restricted: Academic data. Research and bulk data is strongly discouraged.",
         "Durability": "High. Google built-in backup and recycle bin policies apply. Data restore can be admin-initiated for 20 days, recycle bin is user-controlled with 20-day retention.",
         "Availability": "High. Google Workspace is a cloud application. There are no guarantees of uptime and availability from SU IT.",
         "Technical Complexity": "Low. Google use model is ease of use and collaboration.",
         "Contact": "ITS Core Infrastructure CDI Application team. <a class=\"table-links\" href=\"mailto:aascsys@su-jsm.atlassian.net\">Contact Support</a>",
-        "options": ["public", "confidential", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "YesSUSupportITS"],
+        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "YesSUSupportITS"],
         "storageLimit": 60
       },
       {
@@ -40,12 +40,12 @@
         "Cost": "Free up to specific thresholds",
         "Capacity": "500 GB on university-provided Microsoft 365 suite. Staff and Faculty can request more storage from their IT support.",
         "Access and Collaboration": "SU requires that sharing invitations be sent to an email address and requires that invitees not using a @syr.edu email address be able to receive an access code at their email address to access any shared files.",
-        "Data Allowed": "- Allowed: Public data. Sensitive/moderate risk data. <br>- Not Allowed: Confidential or restricted/high-risk data, Export-Controlled information. <br>- Allowed with special configuration: HIPAA-regulated data <a class=\"table-links\" href=\"https://learn.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech\">HIPAA Compliance Details</a>",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data, confidential or restricted/high-risk data. <br>- Not Allowed: Export-Controlled information. <br>- Allowed with special configuration: HIPAA-regulated data <a class=\"table-links\" href=\"https://learn.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech\">HIPAA Compliance Details</a>",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
         "Contact": "<a class=\"table-links\" href=\"https://its.syr.edu/its_service_center/\">ITS Help Desk</a> at 315-443-2677, <a class=\"table-links\" href=\"mailto:help@syr.edu\">Email Support</a>",
-        "options": ["public", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "confidential", "hipaa", "YesSUSupportITS"],
+        "options": ["public", "confidential", "sensitive", "private", "syracuseNetID", "inAndOutOfSU", "generalPublic", "backupCopies", "confidential", "hipaa", "YesSUSupportITS"],
         "storageLimit": 500
       },
       {
