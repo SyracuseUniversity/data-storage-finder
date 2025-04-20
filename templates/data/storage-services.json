@@ -388,6 +388,29 @@
           "DOIYes"
         ],
         "storageLimit": -1
+      },
+      {
+        "Title": "NFS Home Directory",
+        "Intro": "Storage for data being used in analyses on Research Computing clusters",
+        "Description": "Storage exclusively for the research computing clusters. This directory is ideal for storing dataset, scripts, and other files necessary for computational workflows.",
+        "Example Use": "Storage for research data computed on the OrangeGrid or the Zest clusters",
+        "Cost": "At no cost to SU affiliates",
+        "Capacity": "60TB; Inquire if more is needed",
+        "Access and Collaboration": "Public",
+        "Data Allowed": "- Allowed: Public data. Sensitive / moderate risk data. <br> - Not Allowed: Confidential data, HIPAA-regulated data. Export-Controlled information.",
+        "Durability": "High",
+        "Availability": "High",
+        "Technical Complexity": "Low",
+        "Contact": "Reach out via mail on <a class=\"table-links\" href=\"mailto:researchcomputing@syr.edu \"> researchcomputing@syr.edu  </a>",
+        "options": [
+          "public",
+          "sensitive",
+          "generalPublic",
+          "inAndOutOfSU",
+          "syracuseNetID",
+          "YesSUSupportITS"
+        ],
+        "storageLimit": 60
       }
     ]
   }
