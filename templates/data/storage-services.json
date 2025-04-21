@@ -411,6 +411,30 @@
           "YesSUSupportITS"
         ],
         "storageLimit": 60
+      },
+      {
+        "Title": "G:/ Drive",
+        "Intro": "Storage for group and project collaboration",
+        "Description": "Offers Collaborative directory for teams to store, organize, and share files.",
+        "Example Use": "Department-level shared storage for projects or internal documents.",
+        "Cost": "At no cost to SU affiliates",
+        "Capacity": "60TB; Inquire if more is needed",
+        "Access and Collaboration": "Access is limited to authorized users with an active SU affiliation. Authorized users can have a mixture of Read+Write, and Read permissions. Contact your school specific IT department to add/remove authorized users to a given shared G:/ drive.",
+        "Data Allowed": "Allowed: Public data. Sensitive / moderate risk data, Confidential data, HIPAA-regulated data. Export-Controlled information.",
+        "Durability": "High",
+        "Availability": "High",
+        "Technical Complexity": "Low",
+        "Contact": "Contact your school specific IT department. <a class=\"table-links\" href=\"https://its.syr.edu/contact_its/school-and-college-support-contact-information/ \"> Find Contact Info here </a>",
+        "options": [
+          "public",
+          "sensitive",
+          "confidential",
+          "hipaa",
+          "private",
+          "syracuseNetID",
+          "YesSUSupportITS"
+        ],
+        "storageLimit": 60
       }
     ]
   }
