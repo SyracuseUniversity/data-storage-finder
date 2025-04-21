@@ -52,7 +52,7 @@
                             <p class='text-orange-dark'>Do you need a DOI?</p>
                             <div class='form-check margin-bottom-2 text-blue radio-like'>
                                 <input class='form-check-input data-option' type='checkbox' value='DOIYes' id='DOIYes' 
-                                    tabindex='0' onclick='deselectOtherCheckboxesSubQuestion(this)'>
+                                    tabindex='0''>
                                 <label class='form-check-label' for='DOIYes'>Yes</label>
                             </div>
                         </div>";

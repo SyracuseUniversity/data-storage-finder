@@ -54,6 +54,7 @@ function clearCheckboxes(containerId) {
     });
 }
 
+//CSS changes to remove card from grid
 function removeCardFromGrid(card) {
     const parentDiv = card.parentElement;
     parentDiv.classList.remove('showCard');
@@ -64,6 +65,7 @@ function removeCardFromGrid(card) {
     }, 500); 
 }
 
+//CSS changes to add card to grid
 function addCardToGrid(card) {
     const parentDiv = card.parentElement;
     parentDiv.classList.remove('animation-complete');
@@ -113,6 +115,7 @@ function clearCards(containerId) {
     }
 }
 
+//Function to clear the data attributes when all cards are to be reset
 function clearCardConditions(containerId){
 
     const container = document.getElementById(containerId);
@@ -163,8 +166,11 @@ function selectCards(containerId) {
     
 }
 
+
+//Array at holds currently qualified cards
 let selectedCards = [];
 
+//If card is selected set is-selected attributed to true and add to selectedCards array
 function selectionCard(card, service_data) {
     const isCardAlreadySelected = card.getAttribute('is-selected');
     const cardId = card.getAttribute('id');
@@ -193,6 +199,7 @@ function selectionCard(card, service_data) {
     console.log(selectedCards);
 }
 
+
 function removeCardFromGrid(card) {
     const parentDiv = card.parentElement;
     parentDiv.classList.remove('showCard');
@@ -203,6 +210,8 @@ function removeCardFromGrid(card) {
     }, 500); 
 }
 
+
+//Function to fill table content based on selectedCards array
 function updateTable() {
     const table = document.getElementById('detailsTable');
     const rows = table.getElementsByTagName("tr");
@@ -224,6 +233,7 @@ function updateTable() {
     }
 }
 
+//Function to hide table if selectedCards is empty and vice versa
 function toggleTableVisibility() {
     const table = document.getElementById('detailsTable');
     const banner = document.getElementById('detailsTableBanner')
@@ -297,6 +307,13 @@ function findKey(value) {
     return -1; 
 }
 
+
+/**
+ * @param {*} checkbox 
+ * For question 1 and 2. If user selects an option of restrictedScopes, it should disable selecting any option in openScope.
+ * Example: if user selects "HIPAA regulated in Q1" then such data cant be available to "General Public".
+ * This function handles such checkbox configuration
+ */
 function deselectOtherCheckboxes(checkbox) {
     const isRestricted = restrictedScopes.includes(checkbox.id);
     const isOpenScope = openScope.includes(checkbox.id);
@@ -342,6 +359,7 @@ function deselectOtherCheckboxes(checkbox) {
 
 }
 
+//Function to 
 function conflictingCheckBox(array, operation){
     if(operation == 'enable'){
         array.forEach(el => {
@@ -365,23 +383,9 @@ function updateLabelColor(checkboxId) {
     label.style.color = checkbox.disabled ? "grey" : "#000E54" ; 
 }
 
-function deselectOtherCheckboxesSubQuestion(checkbox){
-    if (checkbox.checked) {
-        // Find all checkboxes in the same section
-        var section = checkbox.closest('.sub-question');
-        var checkboxes = section.querySelectorAll('input[type="checkbox"]');
-        
-        checkboxes.forEach(function(otherCheckbox) {
-            if (otherCheckbox !== checkbox) {
-                otherCheckbox.checked = false;
-            }
-        });
-    }
-}
-
+//Function to display sub-question if general-public is selected
 function handleGeneralPublic(checkbox) {
     const subquestion = document.getElementById('sub-question')
-    console.log("comes here")
     if (checkbox.checked) {
         subquestion.style.display = 'block';
     }else{

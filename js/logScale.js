@@ -1,3 +1,9 @@
+
+/**
+ * Based on the slider scroll display the 
+ * corresponding value in the input box.
+ * Handles TB and GB conversion.
+ */
 function updateValue() {
     const slider = document.getElementById("log-slider");
     const valueInput = document.getElementById("slider-value");
@@ -18,6 +24,12 @@ function updateValue() {
 
     valueInput.value = displayValue;
 }
+
+
+/**
+ * Updates the slider based on the value entered in the input box.
+ * Checks for all units Bytes, kilobytes, megabytes, gigabytes and terabytes.
+ */
 
 function updateSlider() {
     const slider = document.getElementById("log-slider");

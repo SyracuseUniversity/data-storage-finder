@@ -1,8 +1,4 @@
 
-function selectCard(card) {
-    card.classList.toggle('selected');
-}
-
 document.addEventListener('DOMContentLoaded', function () {
     const checkboxes = document.querySelectorAll('.data-option');
     const cards = document.querySelectorAll('.service-card');
@@ -23,6 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
         return selectedOptions;
     }
 
+    /**
+     * Function to filter cards based on the questions selected. 
+     * Matches the id of the option to the ids present in the "options" tag of each service
+     * Used helper function updateSelectedOptions to handle the generalPublic subquestion. 
+     * 
+     * data-attribute condition-qualified and storage-qualified used to set 
+     * whether a card is qualified to be display at the grid
+     */
+    
     function filterCards() {
 
         const dataStorageLabel = document.getElementById("slider-value");
@@ -71,6 +76,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    /**
+     * Function to filter cards based on the questions selected. 
+     * Matches the value of the slider with the storage-limit of each card.
+     * 
+     * data-attribute condition-qualified and storage-qualified used to set 
+     * whether a card is qualified to be display at the grid
+     */
+
     function filterStorage() {
         const dataStorageLabel = document.getElementById("log-slider");
         const dataStorageValue = Math.pow(10, dataStorageLabel.value); 
@@ -110,14 +123,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    //if any checkbox is clicked trigger function filterCards().
     checkboxes.forEach(checkbox => {
         checkbox.addEventListener('change', filterCards);
     });
 
+
+    //if log slider is updated, trigger function filterStorage().
     log_slider.addEventListener('input', function () { 
         filterStorage();
     });
 
+
+    //CSS changes to remove card from grid
     function removeCardFromGrid(card) {
         const parentDiv = card.parentElement;
         parentDiv.classList.remove('showCard');
@@ -128,6 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500); 
     }
     
+    //CSS changes to add card to grid
     function addCardToGrid(card) {
         const parentDiv = card.parentElement;
         parentDiv.classList.remove('animation-complete');
