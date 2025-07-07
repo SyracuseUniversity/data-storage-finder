@@ -312,7 +312,7 @@
           "sensitive",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes",
+          "DOIYes"
         ],
         "storageLimit": -1
       },
@@ -335,7 +335,7 @@
           "private",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes",
+          "DOIYes"
         ],
         "storageLimit": 20
       },
@@ -358,7 +358,7 @@
           "private",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes",
+          "DOIYes"
         ],
         "storageLimit": 50
       },
