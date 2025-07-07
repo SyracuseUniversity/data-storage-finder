@@ -280,7 +280,7 @@
         "Cost": "Free to upload and free to access. Zenodo has no upper data limits, but each record is limited to 50 GB and 100 files.",
         "Capacity": "Zenodo has no upper data limits, but each record is limited to 50 GB and 100 files.",
         "Access and Collaboration": "Zenodo collaboration and sharing features allow you to share individual records drafts with other users and communities. Records can have open or closed access.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Not Allowed: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -290,7 +290,7 @@
           "sensitive",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes", "confidential", "YesSUSupportITS"
+          "DOIYes", "YesSUSupportITS"
         ],
         "storageLimit": 50
       },
@@ -302,7 +302,7 @@
         "Cost": "Publication fee of $150. Dryad charges excess storage fees for data totaling over 50GB. For data packages in excess of 50GB, submitters will be charged $50 for each additional 10GB.",
         "Capacity": "Individual files should not exceed 10GB. Limit of 300GB per data publication uploaded through the web interface.",
         "Access and Collaboration": "Open access shared with the public. Some data may have access restrictions due to privacy concerns, ethical considerations, or copyright issues. Authors can apply restrictions to certain datasets.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Not Allowed: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -312,7 +312,7 @@
           "sensitive",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes", "confidential"
+          "DOIYes",
         ],
         "storageLimit": -1
       },
@@ -324,7 +324,7 @@
         "Cost": "Free plan provides 20 GB of storage per user. Additional storage can be purchased <a class=\"table-links\" href=\"https://info.figshare.com/figshare-plus/\">through Figshare Plus</a>.",
         "Capacity": "Free plan provides 20 GB of storage per user. Allows for up to 500 items, with a DOI (Digital Object Identifier) for each.",
         "Access and Collaboration": "Open access with DOI for citation. Restricted access for selected individuals or groups. Share via links or create groups.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Not Allowed: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -335,7 +335,7 @@
           "private",
           "generalPublic",
           "inAndOutOfSU",
-          "DOIYes", "confidential"
+          "DOIYes",
         ],
         "storageLimit": 20
       },
@@ -347,7 +347,7 @@
         "Cost": "Free",
         "Capacity": "Capacity of 5 GB for private projects and 50 GB for public projects. File size limit of 5 GB. Can integrate with other storage management services (e.g., Amazon S3, Dropbox, Github, OneDrive).",
         "Access and Collaboration": "Public projects are open access with optional DOI. Collaborators and contributors can be added for projects, registrations, or preprints. Each contributor has their own permission level (i.e., Administrator, Read+Write, and Read), each with different responsibilities and privileges.",
-        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Allowed with special configuration: FERPA-protected data, confidential or restricted/high-risk data. <br>- Not Allowed: HIPAA-regulated data, Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data, sensitive/moderate risk data. <br>- Not Allowed: FERPA-protected data, confidential or restricted/high-risk data, HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Low",
@@ -359,7 +359,6 @@
           "generalPublic",
           "inAndOutOfSU",
           "DOIYes",
-          "confidential"
         ],
         "storageLimit": 50
       },
@@ -371,7 +370,7 @@
         "Cost": "Free for faculty and students.",
         "Capacity": "Contact QDR before update large amounts of data (100 GB) or individual files larger than 2 GBs",
         "Access and Collaboration": "Public, restricted, and private data sharing. Researchers can control access levels and collaborate with team members or reviewers through managed permissions.",
-        "Data Allowed": "- Allowed: Public data. Sensitive / moderate risk data. <br> - Allowed with special configuration: FERPA-protected data. Confidential or restricted / high risk data. <br> - Not Allowed: HIPAA-regulated data. Export-Controlled information.",
+        "Data Allowed": "- Allowed: Public data. Sensitive / moderate risk data. <br> - Allowed with special configuration: FERPA-protected data, Confidential or restricted / high risk data. <br> - Not Allowed: HIPAA-regulated data, Export-Controlled information.",
         "Durability": "High",
         "Availability": "High",
         "Technical Complexity": "Medium",
@@ -379,6 +378,7 @@
         "options": [
           "public",
           "sensitive",
+          "confidential",
           "generalPublic",
           "inAndOutOfSU",
           "syracuseNetID",
